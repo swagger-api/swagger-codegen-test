@@ -518,7 +518,7 @@ def runWorkflows():
         if s in dataJson['runs'][r]["include"]:
           print("running " + workflow + ", job " + jobName + ", spec: " + specUrl)
           v3Count += 1
-          runSingleWorkflow(workflow, "master", language, specUrl, jobName, options, buildCommands, 'v3')
+          runSingleWorkflow(workflow, "3.0.0", language, specUrl, jobName, options, buildCommands, 'v3')
         continue
 
       if "exclude" in dataJson['runs'][r] and s in dataJson['runs'][r]["exclude"]:
@@ -526,7 +526,7 @@ def runWorkflows():
 
       print("running " + workflow + ", job " + jobName + ", spec: " + specUrl)
       v3Count += 1
-      runSingleWorkflow(workflow, "master", language, specUrl, jobName, options, buildCommands, 'v3')
+      runSingleWorkflow(workflow, "3.0.0", language, specUrl, jobName, options, buildCommands, 'v3')
   print ("runWorkflows - v2 count: " + str(v2Count) + ", v3Count: " + str(v3Count))
 
 
