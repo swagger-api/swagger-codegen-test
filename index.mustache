@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Codegen Test Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+          <div id="content">
+            <div id="project">
+                <div class="pull-left">
+                  <h1>Codegen Test Result</h1>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="sections">
+                <section>
+                  <hr>
+                  <div>
+                    <div>
+                    {{#commits}}
+                    <h3>{{v2_version}}/{{v3_version}} {{timestamp}}</h3>
+                    <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln"><h3><a target="_blank" rel="noopener noreferrer" href="https://github.com/swagger-api/swagger-codegen/commit/{{commit}}">{{short_hash}}</a></h3></span></code></pre><pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln"><h3><a target="_blank" rel="noopener noreferrer" href="https://github.com/swagger-api/swagger-codegen/commit/{{commit}}">{{short_commit}}</a></h3></span></code></pre>
+                    <h5>Total runs: {{total_runs}}</h5>
+                    <h5>Build errors: <span style="color: red">{{build_error_count}}</span>, Generate errors: <span style="color: red">{{generate_error_count}}</span></h5>
+                    <h5>Build failures: <span style="color: red">{{build_failure_count}}</span></h5>
+                    <h5>Regressions: <span style="color: red">{{regression_count}}</span></h5>
+                    <h3>Languages</h3>
+                    <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th>Version</th>
+                          <th>Language</th>
+                          <th>Runs</th>
+                          <th>Successful Runs</th>
+                          <th>Gen Errors</th>
+                          <th>Build Errors</th>
+                          <th>Build Failures</th>
+                          <th>Regressions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {{#languagesv2}}
+                        <tr>
+                          <td>{{codegen_version}}</td>
+                          <td>{{name}}</td>
+                          <td>{{total_runs}}</td>
+                          <td>{{successful_runs}}</td>
+                          <td>{{generate_error_count}}</td>
+                          <td>{{build_error_count}}</td>
+                          <td>{{build_failure_count}}</td>
+                          <td>{{regression_count}}</td>
+                         </tr>
+                        {{/languagesv2}}
+                        {{#languagesv3}}
+                            <tr>
+                                <td>{{codegen_version}}</td>
+                                <td>{{name}}</td>
+                                <td>{{total_runs}}</td>
+                                <td>{{successful_runs}}</td>
+                                <td>{{generate_error_count}}</td>
+                                <td>{{build_error_count}}</td>
+                                <td>{{build_failure_count}}</td>
+                                <td>{{regression_count}}</td>
+                            </tr>
+                        {{/languagesv3}}
+                        </tbody>
+                    </table>
+                    <h3>Runs</h3>
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Version</th>
+                            <th>Language</th>
+                            <th>Codegen Version</th>
+                            <th>Job</th>
+                            <th>Spec</th>
+                            <th>Generate Outcome</th>
+                            <th>Build Outcome</th>
+                            <th>Generated Folder</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#runs}}
+                            <tr>
+                                <td>{{codegen_version}}</td>
+                                <td>{{language}}</td>
+                                <td>{{v2_version}} / {{v3_version}}</td>
+                                <td>{{job}}</td>
+                                <td><a href="{{spec_url}}" target="_blank">{{spec}}</a></td>
+                                <td>
+                                    <span style="color:{{#generate_error}} red{{/generate_error}}{{^generate_error}} green{{/generate_error}}">{{generate_outcome}}</span>
+                                </td>
+                                <td>
+                                    {{#is_regression}}
+                                        <span style="color: red">REGRESSION</span>
+                                    {{/is_regression}}
+                                    {{^is_regression}}
+                                        <span style="color:{{#build_error}} red{{/build_error}}{{^build_error}} green{{/build_error}}">{{build_outcome}}</span>
+                                    {{/is_regression}}
+                                </td>
+                                <td>
+                                    {{#is_success_generation}}
+                                    <a href="{{generated_folder_link}}" target="_blank">View</a>
+                                    {{/is_success_generation}}
+                                    {{^is_success_generation}}
+                                    --
+                                    {{/is_success_generation}}
+                                </td>
+                            </tr>
+                        {{/runs}}
+                        </tbody>
+                    </table>
+                    <hr>
+                    {{/commits}}
+                    </div>
+                  </div>
+                </section>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

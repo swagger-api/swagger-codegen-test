@@ -1,0 +1,90 @@
+{
+  "workflows": [
+    "test-framework-js.yml",
+    "test-framework-java.yml",
+    "test-framework-ada.yml",
+    "test-framework-php.yml",
+    "test-framework-ruby.yml",
+    "test-framework-sbt.yml",
+    "test-framework-dotnet.yml",
+    "test-framework-python.yml"
+  ],
+  "specUrls": {
+    "v3": {
+      "petstore3": "https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3.json",
+      "petstore3fake": "https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml"
+    },
+    "v2": {
+      "petstore": "https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v2/petstore.json",
+      "petstorefake": "https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v2/petstorefake.yaml"
+    }
+  },
+  "runs": {
+    "js": {
+      "version": "v2",
+      "language": "javascript",
+      "workflow": "test-framework-js.yml",
+      "options": " -DappName=PetstoreClient --additional-properties useES6=false",
+      "builder": "jsbuild",
+      "buildCommands": [
+        "npm i",
+        "npm run test"
+      ]
+    },
+    "java-jersey2": {
+      "version": "v2",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library=jersey2",
+      "builder": "javabuild",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "python": {
+      "version": "v2",
+      "language": "python",
+      "workflow": "test-framework-python.yml",
+      "options": " ",
+      "builder": "pythonbuild",
+      "buildCommands": [
+        "python3 setup.py install --user",
+        "pip3 install nose2 --user",
+        "python3 -m nose2"
+      ]
+    },
+    "js-v3": {
+      "version": "v3",
+      "language": "javascript",
+      "workflow": "test-framework-js.yml",
+      "options": " -DappName=PetstoreClient --additional-properties useES6=false",
+      "builder": "jsbuild",
+      "buildCommands": [
+        "npm i",
+        "npm run test"
+      ]
+    },
+    "java-v3": {
+      "version": "v3",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --flatten-inline-schema true",
+      "builder": "javabuild",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "python-v3": {
+      "version": "v3",
+      "language": "python",
+      "workflow": "test-framework-python.yml",
+      "options": " --flatten-inline-schema true",
+      "builder": "pythonbuild",
+      "buildCommands": [
+        "python3 setup.py install --user",
+        "pip3 install nose2 --user",
+        "python3 -m nose2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+name: Codegen Test
+
+on:
+  # execute on demand
+  workflow_dispatch:
+    branches: ["main"]
+    inputs:
+      v2Version:
+        description: 'Optional V2 Version'
+        required: false
+        default: ""
+      v3Version:
+        description: 'Optional V3 Version'
+        required: false
+        default: ""
+      fullScript:
+        description: 'Optional Full Script running'
+        required: false
+        default: ""
+      dataFile:
+        description: 'Optional Data File'
+        required: false
+        default: ""
+
+jobs:
+
+  run-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: runTest
+        id: runTest
+        run: |
+          echo "python version"
+          python --version
+          pip --version
+          echo "which python3"
+          which python3
+          echo "installing packages"
+          pip install chevron
+          echo "running test framework with V2 Version: ${{ env.V2_VERSION }}, V3 Version ${{ env.V3_VERSION }} Full script ${{ env.FULL_SCRIPT }}, Data File ${{ env.DATA_FILE }}"
+          cd codegen-test-framework
+          python ./test-framework.py ${{ env.GH_EXECUTOR }} foo ${{ env.V2_VERSION }} ${{ env.V3_VERSION }} ${{ env.FULL_SCRIPT }} ${{ env.DATA_FILE }}
+      - id: logCommitResult
+        run: |
+          echo "committing result into main branch"
+          cat out/results.csv
+      - uses: EndBug/add-and-commit@v7
+        id: commitResult
+        with:
+          add: 'out'
+          message: 'Add codegen test framework result (GH Workflow codegen-test.yml)'
+          push: true
+
+    env:
+      V2_VERSION: ${{ github.event.inputs.v2Version }}
+      V3_VERSION: ${{ github.event.inputs.v3Version }}
+      FULL_SCRIPT: ${{ github.event.inputs.fullScript }}
+      DATA_FILE: ${{ github.event.inputs.dataFile }}
+      GH_USER: ${{ secrets.GH_USER }}
+      GH_EXECUTOR: ${{ secrets.GH_EXECUTOR }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}

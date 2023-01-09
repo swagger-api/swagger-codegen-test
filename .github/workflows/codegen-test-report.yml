@@ -1,0 +1,62 @@
+name: Codegen Test Report
+
+on:
+  # execute on demand
+  workflow_dispatch:
+    branches: ["main"]
+    inputs:
+      v2NewestVersion:
+        description: 'Optional V2 Newest Version'
+        required: false
+        default: ""
+      v3NewestVersion:
+        description: 'Optional V3 Newest Version'
+        required: false
+        default: ""
+      v2OldestVersion:
+        description: 'Optional V2 Oldest Version'
+        required: false
+        default: ""
+      v3OldestVersion:
+        description: 'Optional V3 Oldest Version'
+        required: false
+        default: ""
+
+jobs:
+
+  run-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: runTestReport
+        id: runTestReport
+        run: |
+          echo "python version"
+          python --version
+          pip --version
+          echo "installing packages"
+          pip install chevron
+          echo "running test framework report with Versions: ${{ env.V2_NEWEST_VERSION }} ${{ env.V3_NEWEST_VERSION }} ${{ env.V2_OLDEST_VERSION }} ${{ env.V3_OLDEST_VERSION }}"
+          cd codegen-test-framework
+          python ./generate-report.py ${{ env.V2_NEWEST_VERSION }} ${{ env.V3_NEWEST_VERSION }} ${{ env.V2_OLDEST_VERSION }} ${{ env.V3_OLDEST_VERSION }}
+      - id: logCommitResult
+        run: |
+          echo "committing result into develop or master branch"
+          ls -la out
+      - uses: EndBug/add-and-commit@v7
+        id: commitResult
+        with:
+          add: 'out'
+          message: 'Add codegen test framework report (GH Workflow codegen-test-report.yml)'
+          push: true
+    env:
+      V2_NEWEST_VERSION: ${{ github.event.inputs.v2NewestVersion }}
+      V3_NEWEST_VERSION: ${{ github.event.inputs.v3NewestVersion }}
+      V2_OLDEST_VERSION: ${{ github.event.inputs.v2OldestVersion }}
+      V3_OLDEST_VERSION: ${{ github.event.inputs.v3OldestVersion }}

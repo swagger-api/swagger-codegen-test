@@ -1,0 +1,25 @@
+{
+  "workflows": [
+    "test-framework-js.yml"
+  ],
+  "specUrls": {
+    "v3": {
+      "petstore3": "https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3.json"
+    },
+    "v2": {
+    }
+  },
+  "runs": {
+    "js-v3": {
+      "version": "v3",
+      "language": "javascript",
+      "workflow": "test-framework-js.yml",
+      "options": " -DappName=PetstoreClient",
+      "builder": "jsbuild",
+      "buildCommands": [
+        "npm i",
+        "npm run test"
+      ]
+    }
+  }
+}
