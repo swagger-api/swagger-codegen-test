@@ -1,0 +1,62 @@
+
+****** generate ******
+
+LANGUAGE javascript
+JOB_NAME js-v3___petstore3fake___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+15:16:49.011 [Thread-1] ERROR io.swagger.v3.parser.util.RemoteUrl - unable to read
+java.io.FileNotFoundException: https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1967)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1962)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1961)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1521)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1505)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+	at io.swagger.v3.parser.util.RemoteUrl.urlToString(RemoteUrl.java:155)
+	at io.swagger.codegen.v3.config.CodegenConfigurator.loadSpecContent(CodegenConfigurator.java:480)
+	at io.swagger.codegen.v3.config.CodegenConfigurator.toClientOptInput(CodegenConfigurator.java:596)
+	at io.swagger.codegen.v3.cli.cmd.Generate.run(Generate.java:386)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.FileNotFoundException: https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1913)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1505)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:3078)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getHeaderField(HttpsURLConnectionImpl.java:305)
+	at io.swagger.v3.parser.util.RemoteUrl.urlToString(RemoteUrl.java:152)
+	... 4 common frames omitted
+15:16:49.013 [Thread-1] ERROR i.s.c.v3.config.CodegenConfigurator - Unable to read URL: https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+java.io.FileNotFoundException: https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1967)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1962)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1961)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1521)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1505)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:268)
+	at io.swagger.v3.parser.util.RemoteUrl.urlToString(RemoteUrl.java:155)
+	at io.swagger.codegen.v3.config.CodegenConfigurator.loadSpecContent(CodegenConfigurator.java:480)
+	at io.swagger.codegen.v3.config.CodegenConfigurator.toClientOptInput(CodegenConfigurator.java:596)
+	at io.swagger.codegen.v3.cli.cmd.Generate.run(Generate.java:386)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.FileNotFoundException: https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1913)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1505)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(HttpURLConnection.java:3078)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getHeaderField(HttpsURLConnectionImpl.java:305)
+	at io.swagger.v3.parser.util.RemoteUrl.urlToString(RemoteUrl.java:152)
+	... 4 common frames omitted
+Exception in thread "Thread-1" java.lang.IllegalArgumentException: Unable to read URL: https://raw.githubusercontent.com/swagger-api/swagger-codegen-test/specifications/immutable/specifications/v3/petstore3fake.yaml
+	at io.swagger.codegen.v3.config.CodegenConfigurator.toClientOptInput(CodegenConfigurator.java:600)
+	at io.swagger.codegen.v3.cli.cmd.Generate.run(Generate.java:386)
+	at java.lang.Thread.run(Thread.java:750)
