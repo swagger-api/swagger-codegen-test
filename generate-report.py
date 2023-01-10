@@ -230,6 +230,15 @@ def generateReport(outFolder, newestSpecV2 = None, newestSpecV3 = None, oldestSp
     result_file.write(output)
     result_file.close()
 
+  with open('repord.md.mustache', 'r') as template:
+    output = chevron.render(template, {'commits': commits})
+    file = outFolder + "report_" + timestamp + ".md"
+    if newestSpecV2 is not None:
+      file = outFolder + "report_" + newestSpecV2 + "-" + newestSpecV3 + "_" + oldestSpecV2 + "-" + oldestSpecV3 + "_" + timestamp + ".md"
+    result_file = open(file, "wt")
+    result_file.write(output)
+    result_file.close()
+
 # main
 def main():
   global timestamp
