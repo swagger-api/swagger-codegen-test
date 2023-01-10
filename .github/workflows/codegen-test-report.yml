@@ -43,7 +43,6 @@ jobs:
           echo "installing packages"
           pip install chevron
           echo "running test framework report with Versions: ${{ env.V2_NEWEST_VERSION }} ${{ env.V3_NEWEST_VERSION }} ${{ env.V2_OLDEST_VERSION }} ${{ env.V3_OLDEST_VERSION }}"
-          cd codegen-test-framework
           python ./generate-report.py ${{ env.V2_NEWEST_VERSION }} ${{ env.V3_NEWEST_VERSION }} ${{ env.V2_OLDEST_VERSION }} ${{ env.V3_OLDEST_VERSION }}
       - id: logCommitResult
         run: |

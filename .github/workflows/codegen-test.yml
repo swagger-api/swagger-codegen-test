@@ -45,7 +45,6 @@ jobs:
           echo "installing packages"
           pip install chevron
           echo "running test framework with V2 Version: ${{ env.V2_VERSION }}, V3 Version ${{ env.V3_VERSION }} Full script ${{ env.FULL_SCRIPT }}, Data File ${{ env.DATA_FILE }}"
-          cd codegen-test-framework
           python ./test-framework.py ${{ env.GH_EXECUTOR }} foo ${{ env.V2_VERSION }} ${{ env.V3_VERSION }} ${{ env.FULL_SCRIPT }} ${{ env.DATA_FILE }}
       - id: logCommitResult
         run: |
