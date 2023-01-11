@@ -1,0 +1,27 @@
+
+****** generate ******
+
+LANGUAGE java
+JOB_NAME java-v3___petstore3fake___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+12:37:06.553 [main] DEBUG io.swagger.codegen.v3.cli.SwaggerCodegen - there are not options for command 'langs'
+12:37:06.556 [main] DEBUG io.swagger.codegen.v3.cli.SwaggerCodegen - there are not options for command 'version'
+usage: swagger-codegen generate [-h] [-v []] [-l] [-o] [-i] [-t]
+                       [--template-version] [--template-engine] [-a] [-c]
+                       [-D [ [ ...]]] [-s] [--api-package]
+                       [--model-package] [--model-name-prefix]
+                       [--model-name-suffix]
+                       [--instantiation-types [ [ ...]]]
+                       [--type-mappings [ [ ...]]]
+                       [--additional-properties [ [ ...]]]
+                       [--import-mappings [ [ ...]]] [--invoker-package]
+                       [--group-id] [--artifact-id] [--artifact-version]
+                       [--library] [--git-user-id] [--git-repo-id]
+                       [--release-note] [--http-user-agent]
+                       [--reserved-words-mappings [ [ ...]]]
+                       [--ignore-file-override]
+                       [--remove-operation-id-prefix] [-u] [--test-option]
+                       [--use-oas2 []]
+swagger-codegen: error: unrecognized arguments: '--flatten-inline-schema'

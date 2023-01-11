@@ -1,0 +1,47 @@
+
+****** generate ******
+
+LANGUAGE javascript
+JOB_NAME js___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] INFO io.swagger.codegen.languages.JavascriptClientCodegen - Using JS ES5 templates
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/model/ApiResponse.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/model/ApiResponse.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/ApiResponse.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/model/Category.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/model/Category.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/Category.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/model/Order.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/model/Order.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/Order.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/model/Pet.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/model/Pet.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/Pet.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/model/Tag.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/model/Tag.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/Tag.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/model/User.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/model/User.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/User.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/api/PetApi.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/api/PetApi.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/PetApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/api/StoreApi.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/api/StoreApi.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/StoreApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/api/UserApi.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/test/api/UserApi.spec.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/docs/UserApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/package.json
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/index.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/src/ApiClient.js
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/git_push.sh
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/README.md
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/mocha.opts
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/.travis.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/js___petstore___/.swagger-codegen/VERSION
