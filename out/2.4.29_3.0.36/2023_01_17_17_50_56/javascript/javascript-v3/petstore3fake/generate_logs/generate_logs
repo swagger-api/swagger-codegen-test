@@ -1,0 +1,2173 @@
+
+****** generate ******
+
+LANGUAGE javascript
+JOB_NAME javascript-v3___petstore3fake___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+18:05:39.580 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+18:05:39.588 [Thread-1] INFO  i.s.c.v.g.j.JavaScriptClientCodegen - Using JS ES5 templates
+18:05:39.651 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.651 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.652 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.652 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.653 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.653 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.678 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.678 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.679 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.679 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.679 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.680 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.680 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.680 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.732 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.735 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.735 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.735 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.736 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.737 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.738 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.738 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.739 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.739 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.739 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.740 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.740 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.740 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.740 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.740 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.742 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.742 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:39.743 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.744 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.744 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.745 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.745 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.746 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.746 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.746 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.746 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.746 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:39.801 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.802 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.802 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.802 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.802 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.803 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.803 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.803 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.803 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.803 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.803 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.803 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.809 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Class (reserved word) cannot be used as model name. Renamed to ModelClass
+18:05:39.811 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Number (reserved word) cannot be used as model name. Renamed to ModelNumber
+18:05:39.811 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Float (reserved word) cannot be used as model name. Renamed to ModelFloat
+18:05:39.811 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Double (reserved word) cannot be used as model name. Renamed to ModelDouble
+18:05:39.811 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - String (reserved word) cannot be used as model name. Renamed to ModelString
+18:05:39.811 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Byte (reserved word) cannot be used as model name. Renamed to ModelByte
+18:05:39.811 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Date (reserved word) cannot be used as model name. Renamed to ModelDate
+18:05:39.812 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Number (reserved word) cannot be used as model name. Renamed to ModelNumber
+18:05:39.812 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Float (reserved word) cannot be used as model name. Renamed to ModelFloat
+18:05:39.812 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Double (reserved word) cannot be used as model name. Renamed to ModelDouble
+18:05:39.812 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - String (reserved word) cannot be used as model name. Renamed to ModelString
+18:05:39.812 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Byte (reserved word) cannot be used as model name. Renamed to ModelByte
+18:05:39.813 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Date (reserved word) cannot be used as model name. Renamed to ModelDate
+18:05:39.813 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Number (reserved word) cannot be used as model name. Renamed to ModelNumber
+18:05:39.813 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Float (reserved word) cannot be used as model name. Renamed to ModelFloat
+18:05:39.813 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Double (reserved word) cannot be used as model name. Renamed to ModelDouble
+18:05:39.813 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - String (reserved word) cannot be used as model name. Renamed to ModelString
+18:05:39.813 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Byte (reserved word) cannot be used as model name. Renamed to ModelByte
+18:05:39.815 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Date (reserved word) cannot be used as model name. Renamed to ModelDate
+18:05:39.815 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 123List (model name starts with number) cannot be used as model name. Renamed to Model123List
+18:05:39.816 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Class (reserved word) cannot be used as model name. Renamed to ModelClass
+18:05:39.816 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:39.817 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 123Number (model name starts with number) cannot be used as model name. Renamed to Model123Number
+18:05:39.832 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:39.833 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.023 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/AdditionalPropertiesClass.js
+18:05:40.034 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/AdditionalPropertiesClass.spec.js
+18:05:40.046 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AdditionalPropertiesClass.md
+18:05:40.078 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/AllOfSubCategoryCategory.js
+18:05:40.084 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/AllOfSubCategoryCategory.spec.js
+18:05:40.090 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AllOfSubCategoryCategory.md
+18:05:40.117 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/AllOfSubCategoryPetsItems.js
+18:05:40.123 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/AllOfSubCategoryPetsItems.spec.js
+18:05:40.129 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AllOfSubCategoryPetsItems.md
+18:05:40.160 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/AllPetsResponse.js
+18:05:40.166 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/AllPetsResponse.spec.js
+18:05:40.171 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AllPetsResponse.md
+18:05:40.202 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Animal.js
+18:05:40.208 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Animal.spec.js
+18:05:40.213 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Animal.md
+18:05:40.236 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/AnimalAnimalIdBody.js
+18:05:40.243 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/AnimalAnimalIdBody.spec.js
+18:05:40.248 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AnimalAnimalIdBody.md
+18:05:40.271 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/AnimalFarm.js
+18:05:40.276 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/AnimalFarm.spec.js
+18:05:40.281 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AnimalFarm.md
+18:05:40.303 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/ApiResponse.js
+18:05:40.307 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/ApiResponse.spec.js
+18:05:40.311 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/ApiResponse.md
+18:05:40.331 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/ArrayOfArrayOfNumberOnly.js
+18:05:40.335 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/ArrayOfArrayOfNumberOnly.spec.js
+18:05:40.340 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/ArrayOfArrayOfNumberOnly.md
+18:05:40.360 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/ArrayOfNumberOnly.js
+18:05:40.364 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/ArrayOfNumberOnly.spec.js
+18:05:40.368 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/ArrayOfNumberOnly.md
+18:05:40.388 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/ArrayTest.js
+18:05:40.393 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/ArrayTest.spec.js
+18:05:40.397 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/ArrayTest.md
+18:05:40.419 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Capitalization.js
+18:05:40.424 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Capitalization.spec.js
+18:05:40.428 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Capitalization.md
+18:05:40.461 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Cat.js
+18:05:40.466 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Cat.spec.js
+18:05:40.470 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Cat.md
+18:05:40.491 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Category.js
+18:05:40.495 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Category.spec.js
+18:05:40.500 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Category.md
+18:05:40.521 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/ClassModel.js
+18:05:40.525 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/ClassModel.spec.js
+18:05:40.530 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/ClassModel.md
+18:05:40.550 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Client.js
+18:05:40.555 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Client.spec.js
+18:05:40.559 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Client.md
+18:05:40.580 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Dog.js
+18:05:40.584 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Dog.spec.js
+18:05:40.588 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Dog.md
+18:05:40.610 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/DogDogIdBody.js
+18:05:40.614 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/DogDogIdBody.spec.js
+18:05:40.618 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/DogDogIdBody.md
+18:05:40.643 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/EnumArrays.js
+18:05:40.648 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/EnumArrays.spec.js
+18:05:40.652 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/EnumArrays.md
+18:05:40.657 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/EnumClass.js
+18:05:40.661 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/EnumClass.spec.js
+18:05:40.665 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/EnumClass.md
+18:05:40.699 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/EnumFormBody.js
+18:05:40.704 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/EnumFormBody.spec.js
+18:05:40.708 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/EnumFormBody.md
+18:05:40.735 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/EnumTest.js
+18:05:40.739 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/EnumTest.spec.js
+18:05:40.744 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/EnumTest.md
+18:05:40.764 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/FakeBody.js
+18:05:40.768 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/FakeBody.spec.js
+18:05:40.772 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/FakeBody.md
+18:05:40.791 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/FakeBody1.js
+18:05:40.796 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/FakeBody1.spec.js
+18:05:40.800 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/FakeBody1.md
+18:05:40.822 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/FakeJsonFormDataBody.js
+18:05:40.827 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/FakeJsonFormDataBody.spec.js
+18:05:40.832 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/FakeJsonFormDataBody.md
+18:05:40.851 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/FormatTest.js
+18:05:40.855 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/FormatTest.spec.js
+18:05:40.859 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/FormatTest.md
+18:05:40.875 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/HasOnlyReadOnly.js
+18:05:40.878 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/HasOnlyReadOnly.spec.js
+18:05:40.881 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/HasOnlyReadOnly.md
+18:05:40.893 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/List.js
+18:05:40.896 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/List.spec.js
+18:05:40.899 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/List.md
+18:05:40.912 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/MapTest.js
+18:05:40.915 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/MapTest.spec.js
+18:05:40.917 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/MapTest.md
+18:05:40.930 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/MixedPropertiesAndAdditionalPropertiesClass.js
+18:05:40.934 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/MixedPropertiesAndAdditionalPropertiesClass.spec.js
+18:05:40.937 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/MixedPropertiesAndAdditionalPropertiesClass.md
+18:05:40.937 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.938 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.938 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.939 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.940 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.940 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.952 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Model200Response.js
+18:05:40.953 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.956 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Model200Response.spec.js
+18:05:40.956 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.959 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Model200Response.md
+18:05:40.959 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.960 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.960 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.960 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.960 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - 200Response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+18:05:40.961 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.961 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.962 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.973 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/ModelReturn.js
+18:05:40.974 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.976 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/ModelReturn.spec.js
+18:05:40.976 [Thread-1] WARN  i.s.c.v.g.j.JavaScriptClientCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+18:05:40.980 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/ModelReturn.md
+18:05:40.999 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Name.js
+18:05:41.001 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Name.spec.js
+18:05:41.004 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Name.md
+18:05:41.016 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/NullableEnumModel.js
+18:05:41.020 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/NullableEnumModel.spec.js
+18:05:41.022 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/NullableEnumModel.md
+18:05:41.033 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/NumberOnly.js
+18:05:41.039 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/NumberOnly.spec.js
+18:05:41.041 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/NumberOnly.md
+18:05:41.054 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/OneOfAllPetsResponseItems.js
+18:05:41.056 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/OneOfAllPetsResponseItems.spec.js
+18:05:41.059 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/OneOfAllPetsResponseItems.md
+18:05:41.072 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/OneOfSinglePetResponsePet.js
+18:05:41.076 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/OneOfSinglePetResponsePet.spec.js
+18:05:41.084 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/OneOfSinglePetResponsePet.md
+18:05:41.097 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Order.js
+18:05:41.100 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Order.spec.js
+18:05:41.104 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Order.md
+18:05:41.117 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/OuterBoolean.js
+18:05:41.121 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/OuterBoolean.spec.js
+18:05:41.125 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/OuterBoolean.md
+18:05:41.144 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/OuterComposite.js
+18:05:41.147 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/OuterComposite.spec.js
+18:05:41.150 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/OuterComposite.md
+18:05:41.157 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/OuterEnum.js
+18:05:41.167 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/OuterEnum.spec.js
+18:05:41.169 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/OuterEnum.md
+18:05:41.181 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/OuterNumber.js
+18:05:41.184 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/OuterNumber.spec.js
+18:05:41.187 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/OuterNumber.md
+18:05:41.198 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/OuterString.js
+18:05:41.201 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/OuterString.spec.js
+18:05:41.204 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/OuterString.md
+18:05:41.222 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Pet.js
+18:05:41.225 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Pet.spec.js
+18:05:41.227 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Pet.md
+18:05:41.238 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/PetIdUploadImageBody.js
+18:05:41.240 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/PetIdUploadImageBody.spec.js
+18:05:41.243 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/PetIdUploadImageBody.md
+18:05:41.255 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/PetPetIdBody.js
+18:05:41.265 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/PetPetIdBody.spec.js
+18:05:41.267 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/PetPetIdBody.md
+18:05:41.278 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/ReadOnlyFirst.js
+18:05:41.280 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/ReadOnlyFirst.spec.js
+18:05:41.283 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/ReadOnlyFirst.md
+18:05:41.293 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/SinglePetResponse.js
+18:05:41.296 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/SinglePetResponse.spec.js
+18:05:41.298 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/SinglePetResponse.md
+18:05:41.308 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/SpecialModelName.js
+18:05:41.311 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/SpecialModelName.spec.js
+18:05:41.314 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/SpecialModelName.md
+18:05:41.327 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/SubCategory.js
+18:05:41.330 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/SubCategory.spec.js
+18:05:41.334 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/SubCategory.md
+18:05:41.345 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/Tag.js
+18:05:41.348 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/Tag.spec.js
+18:05:41.351 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/Tag.md
+18:05:41.362 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/model/User.js
+18:05:41.364 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/model/User.spec.js
+18:05:41.367 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/User.md
+18:05:41.417 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.419 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.421 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.424 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.428 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.429 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.431 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.432 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.433 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.434 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.435 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.435 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.435 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.438 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.438 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.438 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.438 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.438 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: Discriminator{propertyName='pet_type', mapping=null, extensions=null}
+        xml: null
+    }
+}
+18:05:41.440 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.440 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.440 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.440 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.441 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.449 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.450 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.450 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.450 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.450 [Thread-1] ERROR i.s.c.v.g.j.JavaScriptClientCodegen - No Type defined for Property class ComposedSchema {
+    class Schema {
+        type: null
+        format: null
+        $ref: null
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+18:05:41.514 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/AnimalApi.js
+18:05:41.516 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/AnimalApi.spec.js
+18:05:41.528 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AnimalApi.md
+18:05:41.540 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/AnotherFakeApi.js
+18:05:41.542 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/AnotherFakeApi.spec.js
+18:05:41.549 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/AnotherFakeApi.md
+18:05:41.560 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/DogApi.js
+18:05:41.562 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/DogApi.spec.js
+18:05:41.571 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/DogApi.md
+18:05:41.584 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/FakeApi.js
+18:05:41.587 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/FakeApi.spec.js
+18:05:41.597 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/FakeApi.md
+18:05:41.610 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/FakeClassnameTags123Api.js
+18:05:41.611 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/FakeClassnameTags123Api.spec.js
+18:05:41.621 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/FakeClassnameTags123Api.md
+18:05:41.639 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/PetApi.js
+18:05:41.641 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/PetApi.spec.js
+18:05:41.652 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/PetApi.md
+18:05:41.674 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/StoreApi.js
+18:05:41.680 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/StoreApi.spec.js
+18:05:41.689 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/StoreApi.md
+18:05:41.711 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/api/UserApi.js
+18:05:41.726 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/test/api/UserApi.spec.js
+18:05:41.746 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/docs/UserApi.md
+18:05:41.748 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/package.json
+18:05:41.753 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/index.js
+18:05:41.758 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/src/ApiClient.js
+18:05:41.766 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/git_push.sh
+18:05:41.786 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/README.md
+18:05:41.788 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/mocha.opts
+18:05:41.793 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/.travis.yml
+18:05:41.793 [Thread-1] WARN  i.s.codegen.v3.DefaultGenerator - can't open handlebars/javascript/assert-equals.js for input
+18:05:41.797 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/.swagger-codegen-ignore
+18:05:41.798 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-v3___petstore3fake___/.swagger-codegen/VERSION

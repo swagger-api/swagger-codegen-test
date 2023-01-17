@@ -1,0 +1,61 @@
+
+****** generate ******
+
+LANGUAGE ruby
+JOB_NAME ruby-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+17:56:56.063 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+17:56:56.394 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/address.rb
+17:56:56.400 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/address_spec.rb
+17:56:56.404 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/Address.md
+17:56:56.437 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/api_response.rb
+17:56:56.442 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/api_response_spec.rb
+17:56:56.445 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/ApiResponse.md
+17:56:56.504 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/category.rb
+17:56:56.518 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/category_spec.rb
+17:56:56.524 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/Category.md
+17:56:56.561 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/customer.rb
+17:56:56.566 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/customer_spec.rb
+17:56:56.570 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/Customer.md
+17:56:56.607 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/order.rb
+17:56:56.621 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/order_spec.rb
+17:56:56.624 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/Order.md
+17:56:56.652 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/pet.rb
+17:56:56.657 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/pet_spec.rb
+17:56:56.659 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/Pet.md
+17:56:56.688 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/tag.rb
+17:56:56.693 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/tag_spec.rb
+17:56:56.696 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/Tag.md
+17:56:56.735 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/models/user.rb
+17:56:56.740 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/models/user_spec.rb
+17:56:56.744 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/User.md
+17:56:56.982 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/api/pet_api.rb
+17:56:56.989 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/api/pet_api_spec.rb
+17:56:57.018 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/PetApi.md
+17:56:57.072 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/api/store_api.rb
+17:56:57.078 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/api/store_api_spec.rb
+17:56:57.091 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/StoreApi.md
+17:56:57.126 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/api/user_api.rb
+17:56:57.134 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/api/user_api_spec.rb
+17:56:57.150 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/docs/UserApi.md
+17:56:57.156 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/swagger_client.gemspec
+17:56:57.162 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client.rb
+17:56:57.167 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/api_client.rb
+17:56:57.170 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/api_error.rb
+17:56:57.176 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/configuration.rb
+17:56:57.179 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/lib/swagger_client/version.rb
+17:56:57.196 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/README.md
+17:56:57.197 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/git_push.sh
+17:56:57.198 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/.gitignore
+17:56:57.200 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/Rakefile
+17:56:57.200 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/Gemfile
+17:56:57.202 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/.rubocop.yml
+17:56:57.203 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/.rspec
+17:56:57.206 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/spec_helper.rb
+17:56:57.208 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/configuration_spec.rb
+17:56:57.214 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/api_client_spec.rb
+17:56:57.215 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/spec/base_object_spec.rb
+17:56:57.218 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/.swagger-codegen-ignore
+17:56:57.219 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/ruby-v3___petstore3___/.swagger-codegen/VERSION

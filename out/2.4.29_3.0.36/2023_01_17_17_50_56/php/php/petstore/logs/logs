@@ -1,0 +1,17 @@
+
+****** BUILD ******
+
+
+****** executing: composer install ******
+
+::error ::"./composer.json" does not match the expected JSON schema:%0A - name : Does not match the regex pattern ^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]|-{1,2})?[a-z0-9]+)*$
+
+In Factory.php line 319:
+                                                                               
+  "./composer.json" does not match the expected JSON schema:                   
+   - name : Does not match the regex pattern ^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z  
+  0-9](([_.]|-{1,2})?[a-z0-9]+)*$                                              
+                                                                               
+
+install [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--dry-run] [--download-only] [--dev] [--no-suggest] [--no-dev] [--no-autoloader] [--no-progress] [--no-install] [--audit] [--audit-format AUDIT-FORMAT] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--apcu-autoloader-prefix APCU-AUTOLOADER-PREFIX] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--] [<packages>...]
+

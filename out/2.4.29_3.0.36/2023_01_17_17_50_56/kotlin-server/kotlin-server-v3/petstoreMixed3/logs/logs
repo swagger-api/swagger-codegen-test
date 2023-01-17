@@ -1,0 +1,203 @@
+
+****** BUILD ******
+
+
+****** executing: gradle wrapper ******
+
+
+Welcome to Gradle 7.6!
+
+Here are the highlights of this release:
+ - Added support for Java 19.
+ - Introduced `--rerun` flag for individual task rerun.
+ - Improved dependency block for test suites to be strongly typed.
+ - Added a pluggable system for Java toolchains provisioning.
+
+For more details see https://docs.gradle.org/7.6/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :wrapper
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.6/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 31s
+1 actionable task: 1 executed
+
+****** executing: ./gradlew check assemble ******
+
+Downloading https://services.gradle.org/distributions/gradle-5.3-all.zip
+............10%.............20%.............30%............40%.............50%.............60%............70%.............80%.............90%............100%
+
+Welcome to Gradle 5.3!
+
+Here are the highlights of this release:
+ - Feature variants AKA "optional dependencies"
+ - Type-safe accessors in Kotlin precompiled script plugins
+ - Gradle Module Metadata 1.0
+
+For more details see https://docs.gradle.org/5.3/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :compileKotlin FAILED
+w: -Xcoroutines has no effect: coroutines are enabled anyway in 1.3 and beyond
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/AppMain.kt: (123, 2): Expecting '}'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/AppMain.kt: (86, 9): Unresolved reference: basic
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/AppMain.kt: (87, 9): Unresolved reference: validate
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/AppMain.kt: (91, 17): Unresolved reference: UserIdPrincipal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/AnotherFakeApi.kt: (42, 5): Unresolved reference: patch
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/AnotherFakeApi.kt: (49, 35): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/AnotherFakeApi.kt: (50, 34): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/AnotherFakeApi.kt: (51, 21): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/DogApi.kt: (43, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/DogApi.kt: (50, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/DogApi.kt: (57, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/DogApi.kt: (70, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/DogApi.kt: (77, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeApi.kt: (90, 5): Unresolved reference: patch
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeApi.kt: (97, 35): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeApi.kt: (98, 34): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeApi.kt: (99, 21): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeClassnameTags123Api.kt: (42, 5): Unresolved reference: patch
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeClassnameTags123Api.kt: (43, 25): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeClassnameTags123Api.kt: (45, 13): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeClassnameTags123Api.kt: (53, 39): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeClassnameTags123Api.kt: (54, 38): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/FakeClassnameTags123Api.kt: (55, 25): Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+public val PipelineContext<*, ApplicationCall>.call: ApplicationCall defined in io.ktor.application
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/MasterApi.kt: (43, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/ParrotApi.kt: (46, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/ParrotApi.kt: (59, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/apis/ParrotApi.kt: (72, 13): Unresolved reference: principal
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfPupPetsItems.kt: (19, 280): Unresolved reference: Status
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 46): Conflicting declarations: value-parameter foo: Boolean? = ..., value-parameter foo: Boolean? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 46): Conflicting declarations: public final val foo: Boolean?, public final val foo: Boolean?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 82): Conflicting declarations: value-parameter bar: Int? = ..., value-parameter bar: Int? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 82): Conflicting declarations: public final val bar: Int?, public final val bar: Int?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 114): Conflicting declarations: value-parameter beer: String? = ..., value-parameter beer: String? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 114): Conflicting declarations: public final val beer: String?, public final val beer: String?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 150): Conflicting declarations: value-parameter drunk: User? = ..., value-parameter drunk: User? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 150): Conflicting declarations: public final val drunk: User?, public final val drunk: User?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 246): Conflicting declarations: value-parameter foo: Boolean? = ..., value-parameter foo: Boolean? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 246): Conflicting declarations: public final val foo: Boolean?, public final val foo: Boolean?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 282): Conflicting declarations: value-parameter bar: Int? = ..., value-parameter bar: Int? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 282): Conflicting declarations: public final val bar: Int?, public final val bar: Int?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 314): Conflicting declarations: value-parameter beer: String? = ..., value-parameter beer: String? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 314): Conflicting declarations: public final val beer: String?, public final val beer: String?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 350): Conflicting declarations: value-parameter drunk: User? = ..., value-parameter drunk: User? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryCategory.kt: (18, 350): Conflicting declarations: public final val drunk: User?, public final val drunk: User?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllOfSubCategoryPetsItems.kt: (19, 296): Unresolved reference: Status
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AllPetsResponse.kt: (16, 28): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AnimalFarm.kt: (17, 23): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/AnyOfparrot_bodyParrotsItems.kt: (16, 40): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Cat.kt: (17, 58): Conflicting declarations: value-parameter declawed: Boolean? = ..., value-parameter declawed: Boolean? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Cat.kt: (17, 58): Conflicting declarations: public final val declawed: Boolean?, public final val declawed: Boolean?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Cat.kt: (17, 136): Conflicting declarations: value-parameter declawed: Boolean? = ..., value-parameter declawed: Boolean? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Cat.kt: (17, 136): Conflicting declarations: public final val declawed: Boolean?, public final val declawed: Boolean?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Dog.kt: (17, 58): Conflicting declarations: value-parameter breed: String? = ..., value-parameter breed: String? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Dog.kt: (17, 58): Conflicting declarations: public final val breed: String?, public final val breed: String?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Dog.kt: (17, 132): Conflicting declarations: value-parameter breed: String? = ..., value-parameter breed: String? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Dog.kt: (17, 132): Conflicting declarations: public final val breed: String?, public final val breed: String?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 49): Expecting comma or ')'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 49): Expecting ')'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 50): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 53): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 59): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 60): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 66): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 67): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 70): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 71): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (31, 21): Unexpected tokens (use ';' to separate expressions on the same line)
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 44): One type argument expected for class Array<T>
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (30, 71): Function declaration must have a name
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (31, 9): Unresolved reference: FISH
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/EnumArrays.kt: (32, 9): Unresolved reference: CRAB
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 59): Expecting comma or ')'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 59): Expecting ')'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 60): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 63): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 69): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 70): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 76): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 77): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 80): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 81): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (23, 26): Unexpected tokens (use ';' to separate expressions on the same line)
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 54): One type argument expected for class Array<T>
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (22, 81): Function declaration must have a name
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (23, 9): Unresolved reference: GREATER_THAN
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Enum_form_body.kt: (24, 9): Unresolved reference: DOLLAR
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Fake_body.kt: (13, 33): Unresolved reference: ByteArray
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Fake_body_1.kt: (13, 33): Unresolved reference: ByteArray
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Format_test.kt: (13, 33): Unresolved reference: ByteArray
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Inline_response_200_1.kt: (16, 31): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 65): Expecting comma or ')'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 65): Expecting ')'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 66): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 69): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 75): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 76): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 82): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 84): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 90): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 91): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 97): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 98): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 101): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 102): Expecting member declaration
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (23, 23): Unexpected tokens (use ';' to separate expressions on the same line)
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 62): 2 type arguments expected for interface Map<K, out V>
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (22, 102): Function declaration must have a name
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (23, 9): Unresolved reference: UPPER
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/MapTest.kt: (24, 9): Unresolved reference: LOWER
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/NullableEnumModel.kt: (25, 14): No value passed for parameter 'value'
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/OneOfAllPetsResponseItems.kt: (16, 38): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/OneOfPartMasterDestination.kt: (16, 39): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/OneOfPartMasterOrigin.kt: (16, 34): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/OneOfPup.kt: (16, 21): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/OneOfSinglePetResponsePet.kt: (16, 38): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/OneOfinline_response_200ParrotsItems.kt: (16, 47): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/OneOfval_MembersValMemberItems.kt: (16, 42): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Parrot_body_1.kt: (16, 24): Data class must have at least one primary constructor parameter
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 25): Conflicting declarations: value-parameter id: Long? = ..., value-parameter id: Long? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 25): Conflicting declarations: public final val id: Long?, public final val id: Long?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 57): Conflicting declarations: value-parameter category2: Category? = ..., value-parameter category2: Category? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 57): Conflicting declarations: public final val category2: Category?, public final val category2: Category?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 93): Conflicting declarations: value-parameter pets: Array<AllOfPupPetsItems>? = ..., value-parameter pets: Array<Any>? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 93): Conflicting declarations: public final val pets: Array<AllOfPupPetsItems>?, public final val pets: Array<Any>?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 147): Conflicting declarations: value-parameter id: Long? = ..., value-parameter id: Long? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 147): Conflicting declarations: public final val id: Long?, public final val id: Long?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 179): Conflicting declarations: value-parameter category2: Category? = ..., value-parameter category2: Category? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 179): Conflicting declarations: public final val category2: Category?, public final val category2: Category?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 215): Conflicting declarations: value-parameter pets: Array<AllOfPupPetsItems>? = ..., value-parameter pets: Array<Any>? = ...
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Pup.kt: (17, 215): Conflicting declarations: public final val pets: Array<AllOfPupPetsItems>?, public final val pets: Array<Any>?
+e: /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstoreMixed3___/src/main/kotlin/io/swagger/server/models/Users.kt: (17, 18): Data class must have at least one primary constructor parameter
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin'.
+> Compilation error. See log for more details
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 31s
+1 actionable task: 1 executed
