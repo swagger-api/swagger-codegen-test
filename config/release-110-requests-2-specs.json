@@ -1,0 +1,607 @@
+{
+  "workflows": [
+    "test-framework-ada.yml",
+    "test-framework-clojure.yml",
+    "test-framework-dart.yml",
+    "test-framework-go.yml",
+    "test-framework-js.yml",
+    "test-framework-java.yml",
+    "test-framework-no-build.yml",
+    "test-framework-php.yml",
+    "test-framework-ruby.yml",
+    "test-framework-sbt.yml",
+    "test-framework-dotnet.yml",
+    "test-framework-python.yml"
+  ],
+  "specUrls": {
+    "v3": {
+      "petstore3": "https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json",
+      "petstoreMixed3": "https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstoreMixed3.yaml"
+    },
+    "v2": {
+      "petstore": "https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json",
+      "petstore-with-fake-endpoints": "https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/modules/swagger-codegen/src/test/resources/2_0/petstore-with-fake-endpoints-models-for-testing.yaml"
+    }
+  },
+  "runs": {
+    "aspnetcore": {
+      "version": "v2",
+      "language": "aspnetcore",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " --additional-properties packageGuid={3C799344-F285-4669-8FD5-7ED9B795D5C5}",
+      "builder": "",
+      "buildCommands": [
+        "dotnet restore src/IO.Swagger/",
+        "dotnet build src/IO.Swagger/"
+      ]
+    },
+    "aspnetcore-interface-controller": {
+      "version": "v2",
+      "language": "aspnetcore",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " --additional-properties packageGuid={3C799344-F285-4669-8FD5-7ED9B795D5C5},interface-controller=true",
+      "builder": "",
+      "buildCommands": [
+        "dotnet restore src/IO.Swagger/",
+        "dotnet build src/IO.Swagger/"
+      ]
+    },
+    "csharp-dotnet2": {
+      "version": "v2",
+      "language": "csharp-dotnet2",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "chmod +x ./compile-mono.sh",
+        "./compile-mono.sh"
+      ]
+    },
+    "csharp": {
+      "version": "v2",
+      "language": "csharp",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " --additional-properties packageGuid={321C8C3F-0156-40C1-AE42-D59761FB9B6C}",
+      "builder": "",
+      "buildCommands": [
+        "sh ./build.sh"
+      ]
+    },
+    "csharp-standard": {
+      "version": "v2",
+      "language": "csharp",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " --additional-properties packageGuid={321C8C3F-0156-40C1-AE42-D59761FB9B6C},targetFramework=v5.0",
+      "builder": "",
+      "buildCommands": [
+        "sh ./build.sh"
+      ]
+    },
+    "dynamic-html": {
+      "version": "v2",
+      "language": "dynamic-html",
+      "workflow": "test-framework-js.yml",
+      "options": "",
+      "builder": "",
+      "buildCommands": []
+    },
+    "html2": {
+      "version": "v2",
+      "language": "html2",
+      "workflow": "test-framework-js.yml",
+      "options": "",
+      "builder": "",
+      "buildCommands": []
+    },
+    "html": {
+      "version": "v2",
+      "language": "html",
+      "workflow": "test-framework-js.yml",
+      "options": "",
+      "builder": "",
+      "buildCommands": []
+    },
+    "java8": {
+      "version": "v2",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library jersey2 --additional-properties artifactId=swagger-petstore-jersey2,dateLibrary=java8",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "java-jersey2": {
+      "version": "v2",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library jersey2",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "java-okhttp-gson": {
+      "version": "v2",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library okhttp-gson",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "java-resteasy": {
+      "version": "v2",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library resteasy",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "javascript": {
+      "version": "v2",
+      "language": "javascript",
+      "workflow": "test-framework-js.yml",
+      "options": " --additional-properties useES6=false",
+      "builder": "",
+      "buildCommands": [
+        "npm install",
+        "npm run test"
+      ]
+    },
+    "jaxrs-cxf-client": {
+      "version": "v2",
+      "language": "jaxrs-cxf-client",
+      "workflow": "test-framework-java.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "jaxrs-server": {
+      "version": "v2",
+      "language": "jaxrs",
+      "workflow": "test-framework-java.yml",
+      "options": " -DhideGenerationTimestamp=true,serverPort=8080",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "jaxrs-resteasy-java8": {
+      "version": "v2",
+      "language": "jaxrs-resteasy",
+      "workflow": "test-framework-java.yml",
+      "options": " -DdateLibrary=java8",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "jaxrs-spec": {
+      "version": "v2",
+      "language": "jaxrs-spec",
+      "workflow": "test-framework-java.yml",
+      "options": " -DdateLibrary=joda",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "nodejs-server": {
+      "version": "v2",
+      "language": "nodejs-server",
+      "workflow": "test-framework-js.yml",
+      "options": " -Dservice",
+      "builder": "",
+      "buildCommands": [
+        "npm install",
+        "npm run start"
+      ]
+    },
+    "php": {
+      "version": "v2",
+      "language": "php",
+      "workflow": "test-framework-php.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "composer install",
+        "./vendor/bin/phpunit"
+      ]
+    },
+    "python": {
+      "version": "v2",
+      "language": "python",
+      "workflow": "test-framework-python.yml",
+      "options": " ",
+      "builder": "pythonbuild",
+      "buildCommands": [
+        "python3 setup.py install --user",
+        "pip3 install nose2 --user",
+        "python3 -m nose2"
+      ]
+    },
+    "python-flask": {
+      "version": "v2",
+      "language": "python-flask",
+      "workflow": "test-framework-python.yml",
+      "options": " -Dservice",
+      "builder": "pythonbuild",
+      "buildCommands": [
+        "python3 setup.py install --user",
+        "pip3 install nose2 --user",
+        "python3 -m nose2"
+      ]
+    },
+    "spring-cloud": {
+      "version": "v2",
+      "language": "spring",
+      "workflow": "test-framework-java.yml",
+      "options": " --library spring-cloud -DresponseWrapper=HystrixCommand",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "spring-delegate": {
+      "version": "v2",
+      "language": "spring",
+      "workflow": "test-framework-java.yml",
+      "options": " -DdelegatePattern=true,hideGenerationTimestamp=true -DapiTests=false",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "spring-mvc": {
+      "version": "v2",
+      "language": "spring",
+      "workflow": "test-framework-java.yml",
+      "options": " --library spring-mvc",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "springboot": {
+      "version": "v2",
+      "language": "spring",
+      "workflow": "test-framework-java.yml",
+      "options": " -DhideGenerationTimestamp=true -DapiTests=false",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "typescript-angular-v6-with-npm": {
+      "version": "v2",
+      "language": "typescript-angular",
+      "workflow": "test-framework-js.yml",
+      "options": " --additional-properties ngVersion=6,npmName=@swagger/angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
+      "builder": "",
+      "buildCommands": [
+        "npm i",
+        "npm run build"
+      ]
+    },
+    "typescript-angularjs": {
+      "version": "v2",
+      "language": "typescript-angularjs",
+      "workflow": "test-framework-js.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "npm i"
+      ]
+    },
+    "typescript-fetch": {
+      "version": "v2",
+      "language": "typescript-fetch",
+      "workflow": "test-framework-js.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "npm i"
+      ]
+    },
+    "typescript-node": {
+      "version": "v2",
+      "language": "typescript-node",
+      "workflow": "test-framework-js.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": []
+    },
+    "aspnetcore-interface-controller-v3": {
+      "version": "v3",
+      "language": "aspnetcore",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " --interface-controller",
+      "builder": "",
+      "buildCommands": [
+        "dotnet restore src/IO.Swagger/",
+        "dotnet build src/IO.Swagger/"
+      ]
+    },
+    "csharp-dotnet2-v3": {
+      "version": "v3",
+      "language": "csharp-dotnet2",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " ",
+      "builder": "monobuild",
+      "buildCommands": [
+        "chmod +x ./compile-mono.sh",
+        "./compile-mono.sh"
+      ]
+    },
+    "csharp-v3": {
+      "version": "v3",
+      "language": "csharp",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " --additional-properties packageGuid={321C8C3F-0156-40C1-AE42-D59761FB9B6C}",
+      "builder": "monobuild",
+      "buildCommands": [
+        "sh ./build.sh"
+      ]
+    },
+    "csharp-standard-v3": {
+      "version": "v3",
+      "language": "csharp",
+      "workflow": "test-framework-dotnet.yml",
+      "options": " --additional-properties packageGuid={321C8C3F-0156-40C1-AE42-D59761FB9B6C},targetFramework=v5.0",
+      "builder": "monobuild",
+      "buildCommands": [
+        "sh ./build.sh"
+      ]
+    },
+    "dynamic-html-v3": {
+      "version": "v3",
+      "language": "dynamic-html",
+      "workflow": "test-framework-js.yml",
+      "options": "",
+      "builder": "",
+      "buildCommands": []
+    },
+    "html2-v3": {
+      "version": "v3",
+      "language": "html2",
+      "workflow": "test-framework-js.yml",
+      "options": "",
+      "builder": "",
+      "buildCommands": []
+    },
+    "html-v3": {
+      "version": "v3",
+      "language": "html",
+      "workflow": "test-framework-js.yml",
+      "options": "",
+      "builder": "",
+      "buildCommands": []
+    },
+    "java8-v3": {
+      "version": "v3",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library jersey2 --additional-properties artifactId=swagger-petstore-jersey2,dateLibrary=java8",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "java-jersey2-v3": {
+      "version": "v3",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library jersey2",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "java-okhttp-gson-v3": {
+      "version": "v3",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library okhttp-gson",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "java-resteasy-v3": {
+      "version": "v3",
+      "language": "java",
+      "workflow": "test-framework-java.yml",
+      "options": " --library resteasy",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "javascript-v3": {
+      "version": "v3",
+      "language": "javascript",
+      "workflow": "test-framework-js.yml",
+      "options": " --additional-properties useES6=false",
+      "builder": "",
+      "buildCommands": [
+        "npm install",
+        "npm run test"
+      ]
+    },
+    "jaxrs-cxf-client-v3": {
+      "version": "v3",
+      "language": "jaxrs-cxf-client",
+      "workflow": "test-framework-java.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "jaxrs-cxf-v3": {
+      "version": "v3",
+      "language": "jaxrs-cxf",
+      "workflow": "test-framework-java.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "jaxrs-server-v3": {
+      "version": "v3",
+      "language": "jaxrs",
+      "workflow": "test-framework-java.yml",
+      "options": " -DhideGenerationTimestamp=true,serverPort=8080",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "jaxrs-resteasy-v3": {
+      "version": "v3",
+      "language": "jaxrs-resteasy",
+      "workflow": "test-framework-java.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "jaxrs-spec-v3": {
+      "version": "v3",
+      "language": "jaxrs-spec",
+      "workflow": "test-framework-java.yml",
+      "options": " --additional-properties dateLibrary=joda",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "nodejs-server-v3": {
+      "version": "v3",
+      "language": "nodejs-server",
+      "workflow": "test-framework-js.yml",
+      "options": " -Dservice",
+      "builder": "",
+      "buildCommands": [
+        "npm install",
+        "npm run start"
+      ]
+    },
+    "php-v3": {
+      "version": "v3",
+      "language": "php",
+      "workflow": "test-framework-php.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "composer install",
+        "./vendor/bin/phpunit"
+      ]
+    },
+    "python-v3": {
+      "version": "v3",
+      "language": "python",
+      "workflow": "test-framework-python.yml",
+      "options": " ",
+      "builder": "pythonbuild",
+      "buildCommands": [
+        "python3 setup.py install --user",
+        "pip3 install nose2 --user",
+        "python3 -m nose2"
+      ]
+    },
+    "python-flask-v3": {
+      "version": "v3",
+      "language": "python-flask",
+      "workflow": "test-framework-python.yml",
+      "options": " -Dservice",
+      "builder": "pythonbuild",
+      "buildCommands": [
+        "python3 setup.py install --user",
+        "pip3 install nose2 --user",
+        "python3 -m nose2"
+      ]
+    },
+    "spring-cloud-v3": {
+      "version": "v3",
+      "language": "spring",
+      "workflow": "test-framework-java.yml",
+      "options": " --library spring-cloud -DresponseWrapper=HystrixCommand",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "spring-mvc-v3": {
+      "version": "v3",
+      "language": "spring",
+      "workflow": "test-framework-java.yml",
+      "options": " --library spring-mvc",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "springboot-v3": {
+      "version": "v3",
+      "language": "spring",
+      "workflow": "test-framework-java.yml",
+      "options": " -DhideGenerationTimestamp=true -DapiTests=false",
+      "builder": "",
+      "buildCommands": [
+        "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
+      ]
+    },
+    "typescript-angular-v6-with-npm-v3": {
+      "version": "v3",
+      "language": "typescript-angular",
+      "workflow": "test-framework-js.yml",
+      "options": " --additional-properties ngVersion=6.0.0",
+      "builder": "",
+      "buildCommands": [
+        "npm i",
+        "npm run build"
+      ]
+    },
+    "typescript-angular-v7-with-interface-v3": {
+      "version": "v3",
+      "language": "typescript-angular",
+      "workflow": "test-framework-js.yml",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=7.0.0",
+      "builder": "",
+      "buildCommands": [
+        "npm i",
+        "npm run build"
+      ]
+    },
+    "typescript-angular-v8-with-npm-v3": {
+      "version": "v3",
+      "language": "typescript-angular",
+      "workflow": "test-framework-js.yml",
+      "options": " --additional-properties ngVersion=8.0.0",
+      "builder": "",
+      "buildCommands": [
+        "npm i",
+        "npm run build"
+      ]
+    },
+    "typescript-fetch-v3": {
+      "version": "v3",
+      "language": "typescript-fetch",
+      "workflow": "test-framework-js.yml",
+      "options": " ",
+      "builder": "",
+      "buildCommands": [
+        "npm i"
+      ]
+    }
+  }
+}

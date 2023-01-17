@@ -21,9 +21,7 @@ CODEGEN_VERSION_V2 = 'latest'
 CODEGEN_VERSION_V3 = 'latest'
 
 FULL_SCRIPT = True
-# DATA_FILE = 'test-framework-data-oneeach-small.json'
-# DATA_FILE = 'test-framework-data-js-v3-one.json'
-DATA_FILE = 'test-framework-data-oneeach.json'
+DATA_FILE = 'config/js-java-python-12-requests-2-specs.json'
 
 dataJson = None
 sha = ''
