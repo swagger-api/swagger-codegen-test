@@ -1,0 +1,598 @@
+
+****** generate ******
+
+LANGUAGE csharp
+JOB_NAME csharp-v3___petstoreMixed3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstoreMixed3.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstoreMixed3.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+17:06:59.648 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+17:06:59.651 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - Generating code for .NET Framework v4.5
+17:06:59.714 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.716 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.721 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.721 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.721 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.721 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.722 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.723 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.726 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.727 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.727 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.734 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.734 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.734 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.734 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.734 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.734 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.735 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.737 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.737 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.738 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.739 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.739 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.739 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.739 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.739 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.739 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.740 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.742 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable ClassName
+17:06:59.746 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Color
+17:06:59.755 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.760 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.762 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.763 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.764 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.764 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.765 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.765 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.765 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.766 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.768 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.773 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.785 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.789 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable ClassName
+17:06:59.790 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Color
+17:06:59.795 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.839 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.840 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.840 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.841 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.841 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.841 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.841 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.842 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.842 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.843 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.843 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.843 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.843 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.844 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.844 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.844 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.844 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.845 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.846 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.846 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.847 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.847 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.847 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.848 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.848 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.848 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.849 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.849 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.849 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.851 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.851 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.852 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.852 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.852 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.852 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.853 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.853 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.854 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.854 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.854 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.855 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.878 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Id
+17:06:59.879 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Category
+17:06:59.879 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Name
+17:06:59.879 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable PhotoUrls
+17:06:59.880 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Tags
+17:06:59.880 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Status
+17:06:59.884 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Id
+17:06:59.884 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Name
+17:06:59.888 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Id
+17:06:59.889 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Category
+17:06:59.890 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Name
+17:06:59.890 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable PhotoUrls
+17:06:59.890 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Tags
+17:06:59.890 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Status
+17:06:59.896 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.897 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.897 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.899 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.899 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.905 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.906 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.906 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.906 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.906 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.906 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.907 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.907 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.908 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.908 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.908 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.909 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.909 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.909 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.909 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.909 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.909 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.909 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.910 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.911 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.915 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.916 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.917 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.917 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.918 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.918 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.918 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.919 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.919 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.926 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.927 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.927 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.927 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.927 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.927 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.927 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.928 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.929 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.929 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.929 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.929 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.929 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.929 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.930 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.931 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.932 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.932 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.932 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:06:59.932 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:06:59.932 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:00.118 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AdditionalPropertiesClass.cs
+17:07:00.131 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AdditionalPropertiesClassTests.cs
+17:07:00.145 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AdditionalPropertiesClass.md
+17:07:00.198 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AllOfPupPetsItems.cs
+17:07:00.205 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AllOfPupPetsItemsTests.cs
+17:07:00.212 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AllOfPupPetsItems.md
+17:07:00.253 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AllOfSubCategoryCategory.cs
+17:07:00.262 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AllOfSubCategoryCategoryTests.cs
+17:07:00.268 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AllOfSubCategoryCategory.md
+17:07:00.309 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AllOfSubCategoryPetsItems.cs
+17:07:00.316 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AllOfSubCategoryPetsItemsTests.cs
+17:07:00.323 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AllOfSubCategoryPetsItems.md
+17:07:00.360 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AllPetsResponse.cs
+17:07:00.370 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AllPetsResponseTests.cs
+17:07:00.376 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AllPetsResponse.md
+17:07:00.430 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Animal.cs
+17:07:00.437 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AnimalTests.cs
+17:07:00.442 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Animal.md
+17:07:00.485 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AnimalAnimalIdBody.cs
+17:07:00.492 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AnimalAnimalIdBodyTests.cs
+17:07:00.497 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AnimalAnimalIdBody.md
+17:07:00.539 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AnimalFarm.cs
+17:07:00.543 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AnimalFarmTests.cs
+17:07:00.546 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AnimalFarm.md
+17:07:00.575 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/AnyOfparrotBodyParrotsItems.cs
+17:07:00.579 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/AnyOfparrotBodyParrotsItemsTests.cs
+17:07:00.582 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AnyOfparrotBodyParrotsItems.md
+17:07:00.602 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ArrayOfArrayOfNumberOnly.cs
+17:07:00.606 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ArrayOfArrayOfNumberOnlyTests.cs
+17:07:00.609 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ArrayOfArrayOfNumberOnly.md
+17:07:00.627 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ArrayOfNumberOnly.cs
+17:07:00.631 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ArrayOfNumberOnlyTests.cs
+17:07:00.633 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ArrayOfNumberOnly.md
+17:07:00.652 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ArrayTest.cs
+17:07:00.656 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ArrayTestTests.cs
+17:07:00.659 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ArrayTest.md
+17:07:00.684 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Capitalization.cs
+17:07:00.688 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/CapitalizationTests.cs
+17:07:00.691 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Capitalization.md
+17:07:00.722 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Cat.cs
+17:07:00.725 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/CatTests.cs
+17:07:00.728 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Cat.md
+17:07:00.743 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Category.cs
+17:07:00.746 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/CategoryTests.cs
+17:07:00.748 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Category.md
+17:07:00.764 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ClassModel.cs
+17:07:00.767 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ClassModelTests.cs
+17:07:00.769 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ClassModel.md
+17:07:00.784 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Dog.cs
+17:07:00.786 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/DogTests.cs
+17:07:00.788 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Dog.md
+17:07:00.803 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/DogDogIdBody.cs
+17:07:00.806 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/DogDogIdBodyTests.cs
+17:07:00.808 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/DogDogIdBody.md
+17:07:00.852 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/EnumArrays.cs
+17:07:00.856 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/EnumArraysTests.cs
+17:07:00.859 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/EnumArrays.md
+17:07:00.865 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/EnumClass.cs
+17:07:00.869 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/EnumClassTests.cs
+17:07:00.872 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/EnumClass.md
+17:07:00.906 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/EnumFormBody.cs
+17:07:00.912 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/EnumFormBodyTests.cs
+17:07:00.915 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/EnumFormBody.md
+17:07:00.947 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/EnumTest.cs
+17:07:00.950 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/EnumTestTests.cs
+17:07:00.954 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/EnumTest.md
+17:07:00.982 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/FakeBody.cs
+17:07:00.992 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/FakeBodyTests.cs
+17:07:00.996 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/FakeBody.md
+17:07:01.030 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/FakeBody1.cs
+17:07:01.033 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/FakeBody1Tests.cs
+17:07:01.036 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/FakeBody1.md
+17:07:01.056 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/FakeJsonFormDataBody.cs
+17:07:01.059 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/FakeJsonFormDataBodyTests.cs
+17:07:01.062 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/FakeJsonFormDataBody.md
+17:07:01.085 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/FormatTest.cs
+17:07:01.088 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/FormatTestTests.cs
+17:07:01.091 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/FormatTest.md
+17:07:01.109 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/HasOnlyReadOnly.cs
+17:07:01.112 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/HasOnlyReadOnlyTests.cs
+17:07:01.114 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/HasOnlyReadOnly.md
+17:07:01.128 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/InlineResponse200.cs
+17:07:01.130 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/InlineResponse200Tests.cs
+17:07:01.132 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/InlineResponse200.md
+17:07:01.146 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/InlineResponse2001.cs
+17:07:01.148 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/InlineResponse2001Tests.cs
+17:07:01.150 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/InlineResponse2001.md
+17:07:01.161 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Macaw.cs
+17:07:01.163 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/MacawTests.cs
+17:07:01.165 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Macaw.md
+17:07:01.189 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/MapTest.cs
+17:07:01.191 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/MapTestTests.cs
+17:07:01.192 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/MapTest.md
+17:07:01.204 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/MixedPropertiesAndAdditionalPropertiesClass.cs
+17:07:01.206 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/MixedPropertiesAndAdditionalPropertiesClassTests.cs
+17:07:01.207 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/MixedPropertiesAndAdditionalPropertiesClass.md
+17:07:01.208 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.208 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.208 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.208 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.208 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.208 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.209 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.209 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.209 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.209 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.209 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.220 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Model200Response.cs
+17:07:01.220 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.222 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/Model200ResponseTests.cs
+17:07:01.222 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+17:07:01.224 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Model200Response.md
+17:07:01.224 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.224 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.225 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.225 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.225 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.225 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.225 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.225 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.225 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.236 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ModelApiResponse.cs
+17:07:01.236 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.238 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ModelApiResponseTests.cs
+17:07:01.238 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.240 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ModelApiResponse.md
+17:07:01.240 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.240 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.241 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.242 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.251 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ModelClient.cs
+17:07:01.252 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.254 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ModelClientTests.cs
+17:07:01.254 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.255 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ModelClient.md
+17:07:01.256 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.256 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.256 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.256 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.256 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.256 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.256 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.266 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ModelList.cs
+17:07:01.266 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.268 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ModelListTests.cs
+17:07:01.268 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.269 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ModelList.md
+17:07:01.269 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.269 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.269 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.270 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.270 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.270 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.270 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.270 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.270 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.270 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.280 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ModelReturn.cs
+17:07:01.280 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.282 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ModelReturnTests.cs
+17:07:01.282 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+17:07:01.283 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ModelReturn.md
+17:07:01.284 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.295 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Name.cs
+17:07:01.297 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/NameTests.cs
+17:07:01.298 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Name.md
+17:07:01.299 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - List (reserved word) cannot be used as model name. Renamed to ModelList
+17:07:01.310 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/NullableEnumModel.cs
+17:07:01.312 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/NullableEnumModelTests.cs
+17:07:01.314 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/NullableEnumModel.md
+17:07:01.325 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/NumberOnly.cs
+17:07:01.327 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/NumberOnlyTests.cs
+17:07:01.329 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/NumberOnly.md
+17:07:01.345 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OneOfAllPetsResponseItems.cs
+17:07:01.347 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OneOfAllPetsResponseItemsTests.cs
+17:07:01.348 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OneOfAllPetsResponseItems.md
+17:07:01.358 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OneOfPartMasterDestination.cs
+17:07:01.360 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OneOfPartMasterDestinationTests.cs
+17:07:01.361 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OneOfPartMasterDestination.md
+17:07:01.371 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OneOfPartMasterOrigin.cs
+17:07:01.373 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OneOfPartMasterOriginTests.cs
+17:07:01.374 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OneOfPartMasterOrigin.md
+17:07:01.386 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OneOfPup.cs
+17:07:01.388 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OneOfPupTests.cs
+17:07:01.390 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OneOfPup.md
+17:07:01.399 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OneOfSinglePetResponsePet.cs
+17:07:01.401 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OneOfSinglePetResponsePetTests.cs
+17:07:01.403 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OneOfSinglePetResponsePet.md
+17:07:01.413 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OneOfinlineResponse200ParrotsItems.cs
+17:07:01.415 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OneOfinlineResponse200ParrotsItemsTests.cs
+17:07:01.417 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OneOfinlineResponse200ParrotsItems.md
+17:07:01.426 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OneOfvalMembersValMemberItems.cs
+17:07:01.428 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OneOfvalMembersValMemberItemsTests.cs
+17:07:01.430 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OneOfvalMembersValMemberItems.md
+17:07:01.442 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Order.cs
+17:07:01.444 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OrderTests.cs
+17:07:01.446 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Order.md
+17:07:01.456 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OuterComposite.cs
+17:07:01.458 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OuterCompositeTests.cs
+17:07:01.460 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OuterComposite.md
+17:07:01.463 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/OuterEnum.cs
+17:07:01.465 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/OuterEnumTests.cs
+17:07:01.467 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/OuterEnum.md
+17:07:01.480 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Parakeet.cs
+17:07:01.481 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ParakeetTests.cs
+17:07:01.483 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Parakeet.md
+17:07:01.499 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ParrotBody.cs
+17:07:01.501 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ParrotBodyTests.cs
+17:07:01.502 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ParrotBody.md
+17:07:01.518 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ParrotBody1.cs
+17:07:01.520 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ParrotBody1Tests.cs
+17:07:01.521 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ParrotBody1.md
+17:07:01.532 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/PartFour.cs
+17:07:01.533 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PartFourTests.cs
+17:07:01.535 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PartFour.md
+17:07:01.545 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/PartMaster.cs
+17:07:01.547 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PartMasterTests.cs
+17:07:01.548 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PartMaster.md
+17:07:01.558 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/PartOne.cs
+17:07:01.560 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PartOneTests.cs
+17:07:01.561 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PartOne.md
+17:07:01.571 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/PartThree.cs
+17:07:01.573 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PartThreeTests.cs
+17:07:01.574 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PartThree.md
+17:07:01.584 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/PartTwo.cs
+17:07:01.586 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PartTwoTests.cs
+17:07:01.587 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PartTwo.md
+17:07:01.600 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Pet.cs
+17:07:01.602 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PetTests.cs
+17:07:01.604 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Pet.md
+17:07:01.614 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/PetIdUploadImageBody.cs
+17:07:01.615 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PetIdUploadImageBodyTests.cs
+17:07:01.617 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PetIdUploadImageBody.md
+17:07:01.627 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/PetPetIdBody.cs
+17:07:01.628 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PetPetIdBodyTests.cs
+17:07:01.630 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PetPetIdBody.md
+17:07:01.640 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Pup.cs
+17:07:01.642 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/PupTests.cs
+17:07:01.643 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Pup.md
+17:07:01.653 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ReadOnlyFirst.cs
+17:07:01.655 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ReadOnlyFirstTests.cs
+17:07:01.657 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ReadOnlyFirst.md
+17:07:01.668 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/SinglePetResponse.cs
+17:07:01.670 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/SinglePetResponseTests.cs
+17:07:01.671 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/SinglePetResponse.md
+17:07:01.682 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/SpecialModelName.cs
+17:07:01.685 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/SpecialModelNameTests.cs
+17:07:01.686 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/SpecialModelName.md
+17:07:01.701 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/SubCategory.cs
+17:07:01.703 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/SubCategoryTests.cs
+17:07:01.705 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/SubCategory.md
+17:07:01.715 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Tag.cs
+17:07:01.717 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/TagTests.cs
+17:07:01.718 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Tag.md
+17:07:01.729 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/User.cs
+17:07:01.731 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/UserTests.cs
+17:07:01.732 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/User.md
+17:07:01.742 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/UserWrapper.cs
+17:07:01.744 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/UserWrapperTests.cs
+17:07:01.745 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/UserWrapper.md
+17:07:01.755 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/Users.cs
+17:07:01.756 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/UsersTests.cs
+17:07:01.758 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/Users.md
+17:07:01.768 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ValMemberChoice1.cs
+17:07:01.769 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ValMemberChoice1Tests.cs
+17:07:01.771 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ValMemberChoice1.md
+17:07:01.780 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ValMemberChoice2.cs
+17:07:01.782 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ValMemberChoice2Tests.cs
+17:07:01.783 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ValMemberChoice2.md
+17:07:01.793 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Model/ValMembers.cs
+17:07:01.794 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Model/ValMembersTests.cs
+17:07:01.796 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ValMembers.md
+17:07:01.830 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.830 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.830 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.830 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.830 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.830 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.834 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.835 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.835 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.835 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.836 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.836 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+17:07:01.849 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.850 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.851 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.856 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.857 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.857 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.857 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.857 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.857 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.858 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.858 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.863 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.864 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.864 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.864 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.864 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.864 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.864 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.864 [Thread-1] WARN  i.s.c.v.g.d.AbstractCSharpCodegen - Client (reserved word) cannot be used as model name. Renamed to ModelClient
+17:07:01.869 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable ClassName
+17:07:01.869 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Color
+17:07:01.870 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable ClassName
+17:07:01.870 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Color
+17:07:01.871 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable ClassName
+17:07:01.872 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Color
+17:07:01.872 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable ClassName
+17:07:01.872 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Color
+17:07:01.874 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable ClassName
+17:07:01.874 [Thread-1] INFO  i.s.c.v.g.dotnet.CSharpClientCodegen - adding parent variable Color
+17:07:01.910 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/AnimalApi.cs
+17:07:01.915 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/AnimalApiTests.cs
+17:07:01.921 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AnimalApi.md
+17:07:01.943 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/AnotherFakeApi.cs
+17:07:01.947 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/AnotherFakeApiTests.cs
+17:07:01.952 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/AnotherFakeApi.md
+17:07:01.969 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/DogApi.cs
+17:07:01.974 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/DogApiTests.cs
+17:07:01.979 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/DogApi.md
+17:07:01.999 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/FakeApi.cs
+17:07:02.006 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/FakeApiTests.cs
+17:07:02.012 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/FakeApi.md
+17:07:02.026 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/FakeClassnameTags123Api.cs
+17:07:02.028 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/FakeClassnameTags123ApiTests.cs
+17:07:02.032 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/FakeClassnameTags123Api.md
+17:07:02.046 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/MasterApi.cs
+17:07:02.048 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/MasterApiTests.cs
+17:07:02.052 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/MasterApi.md
+17:07:02.067 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/ParrotApi.cs
+17:07:02.069 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/ParrotApiTests.cs
+17:07:02.082 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/ParrotApi.md
+17:07:02.100 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/PetApi.cs
+17:07:02.103 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/PetApiTests.cs
+17:07:02.110 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/PetApi.md
+17:07:02.127 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/StoreApi.cs
+17:07:02.130 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/StoreApiTests.cs
+17:07:02.135 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/StoreApi.md
+17:07:02.155 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Api/UserApi.cs
+17:07:02.157 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/Api/UserApiTests.cs
+17:07:02.163 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/docs/UserApi.md
+17:07:02.165 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/IApiAccessor.cs
+17:07:02.167 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/Configuration.cs
+17:07:02.171 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/ApiClient.cs
+17:07:02.173 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/ApiException.cs
+17:07:02.174 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/ApiResponse.cs
+17:07:02.176 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/ExceptionFactory.cs
+17:07:02.182 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/SwaggerDateConverter.cs
+17:07:02.184 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/build.bat
+17:07:02.186 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/build.sh
+17:07:02.187 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger//packages.config
+17:07:02.188 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/.travis.yml
+17:07:02.195 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/IReadableConfiguration.cs
+17:07:02.197 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Client/GlobalConfiguration.cs
+17:07:02.198 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/mono_nunit_test.sh
+17:07:02.199 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test//packages.config
+17:07:02.206 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/README.md
+17:07:02.206 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/git_push.sh
+17:07:02.207 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/.gitignore
+17:07:02.208 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/Properties/AssemblyInfo.cs
+17:07:02.209 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/IO.Swagger.sln
+17:07:02.211 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/IO.Swagger.csproj
+17:07:02.212 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger/IO.Swagger.nuspec
+17:07:02.219 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/src/IO.Swagger.Test/IO.Swagger.Test.csproj
+17:07:02.223 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/.swagger-codegen-ignore
+17:07:02.223 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3___petstoreMixed3___/.swagger-codegen/VERSION
