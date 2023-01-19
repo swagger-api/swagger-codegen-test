@@ -1,0 +1,43 @@
+
+****** generate ******
+
+LANGUAGE python-flask
+JOB_NAME python-flask___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/api_response.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/category.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/order.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/pet.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/tag.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/user.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/controllers/pet_controller.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/test/test_pet_controller.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/controllers/store_controller.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/test/test_store_controller.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/controllers/user_controller.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/test/test_user_controller.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/README.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/setup.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/tox.ini
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/test-requirements.txt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/requirements.txt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/git_push.sh
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/.gitignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/.travis.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/Dockerfile
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/.dockerignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/__main__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/encoder.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/util.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/controllers/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/models/base_model_.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/test/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/swagger_server/swagger/swagger.yaml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask___petstore___/.swagger-codegen/VERSION

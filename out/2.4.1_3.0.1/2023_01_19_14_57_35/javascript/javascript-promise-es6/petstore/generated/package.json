@@ -1,0 +1,26 @@
+{
+  "name": "swagger_petstore",
+  "version": "1.0.5",
+  "description": "This_is_a_sample_server_Petstore_server___You_can_find_out_more_about_Swagger_at__httpswagger_io_httpswagger_io_or_on__irc_freenode_net_swagger_httpswagger_ioirc___For_this_sample_you_can_use_the_api_key_special_key_to_test_the_authorization_filters_",
+  "license": "Apache 2.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3"
+  }
+}

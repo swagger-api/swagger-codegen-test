@@ -1,0 +1,3036 @@
+
+****** generate ******
+
+LANGUAGE java
+JOB_NAME java-feign-v3___petstore3composed___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3composed.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3composed.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+15:16:55.657 [main] DEBUG io.swagger.codegen.v3.cli.SwaggerCodegen - there are not options for command 'langs'
+15:16:55.659 [main] DEBUG io.swagger.codegen.v3.cli.SwaggerCodegen - there are not options for command 'version'
+15:16:56.116 [Thread-1] DEBUG io.swagger.codegen.v3.config.CodegenConfigurator - Loaded raw data: openapi: 3.0.2
+servers: []
+info:
+  description: |
+    This is a sample Petstore server.  You can find
+    out more about Swagger at
+    [http://swagger.io](http://swagger.io) or on
+    [irc.freenode.net, #swagger](http://swagger.io/irc/).
+  version: "1.0.0"
+  title: Swagger Petstore
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: pet
+    description: Everything about your Pets
+    externalDocs:
+      description: Find out more
+      url: 'http://swagger.io'
+  - name: store
+    description: Access to Petstore orders
+  - name: user
+    description: Operations about user
+    externalDocs:
+      description: Find out more about our store
+      url: 'http://swagger.io'
+paths:
+  /pet:
+    post:
+      tags:
+        - pet
+      summary: Add a new pet to the store
+      operationId: addPet
+      responses:
+        '405':
+          description: Invalid input
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        $ref: '#/components/requestBodies/Pet'
+    put:
+      tags:
+        - pet
+      summary: Update an existing pet
+      operationId: updatePet
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+        '405':
+          description: Validation exception
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        $ref: '#/components/requestBodies/Pet'
+  /pet/findByStatus:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by status
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByStatus
+      parameters:
+        - name: status
+          in: query
+          description: Status values that need to be considered for filter
+          required: true
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              enum:
+                - available
+                - pending
+                - sold
+              default: available
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid status value
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+  /pet/findByTags:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by tags
+      description: >-
+        Muliple tags can be provided with comma separated strings. Use\ \ tag1,
+        tag2, tag3 for testing.
+      operationId: findPetsByTags
+      parameters:
+        - name: tags
+          in: query
+          description: Tags to filter by
+          required: true
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid tag value
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      deprecated: true
+  '/pet/{petId}':
+    get:
+      tags:
+        - pet
+      summary: Find pet by ID
+      description: Returns a single pet
+      operationId: getPetById
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+      security:
+        - api_key: []
+    post:
+      tags:
+        - pet
+      summary: Updates a pet in the store with form data
+      operationId: updatePetWithForm
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet that needs to be updated
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '405':
+          description: Invalid input
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name:
+                  description: Updated name of the pet
+                  type: string
+                status:
+                  description: Updated status of the pet
+                  type: string
+    delete:
+      tags:
+        - pet
+      summary: Deletes a pet
+      operationId: deletePet
+      parameters:
+        - name: api_key
+          in: header
+          required: false
+          schema:
+            type: string
+        - name: petId
+          in: path
+          description: Pet id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+
+  /pet/feed/{petId}:
+    post:
+      tags:
+        - pet
+      summary: Find pet by ID
+      description: schedule pet feeding
+      operationId: feedPet
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: petType
+          in: query
+          description: type of food
+          required: true
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: status
+          required: true
+          schema:
+            type: string
+        - name: sessionId
+          in: cookie
+          description: session id
+          required: true
+          schema:
+            type: string
+        - name: token
+          in: header
+          description: status
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Pet object that needs to be added to the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Pet'
+        required: true
+      responses:
+        200:
+          description: successful operation
+
+  '/pet/{petId}/uploadImage':
+    post:
+      tags:
+        - pet
+      summary: uploads an image
+      operationId: uploadFile
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to update
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+
+  /pet/category:
+    post:
+      tags:
+        - pet
+      operationId: doCategoryStuff
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubCategory'
+  /store/inventory:
+    get:
+      tags:
+        - store
+      summary: Returns pet inventories by status
+      description: Returns a map of status codes to quantities
+      operationId: getInventory
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                  format: int32
+      security:
+        - api_key: []
+  /store/order:
+    post:
+      tags:
+        - store
+      summary: Place an order for a pet
+      operationId: placeOrder
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Invalid Order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+        description: order placed for purchasing the pet
+        required: true
+  '/store/order/{orderId}':
+    get:
+      tags:
+        - store
+      summary: Find purchase order by ID
+      description: >-
+        For valid response try integer IDs with value >= 1 and <= 10.\ \ Other
+        values will generated exceptions
+      operationId: getOrderById
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of pet that needs to be fetched
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 10
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+    delete:
+      tags:
+        - store
+      summary: Delete purchase order by ID
+      description: >-
+        For valid response try integer IDs with positive integer value.\ \
+        Negative or non-integer values will generate API errors
+      operationId: deleteOrder
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of the order that needs to be deleted
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+  /user:
+    post:
+      tags:
+        - user
+      summary: Create user
+      description: This can only be done by the logged in user.
+      operationId: createUser
+      responses:
+        default:
+          description: successful operation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Created user object
+        required: true
+  /user/createWithArray:
+    post:
+      tags:
+        - user
+      summary: Creates list of users with given input array
+      operationId: createUsersWithArrayInput
+      responses:
+        default:
+          description: successful operation
+      requestBody:
+        $ref: '#/components/requestBodies/UserArray'
+  /user/createWithList:
+    post:
+      tags:
+        - user
+      summary: Creates list of users with given input array
+      operationId: createUsersWithListInput
+      responses:
+        default:
+          description: successful operation
+      requestBody:
+        $ref: '#/components/requestBodies/UserArray'
+  /user/login:
+    get:
+      tags:
+        - user
+      summary: Logs user into the system
+      operationId: loginUser
+      parameters:
+        - name: username
+          in: query
+          description: The user name for login
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              schema:
+                type: integer
+                format: int32
+            X-Expires-After:
+              description: date in UTC when token expires
+              schema:
+                type: string
+                format: date-time
+          content:
+            application/json:
+              schema:
+                type: string
+            application/xml:
+              schema:
+                type: string
+        '400':
+          description: Invalid username/password supplied
+  /user/logout:
+    get:
+      tags:
+        - user
+      summary: Logs out current logged in user session
+      operationId: logoutUser
+      responses:
+        default:
+          description: successful operation
+  '/user/{username}':
+    get:
+      tags:
+        - user
+      summary: Get user by user name
+      operationId: getUserByName
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be fetched. Use user1 for testing.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+    put:
+      tags:
+        - user
+      summary: Updated user
+      description: This can only be done by the logged in user.
+      parameters:
+        - name: username
+          in: path
+          description: name that need to be updated
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid user supplied
+        '404':
+          description: User not found
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Updated user object
+        required: true
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+  /parrot:
+    post:
+      tags:
+        - pet
+      summary: Add a new parrow to the store
+      operationId: addParrot
+      responses:
+        '405':
+          description: Invalid input
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - "$ref": "#/components/schemas/Macaw"
+                  - "$ref": "#/components/schemas/Parakeet"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              anyOf:
+                - "$ref": "#/components/schemas/Macaw"
+                - "$ref": "#/components/schemas/Parakeet"
+
+    put:
+      tags:
+        - pet
+      summary: update parrots
+      operationId: updateParrots
+      responses:
+        '405':
+          description: Invalid input
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  parrots:
+                    type: array
+                    items:
+                      oneOf:
+                        - "$ref": "#/components/schemas/Macaw"
+                        - "$ref": "#/components/schemas/Parakeet"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                parrots:
+                  type: array
+                  items:
+                    anyOf:
+                      - "$ref": "#/components/schemas/Macaw"
+                      - "$ref": "#/components/schemas/Parakeet"
+
+    get:
+      tags:
+        - pet
+      summary: get Parrots
+      operationId: getParrots
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  anyOf:
+                    - "$ref": "#/components/schemas/Macaw"
+                    - "$ref": "#/components/schemas/Parakeet"
+  /test:
+    get:
+      security:
+        - bearer: []
+      operationId: testMethod
+      responses:
+        200:
+          description: peticion realizada con exito
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Test'
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
+components:
+  schemas:
+    Order:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        petId:
+          type: integer
+          format: int64
+        quantity:
+          type: integer
+          format: int32
+        shipDate:
+          type: string
+          format: date-time
+        status:
+          type: string
+          description: Order Status
+          enum:
+            - placed
+            - approved
+            - delivered
+        complete:
+          type: boolean
+          default: false
+      xml:
+        name: Order
+    Category:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        subcategories:
+          type: array
+          items:
+            $ref: '#/components/schemas/Category'
+      example:
+        - id: 100
+          name: Mammal
+          subcategories:
+            - id: 110
+              name: Yinotheria
+            - id: 120
+              name: Theriiformes
+      xml:
+        name: Category
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        username:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        phone:
+          type: string
+        userStatus:
+          type: integer
+          format: int32
+          description: User Status
+      xml:
+        name: User
+    Tag:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+      xml:
+        name: Tag
+    ApiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string
+    Test:
+      type: string
+      example: ""
+
+    PartOne:
+      properties:
+        name:
+          type: string
+          description: A test description
+    PartTwo:
+      properties:
+        id:
+          type: string
+    PartThree:
+      properties:
+        otherId:
+          type: string
+    PartFour:
+      properties:
+        otherIdPart:
+          type: string
+    PartMaster:
+      properties:
+        destination:
+          oneOf:
+            - $ref: '#/components/schemas/PartOne'
+            - $ref: '#/components/schemas/PartTwo'
+        origin:
+          oneOf:
+            - $ref: '#/components/schemas/PartThree'
+            - $ref: '#/components/schemas/PartFour'
+
+    Pet:
+      type: object
+      required:
+        - name
+        - photoUrls
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+          example: doggie
+        status:
+          type: string
+          description: pet status in the store
+          enum:
+            - available
+            - pending
+            - sold
+        part:
+          type: array
+          items:
+            oneOf:
+              - $ref: "#/components/schemas/Dog"
+              - $ref: "#/components/schemas/Cat"
+      xml:
+        name: Pet
+
+    Pup:
+      oneOf:
+        - $ref: "#/components/schemas/Dog"
+        - $ref: "#/components/schemas/Cat"
+      properties:
+        id:
+          type: integer
+          format: int64
+    AllPetsResponse:
+      type: array
+      items:
+        oneOf:
+          - $ref: "#/components/schemas/Dog"
+          - $ref: "#/components/schemas/Cat"
+        discriminator:
+          propertyName: pet_type
+
+    Dog:
+      allOf:
+        - $ref: '#/components/schemas/Pet'
+        - type: object
+          properties:
+            bark:
+              type: boolean
+            breed:
+              type: string
+              enum: [Dingo, Husky, Retriever, Shepherd]
+    Cat:
+      allOf:
+        - $ref: '#/components/schemas/Pet'
+        - type: object
+          properties:
+            hunts:
+              type: boolean
+            age:
+              type: integer
+    Macaw:
+      type: object
+      properties:
+        color:
+          type: string
+        singer:
+          type: boolean
+
+    Parakeet:
+      type: object
+      properties:
+        color:
+          type: string
+        soundRepeater:
+          type: boolean
+
+    val_Members:
+      type: object
+      additionalProperties: false
+      description: |-
+        Business Term: Scheme Members
+        Definition: Information about the Members of the Scheme.
+        Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+      properties:
+        val_member:
+          description: |-
+            Business Term: Scheme Member
+            Definition: Information about a Member of the Scheme.
+            Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+          items:
+            oneOf:
+              - "$ref": "#/components/schemas/val_MemberChoice1"
+              - "$ref": "#/components/schemas/val_MemberChoice2"
+          minItems: 1
+          type: array
+      required:
+        - val_member
+      xml:
+        prefix: val
+        name: members
+
+    val_MemberChoice1:
+      additionalProperties: false
+      description: |-
+        Business Term: Scheme Member
+        Definition: Information about a Member of the Scheme.
+        Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+      properties:
+        val_date_of_birth:
+          description: |-
+            Business Term: Date Of Birth
+            Definition: The date of birth of the member.
+            Purpose: To be able to uniquely identify a member within a scheme.
+          type: string
+          format: date
+          xml:
+            prefix: val
+            name: date_of_birth
+        val_leaving_date:
+          description: |-
+            Business Term: Leaving Date
+            Definition: The date the member left/is due to leave the scheme.
+            Purpose: To identify those members that have left or are due to leave the scheme. To be able to calculate the benefit insured/premium payable in respect of the member/category.
+          type: string
+          format: date
+          xml:
+            prefix: val
+            name: leaving_date
+      required:
+        - val_date_of_birth
+      xml:
+        prefix: val
+        name: member
+      type: object
+    val_MemberChoice2:
+      additionalProperties: false
+      description: |-
+        Business Term: Scheme Member
+        Definition: Information about a Member of the Scheme.
+        Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+      properties:
+        val_leaving_date:
+          description: |-
+            Business Term: Leaving Date
+            Definition: The date the member left/is due to leave the scheme.
+            Purpose: To identify those members that have left or are due to leave the scheme. To be able to calculate the benefit insured/premium payable in respect of the member/category.
+          type: string
+          format: date
+          xml:
+            prefix: val
+            name: leaving_date
+      xml:
+        prefix: val
+        name: member
+      type: object
+    NullableEnumModel:
+      type: object
+      properties:
+        enumProp:
+          type: string
+          nullable: true
+          enum:
+            - a
+            - b
+            - null
+    SubCategory:
+      type: object
+      properties:
+        category:
+          allOf:
+            - $ref: '#/components/schemas/Category'
+            - type: object
+              properties:
+                foo:
+                  type: boolean
+                bar:
+                  type: integer
+                beer:
+                  type: string
+                drunk:
+                  $ref: '#/components/schemas/User'
+        category2:
+          $ref: '#/components/schemas/Category'
+        pets:
+          type: array
+          items:
+            allOf:
+              - $ref: "#/components/schemas/Pet"
+
+
+  requestBodies:
+    Pet:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Pet'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/Pet'
+      description: Pet object that needs to be added to the store
+      required: true
+    UserArray:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/User'
+      description: List of user object
+      required: true
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: 'http://petstore.swagger.io/oauth/dialog'
+          scopes:
+            'write:pets': modify pets in your account
+            'read:pets': read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
+
+15:16:56.164 [Thread-1] DEBUG io.swagger.v3.parser.OpenAPIV3Parser - Loaded raw data: openapi: 3.0.2
+servers: []
+info:
+  description: |
+    This is a sample Petstore server.  You can find
+    out more about Swagger at
+    [http://swagger.io](http://swagger.io) or on
+    [irc.freenode.net, #swagger](http://swagger.io/irc/).
+  version: "1.0.0"
+  title: Swagger Petstore
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: pet
+    description: Everything about your Pets
+    externalDocs:
+      description: Find out more
+      url: 'http://swagger.io'
+  - name: store
+    description: Access to Petstore orders
+  - name: user
+    description: Operations about user
+    externalDocs:
+      description: Find out more about our store
+      url: 'http://swagger.io'
+paths:
+  /pet:
+    post:
+      tags:
+        - pet
+      summary: Add a new pet to the store
+      operationId: addPet
+      responses:
+        '405':
+          description: Invalid input
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        $ref: '#/components/requestBodies/Pet'
+    put:
+      tags:
+        - pet
+      summary: Update an existing pet
+      operationId: updatePet
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+        '405':
+          description: Validation exception
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        $ref: '#/components/requestBodies/Pet'
+  /pet/findByStatus:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by status
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByStatus
+      parameters:
+        - name: status
+          in: query
+          description: Status values that need to be considered for filter
+          required: true
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+              enum:
+                - available
+                - pending
+                - sold
+              default: available
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid status value
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+  /pet/findByTags:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by tags
+      description: >-
+        Muliple tags can be provided with comma separated strings. Use\ \ tag1,
+        tag2, tag3 for testing.
+      operationId: findPetsByTags
+      parameters:
+        - name: tags
+          in: query
+          description: Tags to filter by
+          required: true
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid tag value
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      deprecated: true
+  '/pet/{petId}':
+    get:
+      tags:
+        - pet
+      summary: Find pet by ID
+      description: Returns a single pet
+      operationId: getPetById
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+      security:
+        - api_key: []
+    post:
+      tags:
+        - pet
+      summary: Updates a pet in the store with form data
+      operationId: updatePetWithForm
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet that needs to be updated
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '405':
+          description: Invalid input
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name:
+                  description: Updated name of the pet
+                  type: string
+                status:
+                  description: Updated status of the pet
+                  type: string
+    delete:
+      tags:
+        - pet
+      summary: Deletes a pet
+      operationId: deletePet
+      parameters:
+        - name: api_key
+          in: header
+          required: false
+          schema:
+            type: string
+        - name: petId
+          in: path
+          description: Pet id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+
+  /pet/feed/{petId}:
+    post:
+      tags:
+        - pet
+      summary: Find pet by ID
+      description: schedule pet feeding
+      operationId: feedPet
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: petType
+          in: query
+          description: type of food
+          required: true
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: status
+          required: true
+          schema:
+            type: string
+        - name: sessionId
+          in: cookie
+          description: session id
+          required: true
+          schema:
+            type: string
+        - name: token
+          in: header
+          description: status
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Pet object that needs to be added to the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Pet'
+        required: true
+      responses:
+        200:
+          description: successful operation
+
+  '/pet/{petId}/uploadImage':
+    post:
+      tags:
+        - pet
+      summary: uploads an image
+      operationId: uploadFile
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to update
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+      security:
+        - petstore_auth:
+            - 'write:pets'
+            - 'read:pets'
+      requestBody:
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+
+  /pet/category:
+    post:
+      tags:
+        - pet
+      operationId: doCategoryStuff
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubCategory'
+  /store/inventory:
+    get:
+      tags:
+        - store
+      summary: Returns pet inventories by status
+      description: Returns a map of status codes to quantities
+      operationId: getInventory
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                  format: int32
+      security:
+        - api_key: []
+  /store/order:
+    post:
+      tags:
+        - store
+      summary: Place an order for a pet
+      operationId: placeOrder
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Invalid Order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+        description: order placed for purchasing the pet
+        required: true
+  '/store/order/{orderId}':
+    get:
+      tags:
+        - store
+      summary: Find purchase order by ID
+      description: >-
+        For valid response try integer IDs with value >= 1 and <= 10.\ \ Other
+        values will generated exceptions
+      operationId: getOrderById
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of pet that needs to be fetched
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 10
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+    delete:
+      tags:
+        - store
+      summary: Delete purchase order by ID
+      description: >-
+        For valid response try integer IDs with positive integer value.\ \
+        Negative or non-integer values will generate API errors
+      operationId: deleteOrder
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of the order that needs to be deleted
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+  /user:
+    post:
+      tags:
+        - user
+      summary: Create user
+      description: This can only be done by the logged in user.
+      operationId: createUser
+      responses:
+        default:
+          description: successful operation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Created user object
+        required: true
+  /user/createWithArray:
+    post:
+      tags:
+        - user
+      summary: Creates list of users with given input array
+      operationId: createUsersWithArrayInput
+      responses:
+        default:
+          description: successful operation
+      requestBody:
+        $ref: '#/components/requestBodies/UserArray'
+  /user/createWithList:
+    post:
+      tags:
+        - user
+      summary: Creates list of users with given input array
+      operationId: createUsersWithListInput
+      responses:
+        default:
+          description: successful operation
+      requestBody:
+        $ref: '#/components/requestBodies/UserArray'
+  /user/login:
+    get:
+      tags:
+        - user
+      summary: Logs user into the system
+      operationId: loginUser
+      parameters:
+        - name: username
+          in: query
+          description: The user name for login
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              schema:
+                type: integer
+                format: int32
+            X-Expires-After:
+              description: date in UTC when token expires
+              schema:
+                type: string
+                format: date-time
+          content:
+            application/json:
+              schema:
+                type: string
+            application/xml:
+              schema:
+                type: string
+        '400':
+          description: Invalid username/password supplied
+  /user/logout:
+    get:
+      tags:
+        - user
+      summary: Logs out current logged in user session
+      operationId: logoutUser
+      responses:
+        default:
+          description: successful operation
+  '/user/{username}':
+    get:
+      tags:
+        - user
+      summary: Get user by user name
+      operationId: getUserByName
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be fetched. Use user1 for testing.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+    put:
+      tags:
+        - user
+      summary: Updated user
+      description: This can only be done by the logged in user.
+      parameters:
+        - name: username
+          in: path
+          description: name that need to be updated
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid user supplied
+        '404':
+          description: User not found
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        description: Updated user object
+        required: true
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+  /parrot:
+    post:
+      tags:
+        - pet
+      summary: Add a new parrow to the store
+      operationId: addParrot
+      responses:
+        '405':
+          description: Invalid input
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - "$ref": "#/components/schemas/Macaw"
+                  - "$ref": "#/components/schemas/Parakeet"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              anyOf:
+                - "$ref": "#/components/schemas/Macaw"
+                - "$ref": "#/components/schemas/Parakeet"
+
+    put:
+      tags:
+        - pet
+      summary: update parrots
+      operationId: updateParrots
+      responses:
+        '405':
+          description: Invalid input
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  parrots:
+                    type: array
+                    items:
+                      oneOf:
+                        - "$ref": "#/components/schemas/Macaw"
+                        - "$ref": "#/components/schemas/Parakeet"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                parrots:
+                  type: array
+                  items:
+                    anyOf:
+                      - "$ref": "#/components/schemas/Macaw"
+                      - "$ref": "#/components/schemas/Parakeet"
+
+    get:
+      tags:
+        - pet
+      summary: get Parrots
+      operationId: getParrots
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  anyOf:
+                    - "$ref": "#/components/schemas/Macaw"
+                    - "$ref": "#/components/schemas/Parakeet"
+  /test:
+    get:
+      security:
+        - bearer: []
+      operationId: testMethod
+      responses:
+        200:
+          description: peticion realizada con exito
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Test'
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
+components:
+  schemas:
+    Order:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        petId:
+          type: integer
+          format: int64
+        quantity:
+          type: integer
+          format: int32
+        shipDate:
+          type: string
+          format: date-time
+        status:
+          type: string
+          description: Order Status
+          enum:
+            - placed
+            - approved
+            - delivered
+        complete:
+          type: boolean
+          default: false
+      xml:
+        name: Order
+    Category:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+        subcategories:
+          type: array
+          items:
+            $ref: '#/components/schemas/Category'
+      example:
+        - id: 100
+          name: Mammal
+          subcategories:
+            - id: 110
+              name: Yinotheria
+            - id: 120
+              name: Theriiformes
+      xml:
+        name: Category
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        username:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        phone:
+          type: string
+        userStatus:
+          type: integer
+          format: int32
+          description: User Status
+      xml:
+        name: User
+    Tag:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+      xml:
+        name: Tag
+    ApiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string
+    Test:
+      type: string
+      example: ""
+
+    PartOne:
+      properties:
+        name:
+          type: string
+          description: A test description
+    PartTwo:
+      properties:
+        id:
+          type: string
+    PartThree:
+      properties:
+        otherId:
+          type: string
+    PartFour:
+      properties:
+        otherIdPart:
+          type: string
+    PartMaster:
+      properties:
+        destination:
+          oneOf:
+            - $ref: '#/components/schemas/PartOne'
+            - $ref: '#/components/schemas/PartTwo'
+        origin:
+          oneOf:
+            - $ref: '#/components/schemas/PartThree'
+            - $ref: '#/components/schemas/PartFour'
+
+    Pet:
+      type: object
+      required:
+        - name
+        - photoUrls
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+          example: doggie
+        status:
+          type: string
+          description: pet status in the store
+          enum:
+            - available
+            - pending
+            - sold
+        part:
+          type: array
+          items:
+            oneOf:
+              - $ref: "#/components/schemas/Dog"
+              - $ref: "#/components/schemas/Cat"
+      xml:
+        name: Pet
+
+    Pup:
+      oneOf:
+        - $ref: "#/components/schemas/Dog"
+        - $ref: "#/components/schemas/Cat"
+      properties:
+        id:
+          type: integer
+          format: int64
+    AllPetsResponse:
+      type: array
+      items:
+        oneOf:
+          - $ref: "#/components/schemas/Dog"
+          - $ref: "#/components/schemas/Cat"
+        discriminator:
+          propertyName: pet_type
+
+    Dog:
+      allOf:
+        - $ref: '#/components/schemas/Pet'
+        - type: object
+          properties:
+            bark:
+              type: boolean
+            breed:
+              type: string
+              enum: [Dingo, Husky, Retriever, Shepherd]
+    Cat:
+      allOf:
+        - $ref: '#/components/schemas/Pet'
+        - type: object
+          properties:
+            hunts:
+              type: boolean
+            age:
+              type: integer
+    Macaw:
+      type: object
+      properties:
+        color:
+          type: string
+        singer:
+          type: boolean
+
+    Parakeet:
+      type: object
+      properties:
+        color:
+          type: string
+        soundRepeater:
+          type: boolean
+
+    val_Members:
+      type: object
+      additionalProperties: false
+      description: |-
+        Business Term: Scheme Members
+        Definition: Information about the Members of the Scheme.
+        Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+      properties:
+        val_member:
+          description: |-
+            Business Term: Scheme Member
+            Definition: Information about a Member of the Scheme.
+            Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+          items:
+            oneOf:
+              - "$ref": "#/components/schemas/val_MemberChoice1"
+              - "$ref": "#/components/schemas/val_MemberChoice2"
+          minItems: 1
+          type: array
+      required:
+        - val_member
+      xml:
+        prefix: val
+        name: members
+
+    val_MemberChoice1:
+      additionalProperties: false
+      description: |-
+        Business Term: Scheme Member
+        Definition: Information about a Member of the Scheme.
+        Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+      properties:
+        val_date_of_birth:
+          description: |-
+            Business Term: Date Of Birth
+            Definition: The date of birth of the member.
+            Purpose: To be able to uniquely identify a member within a scheme.
+          type: string
+          format: date
+          xml:
+            prefix: val
+            name: date_of_birth
+        val_leaving_date:
+          description: |-
+            Business Term: Leaving Date
+            Definition: The date the member left/is due to leave the scheme.
+            Purpose: To identify those members that have left or are due to leave the scheme. To be able to calculate the benefit insured/premium payable in respect of the member/category.
+          type: string
+          format: date
+          xml:
+            prefix: val
+            name: leaving_date
+      required:
+        - val_date_of_birth
+      xml:
+        prefix: val
+        name: member
+      type: object
+    val_MemberChoice2:
+      additionalProperties: false
+      description: |-
+        Business Term: Scheme Member
+        Definition: Information about a Member of the Scheme.
+        Purpose: To have enough information to be able to produce a Statement of Account indicating premium due.
+      properties:
+        val_leaving_date:
+          description: |-
+            Business Term: Leaving Date
+            Definition: The date the member left/is due to leave the scheme.
+            Purpose: To identify those members that have left or are due to leave the scheme. To be able to calculate the benefit insured/premium payable in respect of the member/category.
+          type: string
+          format: date
+          xml:
+            prefix: val
+            name: leaving_date
+      xml:
+        prefix: val
+        name: member
+      type: object
+    NullableEnumModel:
+      type: object
+      properties:
+        enumProp:
+          type: string
+          nullable: true
+          enum:
+            - a
+            - b
+            - null
+    SubCategory:
+      type: object
+      properties:
+        category:
+          allOf:
+            - $ref: '#/components/schemas/Category'
+            - type: object
+              properties:
+                foo:
+                  type: boolean
+                bar:
+                  type: integer
+                beer:
+                  type: string
+                drunk:
+                  $ref: '#/components/schemas/User'
+        category2:
+          $ref: '#/components/schemas/Category'
+        pets:
+          type: array
+          items:
+            allOf:
+              - $ref: "#/components/schemas/Pet"
+
+
+  requestBodies:
+    Pet:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Pet'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/Pet'
+      description: Pet object that needs to be added to the store
+      required: true
+    UserArray:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/User'
+      description: List of user object
+      required: true
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: 'http://petstore.swagger.io/oauth/dialog'
+          scopes:
+            'write:pets': modify pets in your account
+            'read:pets': read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
+
+15:16:56.219 [Thread-1] DEBUG io.swagger.v3.parser.OpenAPIV3Parser - Parsed rootNode: {"openapi":"3.0.2","servers":[],"info":{"description":"This is a sample Petstore server.  You can find\nout more about Swagger at\n[http://swagger.io](http://swagger.io) or on\n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n","version":"1.0.0","title":"Swagger Petstore","termsOfService":"http://swagger.io/terms/","contact":{"email":"apiteam@swagger.io"},"license":{"name":"Apache 2.0","url":"http://www.apache.org/licenses/LICENSE-2.0.html"}},"tags":[{"name":"pet","description":"Everything about your Pets","externalDocs":{"description":"Find out more","url":"http://swagger.io"}},{"name":"store","description":"Access to Petstore orders"},{"name":"user","description":"Operations about user","externalDocs":{"description":"Find out more about our store","url":"http://swagger.io"}}],"paths":{"/pet":{"post":{"tags":["pet"],"summary":"Add a new pet to the store","operationId":"addPet","responses":{"405":{"description":"Invalid input"}},"security":[{"petstore_auth":["write:pets","read:pets"]}],"requestBody":{"$ref":"#/components/requestBodies/Pet"}},"put":{"tags":["pet"],"summary":"Update an existing pet","operationId":"updatePet","responses":{"400":{"description":"Invalid ID supplied"},"404":{"description":"Pet not found"},"405":{"description":"Validation exception"}},"security":[{"petstore_auth":["write:pets","read:pets"]}],"requestBody":{"$ref":"#/components/requestBodies/Pet"}}},"/pet/findByStatus":{"get":{"tags":["pet"],"summary":"Finds Pets by status","description":"Multiple status values can be provided with comma separated strings","operationId":"findPetsByStatus","parameters":[{"name":"status","in":"query","description":"Status values that need to be considered for filter","required":true,"explode":true,"schema":{"type":"array","items":{"type":"string","enum":["available","pending","sold"],"default":"available"}}}],"responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/Pet"}}},"application/xml":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/Pet"}}}}},"400":{"description":"Invalid status value"}},"security":[{"petstore_auth":["write:pets","read:pets"]}]}},"/pet/findByTags":{"get":{"tags":["pet"],"summary":"Finds Pets by tags","description":"Muliple tags can be provided with comma separated strings. Use\\ \\ tag1, tag2, tag3 for testing.","operationId":"findPetsByTags","parameters":[{"name":"tags","in":"query","description":"Tags to filter by","required":true,"explode":true,"schema":{"type":"array","items":{"type":"string"}}}],"responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/Pet"}}},"application/xml":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/Pet"}}}}},"400":{"description":"Invalid tag value"}},"security":[{"petstore_auth":["write:pets","read:pets"]}],"deprecated":true}},"/pet/{petId}":{"get":{"tags":["pet"],"summary":"Find pet by ID","description":"Returns a single pet","operationId":"getPetById","parameters":[{"name":"petId","in":"path","description":"ID of pet to return","required":true,"schema":{"type":"integer","format":"int64"}}],"responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Pet"}},"application/xml":{"schema":{"$ref":"#/components/schemas/Pet"}}}},"400":{"description":"Invalid ID supplied"},"404":{"description":"Pet not found"}},"security":[{"api_key":[]}]},"post":{"tags":["pet"],"summary":"Updates a pet in the store with form data","operationId":"updatePetWithForm","parameters":[{"name":"petId","in":"path","description":"ID of pet that needs to be updated","required":true,"schema":{"type":"integer","format":"int64"}}],"responses":{"405":{"description":"Invalid input"}},"security":[{"petstore_auth":["write:pets","read:pets"]}],"requestBody":{"content":{"application/x-www-form-urlencoded":{"schema":{"type":"object","properties":{"name":{"description":"Updated name of the pet","type":"string"},"status":{"description":"Updated status of the pet","type":"string"}}}}}}},"delete":{"tags":["pet"],"summary":"Deletes a pet","operationId":"deletePet","parameters":[{"name":"api_key","in":"header","required":false,"schema":{"type":"string"}},{"name":"petId","in":"path","description":"Pet id to delete","required":true,"schema":{"type":"integer","format":"int64"}}],"responses":{"400":{"description":"Invalid ID supplied"},"404":{"description":"Pet not found"}},"security":[{"petstore_auth":["write:pets","read:pets"]}]}},"/pet/feed/{petId}":{"post":{"tags":["pet"],"summary":"Find pet by ID","description":"schedule pet feeding","operationId":"feedPet","parameters":[{"name":"petId","in":"path","description":"ID of pet to return","required":true,"schema":{"type":"integer","format":"int64"}},{"name":"petType","in":"query","description":"type of food","required":true,"schema":{"type":"string"}},{"name":"status","in":"query","description":"status","required":true,"schema":{"type":"string"}},{"name":"sessionId","in":"cookie","description":"session id","required":true,"schema":{"type":"string"}},{"name":"token","in":"header","description":"status","required":true,"schema":{"type":"string"}}],"requestBody":{"description":"Pet object that needs to be added to the store","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Pet"}},"application/xml":{"schema":{"$ref":"#/components/schemas/Pet"}}},"required":true},"responses":{"200":{"description":"successful operation"}}}},"/pet/{petId}/uploadImage":{"post":{"tags":["pet"],"summary":"uploads an image","operationId":"uploadFile","parameters":[{"name":"petId","in":"path","description":"ID of pet to update","required":true,"schema":{"type":"integer","format":"int64"}}],"responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApiResponse"}}}}},"security":[{"petstore_auth":["write:pets","read:pets"]}],"requestBody":{"content":{"application/octet-stream":{"schema":{"type":"string","format":"binary"}}}}}},"/pet/category":{"post":{"tags":["pet"],"operationId":"doCategoryStuff","responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"$ref":"#/components/schemas/ApiResponse"}}}}},"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/SubCategory"}}}}}},"/store/inventory":{"get":{"tags":["store"],"summary":"Returns pet inventories by status","description":"Returns a map of status codes to quantities","operationId":"getInventory","responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"object","additionalProperties":{"type":"integer","format":"int32"}}}}}},"security":[{"api_key":[]}]}},"/store/order":{"post":{"tags":["store"],"summary":"Place an order for a pet","operationId":"placeOrder","responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Order"}},"application/xml":{"schema":{"$ref":"#/components/schemas/Order"}}}},"400":{"description":"Invalid Order"}},"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Order"}}},"description":"order placed for purchasing the pet","required":true}}},"/store/order/{orderId}":{"get":{"tags":["store"],"summary":"Find purchase order by ID","description":"For valid response try integer IDs with value >= 1 and <= 10.\\ \\ Other values will generated exceptions","operationId":"getOrderById","parameters":[{"name":"orderId","in":"path","description":"ID of pet that needs to be fetched","required":true,"schema":{"type":"integer","format":"int64","minimum":1,"maximum":10}}],"responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Order"}},"application/xml":{"schema":{"$ref":"#/components/schemas/Order"}}}},"400":{"description":"Invalid ID supplied"},"404":{"description":"Order not found"}}},"delete":{"tags":["store"],"summary":"Delete purchase order by ID","description":"For valid response try integer IDs with positive integer value.\\ \\ Negative or non-integer values will generate API errors","operationId":"deleteOrder","parameters":[{"name":"orderId","in":"path","description":"ID of the order that needs to be deleted","required":true,"schema":{"type":"integer","format":"int64","minimum":1}}],"responses":{"400":{"description":"Invalid ID supplied"},"404":{"description":"Order not found"}}}},"/user":{"post":{"tags":["user"],"summary":"Create user","description":"This can only be done by the logged in user.","operationId":"createUser","responses":{"default":{"description":"successful operation"}},"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/User"}}},"description":"Created user object","required":true}}},"/user/createWithArray":{"post":{"tags":["user"],"summary":"Creates list of users with given input array","operationId":"createUsersWithArrayInput","responses":{"default":{"description":"successful operation"}},"requestBody":{"$ref":"#/components/requestBodies/UserArray"}}},"/user/createWithList":{"post":{"tags":["user"],"summary":"Creates list of users with given input array","operationId":"createUsersWithListInput","responses":{"default":{"description":"successful operation"}},"requestBody":{"$ref":"#/components/requestBodies/UserArray"}}},"/user/login":{"get":{"tags":["user"],"summary":"Logs user into the system","operationId":"loginUser","parameters":[{"name":"username","in":"query","description":"The user name for login","required":true,"schema":{"type":"string"}},{"name":"password","in":"query","description":"The password for login in clear text","required":true,"schema":{"type":"string"}}],"responses":{"200":{"description":"successful operation","headers":{"X-Rate-Limit":{"description":"calls per hour allowed by the user","schema":{"type":"integer","format":"int32"}},"X-Expires-After":{"description":"date in UTC when token expires","schema":{"type":"string","format":"date-time"}}},"content":{"application/json":{"schema":{"type":"string"}},"application/xml":{"schema":{"type":"string"}}}},"400":{"description":"Invalid username/password supplied"}}}},"/user/logout":{"get":{"tags":["user"],"summary":"Logs out current logged in user session","operationId":"logoutUser","responses":{"default":{"description":"successful operation"}}}},"/user/{username}":{"get":{"tags":["user"],"summary":"Get user by user name","operationId":"getUserByName","parameters":[{"name":"username","in":"path","description":"The name that needs to be fetched. Use user1 for testing.","required":true,"schema":{"type":"string"}}],"responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"$ref":"#/components/schemas/User"}},"application/xml":{"schema":{"$ref":"#/components/schemas/User"}}}},"400":{"description":"Invalid username supplied"},"404":{"description":"User not found"}}},"put":{"tags":["user"],"summary":"Updated user","description":"This can only be done by the logged in user.","parameters":[{"name":"username","in":"path","description":"name that need to be updated","required":true,"schema":{"type":"string"}}],"responses":{"400":{"description":"Invalid user supplied"},"404":{"description":"User not found"}},"requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/User"}}},"description":"Updated user object","required":true}},"delete":{"tags":["user"],"summary":"Delete user","description":"This can only be done by the logged in user.","operationId":"deleteUser","parameters":[{"name":"username","in":"path","description":"The name that needs to be deleted","required":true,"schema":{"type":"string"}}],"responses":{"400":{"description":"Invalid username supplied"},"404":{"description":"User not found"}}}},"/parrot":{"post":{"tags":["pet"],"summary":"Add a new parrow to the store","operationId":"addParrot","responses":{"405":{"description":"Invalid input"},"200":{"description":"successful operation","content":{"application/json":{"schema":{"oneOf":[{"$ref":"#/components/schemas/Macaw"},{"$ref":"#/components/schemas/Parakeet"}]}}}}},"requestBody":{"content":{"application/json":{"schema":{"anyOf":[{"$ref":"#/components/schemas/Macaw"},{"$ref":"#/components/schemas/Parakeet"}]}}}}},"put":{"tags":["pet"],"summary":"update parrots","operationId":"updateParrots","responses":{"405":{"description":"Invalid input"},"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"object","properties":{"parrots":{"type":"array","items":{"oneOf":[{"$ref":"#/components/schemas/Macaw"},{"$ref":"#/components/schemas/Parakeet"}]}}}}}}}},"requestBody":{"content":{"application/json":{"schema":{"type":"object","properties":{"parrots":{"type":"array","items":{"anyOf":[{"$ref":"#/components/schemas/Macaw"},{"$ref":"#/components/schemas/Parakeet"}]}}}}}}}},"get":{"tags":["pet"],"summary":"get Parrots","operationId":"getParrots","responses":{"200":{"description":"successful operation","content":{"application/json":{"schema":{"type":"array","items":{"anyOf":[{"$ref":"#/components/schemas/Macaw"},{"$ref":"#/components/schemas/Parakeet"}]}}}}}}}},"/test":{"get":{"security":[{"bearer":[]}],"operationId":"testMethod","responses":{"200":{"description":"peticion realizada con exito","content":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/Test"}}}}}}}}},"externalDocs":{"description":"Find out more about Swagger","url":"http://swagger.io"},"components":{"schemas":{"Order":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"petId":{"type":"integer","format":"int64"},"quantity":{"type":"integer","format":"int32"},"shipDate":{"type":"string","format":"date-time"},"status":{"type":"string","description":"Order Status","enum":["placed","approved","delivered"]},"complete":{"type":"boolean","default":false}},"xml":{"name":"Order"}},"Category":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string"},"subcategories":{"type":"array","items":{"$ref":"#/components/schemas/Category"}}},"example":[{"id":100,"name":"Mammal","subcategories":[{"id":110,"name":"Yinotheria"},{"id":120,"name":"Theriiformes"}]}],"xml":{"name":"Category"}},"User":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"username":{"type":"string"},"firstName":{"type":"string"},"lastName":{"type":"string"},"email":{"type":"string"},"password":{"type":"string"},"phone":{"type":"string"},"userStatus":{"type":"integer","format":"int32","description":"User Status"}},"xml":{"name":"User"}},"Tag":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string"}},"xml":{"name":"Tag"}},"ApiResponse":{"type":"object","properties":{"code":{"type":"integer","format":"int32"},"type":{"type":"string"},"message":{"type":"string"}}},"Test":{"type":"string","example":""},"PartOne":{"properties":{"name":{"type":"string","description":"A test description"}}},"PartTwo":{"properties":{"id":{"type":"string"}}},"PartThree":{"properties":{"otherId":{"type":"string"}}},"PartFour":{"properties":{"otherIdPart":{"type":"string"}}},"PartMaster":{"properties":{"destination":{"oneOf":[{"$ref":"#/components/schemas/PartOne"},{"$ref":"#/components/schemas/PartTwo"}]},"origin":{"oneOf":[{"$ref":"#/components/schemas/PartThree"},{"$ref":"#/components/schemas/PartFour"}]}}},"Pet":{"type":"object","required":["name","photoUrls"],"properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","example":"doggie"},"status":{"type":"string","description":"pet status in the store","enum":["available","pending","sold"]},"part":{"type":"array","items":{"oneOf":[{"$ref":"#/components/schemas/Dog"},{"$ref":"#/components/schemas/Cat"}]}}},"xml":{"name":"Pet"}},"Pup":{"oneOf":[{"$ref":"#/components/schemas/Dog"},{"$ref":"#/components/schemas/Cat"}],"properties":{"id":{"type":"integer","format":"int64"}}},"AllPetsResponse":{"type":"array","items":{"oneOf":[{"$ref":"#/components/schemas/Dog"},{"$ref":"#/components/schemas/Cat"}],"discriminator":{"propertyName":"pet_type"}}},"Dog":{"allOf":[{"$ref":"#/components/schemas/Pet"},{"type":"object","properties":{"bark":{"type":"boolean"},"breed":{"type":"string","enum":["Dingo","Husky","Retriever","Shepherd"]}}}]},"Cat":{"allOf":[{"$ref":"#/components/schemas/Pet"},{"type":"object","properties":{"hunts":{"type":"boolean"},"age":{"type":"integer"}}}]},"Macaw":{"type":"object","properties":{"color":{"type":"string"},"singer":{"type":"boolean"}}},"Parakeet":{"type":"object","properties":{"color":{"type":"string"},"soundRepeater":{"type":"boolean"}}},"val_Members":{"type":"object","additionalProperties":false,"description":"Business Term: Scheme Members\nDefinition: Information about the Members of the Scheme.\nPurpose: To have enough information to be able to produce a Statement of Account indicating premium due.","properties":{"val_member":{"description":"Business Term: Scheme Member\nDefinition: Information about a Member of the Scheme.\nPurpose: To have enough information to be able to produce a Statement of Account indicating premium due.","items":{"oneOf":[{"$ref":"#/components/schemas/val_MemberChoice1"},{"$ref":"#/components/schemas/val_MemberChoice2"}]},"minItems":1,"type":"array"}},"required":["val_member"],"xml":{"prefix":"val","name":"members"}},"val_MemberChoice1":{"additionalProperties":false,"description":"Business Term: Scheme Member\nDefinition: Information about a Member of the Scheme.\nPurpose: To have enough information to be able to produce a Statement of Account indicating premium due.","properties":{"val_date_of_birth":{"description":"Business Term: Date Of Birth\nDefinition: The date of birth of the member.\nPurpose: To be able to uniquely identify a member within a scheme.","type":"string","format":"date","xml":{"prefix":"val","name":"date_of_birth"}},"val_leaving_date":{"description":"Business Term: Leaving Date\nDefinition: The date the member left/is due to leave the scheme.\nPurpose: To identify those members that have left or are due to leave the scheme. To be able to calculate the benefit insured/premium payable in respect of the member/category.","type":"string","format":"date","xml":{"prefix":"val","name":"leaving_date"}}},"required":["val_date_of_birth"],"xml":{"prefix":"val","name":"member"},"type":"object"},"val_MemberChoice2":{"additionalProperties":false,"description":"Business Term: Scheme Member\nDefinition: Information about a Member of the Scheme.\nPurpose: To have enough information to be able to produce a Statement of Account indicating premium due.","properties":{"val_leaving_date":{"description":"Business Term: Leaving Date\nDefinition: The date the member left/is due to leave the scheme.\nPurpose: To identify those members that have left or are due to leave the scheme. To be able to calculate the benefit insured/premium payable in respect of the member/category.","type":"string","format":"date","xml":{"prefix":"val","name":"leaving_date"}}},"xml":{"prefix":"val","name":"member"},"type":"object"},"NullableEnumModel":{"type":"object","properties":{"enumProp":{"type":"string","nullable":true,"enum":["a","b",null]}}},"SubCategory":{"type":"object","properties":{"category":{"allOf":[{"$ref":"#/components/schemas/Category"},{"type":"object","properties":{"foo":{"type":"boolean"},"bar":{"type":"integer"},"beer":{"type":"string"},"drunk":{"$ref":"#/components/schemas/User"}}}]},"category2":{"$ref":"#/components/schemas/Category"},"pets":{"type":"array","items":{"allOf":[{"$ref":"#/components/schemas/Pet"}]}}}}},"requestBodies":{"Pet":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Pet"}},"application/xml":{"schema":{"$ref":"#/components/schemas/Pet"}}},"description":"Pet object that needs to be added to the store","required":true},"UserArray":{"content":{"application/json":{"schema":{"type":"array","items":{"$ref":"#/components/schemas/User"}}}},"description":"List of user object","required":true}},"securitySchemes":{"bearer":{"type":"http","scheme":"bearer"},"petstore_auth":{"type":"oauth2","flows":{"implicit":{"authorizationUrl":"http://petstore.swagger.io/oauth/dialog","scopes":{"write:pets":"modify pets in your account","read:pets":"read your pets"}}}},"api_key":{"type":"apiKey","name":"api_key","in":"header"}}}}
+15:16:56.321 [Thread-1] WARN io.swagger.codegen.v3.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+15:16:56.387 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.388 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.389 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.389 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.389 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.390 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.391 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.391 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.392 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.393 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.393 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.393 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.394 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.394 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.394 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.394 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.397 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.401 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.401 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.402 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.402 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.406 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.413 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.413 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.413 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.413 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.414 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.414 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.415 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.415 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.415 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.415 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.417 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.417 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.417 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.417 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.417 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.418 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.418 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.419 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.419 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.419 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.424 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.426 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.429 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.429 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.429 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.430 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.431 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.433 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.434 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.435 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.435 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.436 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.439 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.440 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.440 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.442 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.443 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.455 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.457 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.458 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.459 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.459 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.460 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.460 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.461 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.461 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.462 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.463 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.464 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.465 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.465 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.466 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.466 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.467 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.467 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.468 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:56.469 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.472 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.473 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.473 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.473 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.473 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.474 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.474 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:56.569 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:56.598 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.616 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.621 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.634 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:56.635 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.641 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.642 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.646 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:56.647 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.726 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.731 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.745 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:56.748 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.748 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.748 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.749 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:56.749 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.752 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.752 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.754 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/AllPetsResponse.java
+15:16:56.757 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:56.757 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.759 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.759 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.760 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:56.760 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.762 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.763 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.766 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:56.767 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.795 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.797 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.807 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:56.807 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.808 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.809 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.810 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:56.810 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.812 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.812 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.817 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Body.java
+15:16:56.818 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:56.819 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.820 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.820 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.820 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:56.820 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.821 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.822 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.822 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:56.823 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.846 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.848 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.855 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:56.856 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.858 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.858 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.859 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:56.859 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.860 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.860 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.861 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Body1.java
+15:16:56.862 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:56.862 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.863 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.863 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.863 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:56.864 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.865 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.865 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.866 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:56.866 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.893 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.896 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.903 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:56.904 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.904 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.904 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.905 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:56.905 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.906 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.908 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.911 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Cat.java
+15:16:56.912 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:56.913 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.914 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.914 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.914 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:56.914 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.915 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.915 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.916 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:56.916 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.939 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.941 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.947 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:56.947 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.947 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.947 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.948 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:56.948 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.949 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.949 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.956 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Category.java
+15:16:56.964 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:56.964 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.967 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.967 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.968 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:56.969 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:56.973 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:56.974 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:56.974 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:56.974 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.011 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.013 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.014 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.015 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.016 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.016 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.016 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.016 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.017 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.017 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.018 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/modelInnerEnum.mustache
+15:16:57.018 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.025 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.026 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.029 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Dog.java
+15:16:57.030 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.030 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.031 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.031 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.032 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.032 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.033 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.033 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.033 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.036 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.060 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.062 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.066 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.066 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.068 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.068 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.068 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.070 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.072 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.072 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.074 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/InlineResponse200.java
+15:16:57.074 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.076 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.077 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.077 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.077 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.077 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.079 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.079 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.079 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.079 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.105 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.107 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.109 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.109 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.110 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.110 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.110 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.111 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.112 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.112 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.113 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Macaw.java
+15:16:57.114 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.114 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.114 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.115 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.115 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.115 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.115 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.116 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.116 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.117 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.118 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.118 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.118 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.119 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.120 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.120 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.121 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.141 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.143 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.144 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.144 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.145 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.145 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.145 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.146 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.147 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.147 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.149 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/ModelApiResponse.java
+15:16:57.150 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.150 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.151 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.152 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.152 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.152 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.153 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.154 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.154 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.155 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.155 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.175 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.177 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.178 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.179 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.179 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.180 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.180 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.180 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.181 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.182 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.182 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/modelInnerEnum.mustache
+15:16:57.182 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.188 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.188 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.189 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/NullableEnumModel.java
+15:16:57.190 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.190 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.191 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.192 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.192 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.192 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.193 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.193 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.194 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.194 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.218 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.220 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.221 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.222 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.222 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.223 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.223 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.223 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.225 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.225 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.226 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/modelInnerEnum.mustache
+15:16:57.226 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.233 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.233 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.234 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Order.java
+15:16:57.235 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.236 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.237 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.237 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.237 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.238 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.239 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.239 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.240 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.240 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.262 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.264 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.265 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.265 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.266 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.266 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.267 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.267 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.268 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.269 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.269 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Parakeet.java
+15:16:57.270 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.271 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.272 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.272 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.272 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.273 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.274 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.274 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.275 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.275 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.294 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.296 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.297 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.298 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.298 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.298 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.299 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.299 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.300 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.301 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.301 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/PartFour.java
+15:16:57.302 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.303 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.304 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.304 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.305 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.305 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.306 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.307 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.307 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.308 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.322 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.323 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.325 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.326 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.326 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.327 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.327 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.327 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.329 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.329 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.330 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/PartMaster.java
+15:16:57.331 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.331 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.332 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.333 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.333 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.333 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.334 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.335 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.335 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.336 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.351 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.352 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.353 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.354 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.361 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.361 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.362 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.362 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.363 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.363 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.363 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/PartOne.java
+15:16:57.364 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.364 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.364 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.364 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.364 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.365 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.365 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.365 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.366 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.366 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.379 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.380 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.382 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.382 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.382 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.382 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.383 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.383 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.384 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.384 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.385 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/PartThree.java
+15:16:57.386 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.386 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.386 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.386 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.386 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.387 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.388 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.388 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.389 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.389 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.401 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.403 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.404 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.404 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.404 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.404 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.404 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.404 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.405 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.405 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.406 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/PartTwo.java
+15:16:57.406 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.407 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.407 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.407 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.407 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.407 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.408 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.408 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.408 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.408 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.421 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.422 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.423 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.423 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.424 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.424 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.424 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.424 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.425 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.425 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.426 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/modelInnerEnum.mustache
+15:16:57.427 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.431 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.431 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.433 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Pet.java
+15:16:57.434 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.434 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.435 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.435 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.435 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.435 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.436 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.436 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.438 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.439 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.454 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.455 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.457 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.457 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.457 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.457 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.457 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.457 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.461 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.461 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.462 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/modelInnerEnum.mustache
+15:16:57.463 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.466 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.467 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.468 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Pup.java
+15:16:57.469 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.469 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.470 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.470 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.470 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.471 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.472 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.472 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.472 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.472 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.486 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.488 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.492 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.492 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.492 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.492 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.493 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.493 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.493 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.493 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.494 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/SubCategory.java
+15:16:57.495 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.495 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.496 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.496 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.496 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.496 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.497 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.497 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.497 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.497 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.510 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.513 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.514 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.514 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.514 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.514 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.514 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.515 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.516 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.516 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.517 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/Tag.java
+15:16:57.522 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.522 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.522 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.522 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.522 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.523 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.523 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.523 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.524 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.524 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.536 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.538 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.539 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.539 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.540 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.540 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.540 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.540 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.541 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.541 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.543 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/User.java
+15:16:57.544 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.544 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.545 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.545 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.545 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.545 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.546 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.546 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.546 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.547 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.559 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.560 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.562 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.562 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.562 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.562 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.563 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.563 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.564 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.564 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.565 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/ValMemberChoice1.java
+15:16:57.565 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.565 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.566 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.566 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.566 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.566 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.567 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.567 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.567 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.567 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.584 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.585 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.586 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.586 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.586 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.586 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.587 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.587 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.587 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.588 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.588 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/ValMemberChoice2.java
+15:16:57.589 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/model.mustache
+15:16:57.589 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.589 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.589 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.590 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.590 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.590 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.590 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.591 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/pojo.mustache
+15:16:57.592 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.605 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.606 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.607 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.607 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.608 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.608 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.609 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/xmlAnnotation.mustache
+15:16:57.609 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.609 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.609 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.610 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/model/ValMembers.java
+15:16:57.622 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.622 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.623 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.623 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.623 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.629 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.629 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.629 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.629 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.630 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.632 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<Pet>
+15:16:57.633 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.633 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.633 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.633 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.633 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.639 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<String>
+15:16:57.642 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<Pet>
+15:16:57.647 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.648 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.648 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.648 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.648 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.648 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<String>
+15:16:57.649 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: Pet
+15:16:57.649 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.649 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.649 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.649 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.649 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.661 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.661 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.661 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.661 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.661 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.669 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.669 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.669 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.669 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: ModelApiResponse
+15:16:57.669 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.669 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.669 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.671 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: ModelApiResponse
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.671 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.672 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.672 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.672 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.672 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.673 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: Map<String, Integer>
+15:16:57.674 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: Order
+15:16:57.678 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: Order
+15:16:57.693 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<User>
+15:16:57.694 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<User>
+15:16:57.702 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: User
+15:16:57.704 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - Empty operationId found for path: put /user/{username}. Renamed to auto-generated operationId: userUsernamePut
+15:16:57.708 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.708 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.708 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.708 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.708 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<Object>
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.709 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.710 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: InlineResponse200
+15:16:57.710 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.710 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.711 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.711 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.711 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.711 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.711 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.711 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.711 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: Object
+15:16:57.712 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.713 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.713 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.715 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.715 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.715 [Thread-1] WARN io.swagger.codegen.v3.generators.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:16:57.716 [Thread-1] DEBUG io.swagger.codegen.v3.generators.DefaultCodegenConfig - Property type is not primitive: List<String>
+15:16:57.718 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api.mustache
+15:16:57.718 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.732 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.733 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.734 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.734 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.734 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.734 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.735 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/api/DefaultApi.java
+15:16:57.736 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api_test.mustache
+15:16:57.736 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.739 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.740 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.740 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/test/java/io/swagger/client/api/DefaultApiTest.java
+15:16:57.741 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api.mustache
+15:16:57.741 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.750 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.751 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.752 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.752 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.752 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.752 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.757 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/api/PetApi.java
+15:16:57.758 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api_test.mustache
+15:16:57.758 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.762 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.762 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.769 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/test/java/io/swagger/client/api/PetApiTest.java
+15:16:57.769 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api.mustache
+15:16:57.769 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.780 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.781 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.781 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.781 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.782 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.782 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.782 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/api/StoreApi.java
+15:16:57.782 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api_test.mustache
+15:16:57.783 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.786 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.786 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.787 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/test/java/io/swagger/client/api/StoreApiTest.java
+15:16:57.788 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api.mustache
+15:16:57.788 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.796 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.797 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.798 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.798 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.798 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.798 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.799 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/api/UserApi.java
+15:16:57.800 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/api_test.mustache
+15:16:57.800 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.804 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.804 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.804 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/test/java/io/swagger/client/api/UserApiTest.java
+15:16:57.805 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/pom.mustache
+15:16:57.806 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.812 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.813 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.814 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/pom.xml
+15:16:57.815 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/README.mustache
+15:16:57.815 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.817 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.817 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.817 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/README.md
+15:16:57.818 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/build.gradle.mustache
+15:16:57.818 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.822 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.823 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.826 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/build.gradle
+15:16:57.827 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/build.sbt.mustache
+15:16:57.828 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.830 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.830 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.830 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/build.sbt
+15:16:57.830 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/settings.gradle.mustache
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.831 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/settings.gradle
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/gradle.properties.mustache
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.831 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/gradle.properties
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/manifest.mustache
+15:16:57.831 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.832 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.832 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.832 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/AndroidManifest.xml
+15:16:57.832 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/travis.mustache
+15:16:57.832 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.833 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.833 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.833 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/.travis.yml
+15:16:57.834 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/ApiClient.mustache
+15:16:57.834 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.848 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.850 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.854 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.854 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.854 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.855 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.855 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/ApiClient.java
+15:16:57.855 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/StringUtil.mustache
+15:16:57.856 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.858 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.858 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.858 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.858 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.859 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.859 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.859 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/generatedAnnotation.mustache
+15:16:57.859 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.860 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.860 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.860 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/StringUtil.java
+15:16:57.860 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/auth/HttpBasicAuth.mustache
+15:16:57.860 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.861 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.861 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.862 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/auth/HttpBasicAuth.java
+15:16:57.862 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/auth/ApiKeyAuth.mustache
+15:16:57.863 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.864 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.864 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.864 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/auth/ApiKeyAuth.java
+15:16:57.864 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/auth/OAuth.mustache
+15:16:57.864 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.869 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.870 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.872 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/auth/OAuth.java
+15:16:57.872 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/auth/OAuthFlow.mustache
+15:16:57.872 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.873 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.873 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.873 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.873 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.873 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.873 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.874 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/auth/OAuthFlow.java
+15:16:57.874 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/gradlew.mustache
+15:16:57.874 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.879 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.880 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.882 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/gradlew
+15:16:57.882 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/gradlew.bat.mustache
+15:16:57.882 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.884 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.885 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.885 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/gradlew.bat
+15:16:57.886 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/gradle-wrapper.properties.mustache
+15:16:57.886 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.886 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.886 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.886 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/gradle/wrapper/gradle-wrapper.properties
+15:16:57.886 [Thread-1] WARN io.swagger.codegen.v3.DefaultGenerator - can't open handlebars/Java/gradle-wrapper.jar for input
+15:16:57.886 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/git_push.sh.mustache
+15:16:57.887 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.888 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.889 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.889 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/git_push.sh
+15:16:57.889 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/gitignore.mustache
+15:16:57.890 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.890 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.890 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.890 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/.gitignore
+15:16:57.890 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/ParamExpander.mustache
+15:16:57.890 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.891 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.891 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.891 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/ParamExpander.java
+15:16:57.891 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/libraries/feign/EncodingUtils.mustache
+15:16:57.891 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.894 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.894 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.895 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/EncodingUtils.java
+15:16:57.896 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/RFC3339DateFormat.mustache
+15:16:57.896 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.896 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.896 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.896 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/licenseInfo.mustache
+15:16:57.896 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.897 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.897 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.897 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/RFC3339DateFormat.java
+15:16:57.898 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: /handlebars/Java/CustomInstantDeserializer.mustache
+15:16:57.898 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+15:16:57.903 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Applying Mustache spec
+15:16:57.905 [Thread-1] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+15:16:57.916 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/src/main/java/io/swagger/client/CustomInstantDeserializer.java
+15:16:57.920 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/.swagger-codegen-ignore
+15:16:57.920 [Thread-1] INFO io.swagger.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-feign-v3___petstore3composed___/.swagger-codegen/VERSION

@@ -1,0 +1,44 @@
+
+****** generate ******
+
+LANGUAGE aspnetcore
+JOB_NAME aspnetcore-interface-only-v3___petstore3composed___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3composed.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3composed.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+Exception in thread "main" java.lang.RuntimeException: Can't load config class with name aspnetcore Available: dynamic-html
+html
+html2
+java
+jaxrs-cxf-client
+jaxrs-cxf
+inflector
+jaxrs-cxf-cdi
+jaxrs-spec
+jaxrs-jersey
+jaxrs-di
+jaxrs-resteasy-eap
+jaxrs-resteasy
+spring
+openapi
+openapi-yaml
+kotlin-client
+kotlin-server
+php
+scala
+scala-akka-http-server
+swift3
+swift4
+typescript-angular
+
+	at io.swagger.codegen.v3.CodegenConfigLoader.forName(CodegenConfigLoader.java:31)
+	at io.swagger.codegen.v3.cli.SwaggerCodegen.main(SwaggerCodegen.java:96)
+Caused by: java.lang.ClassNotFoundException: aspnetcore
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at io.swagger.codegen.v3.CodegenConfigLoader.forName(CodegenConfigLoader.java:29)
+	... 1 more

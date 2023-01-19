@@ -1,0 +1,54 @@
+
+****** generate ******
+
+LANGUAGE python
+JOB_NAME python___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/models/api_response.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_api_response.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/ApiResponse.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/models/category.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_category.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/Category.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/models/order.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_order.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/Order.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/models/pet.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_pet.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/Pet.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/models/tag.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_tag.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/Tag.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/models/user.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_user.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/User.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/api/pet_api.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_pet_api.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/PetApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/api/store_api.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_store_api.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/StoreApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/api/user_api.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/test_user_api.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/docs/UserApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/README.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/tox.ini
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test-requirements.txt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/requirements.txt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/configuration.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/models/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/api/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/test/__init__.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/git_push.sh
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/.gitignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/.travis.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/setup.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/api_client.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/swagger_client/rest.py
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python___petstore___/.swagger-codegen/VERSION

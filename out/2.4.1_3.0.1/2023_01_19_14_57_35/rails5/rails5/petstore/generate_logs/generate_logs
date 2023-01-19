@@ -1,0 +1,80 @@
+
+****** generate ******
+
+LANGUAGE rails5
+JOB_NAME rails5___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/models/api_response.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/models/category.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/models/order.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/models/pet.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/models/tag.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/models/user.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/controllers/pet_controller.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/controllers/store_controller.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/controllers/user_controller.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/Gemfile
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/README.md
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/Rakefile
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config.ru
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/channels/application_cable/channel.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/channels/application_cable/connection.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/controllers/application_controller.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/jobs/application_job.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/mailers/application_mailer.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/models/application_record.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/views/layouts/mailer.html.erb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/app/views/layouts/mailer.text.erb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/bin/bundle
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/bin/rails
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/bin/rake
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/bin/setup
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/bin/update
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/environments/development.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/environments/production.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/active_record_belongs_to_required_by_default.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/application_controller_renderer.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/backtrace_silencers.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/callback_terminator.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/cors.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/filter_parameter_logging.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/inflections.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/mime_types.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/ssl_options.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/initializers/to_time_preserves_timezone.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/locales/en.yml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/application.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/boot.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/cable.yml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/database.yml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/environment.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/puma.rb
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/routes.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/secrets.yml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/config/spring.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/db/migrate/.keep
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/db/migrate/0_init_tables.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/db/schema.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/db/seeds.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/lib/tasks/.keep
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/log/.keep
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/404.html
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/422.html
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/500.html
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/apple-touch-icon-precomposed.png
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/apple-touch-icon.png
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/favicon.ico
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/robots.txt
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/public/robots.txt
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/test/test_helper.rb
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/tmp/cache/.keep
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/tmp/pids/.keep
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/tmp/sockets/.keep
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/tmp/restart.txt
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/vendor/.keep
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/rails5___petstore___/.swagger-codegen/VERSION

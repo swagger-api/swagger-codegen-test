@@ -1,0 +1,133 @@
+
+****** BUILD ******
+
+
+****** executing: npm install ******
+
+npm WARN deprecated babel@6.23.0: In 6.x, the babel package has been deprecated in favor of babel-cli. Check https://opencollective.com/babel to support the Babel maintainers
+npm WARN deprecated superagent@3.7.0: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+npm WARN deprecated chokidar@1.7.0: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated jade@0.26.3: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated mkdirp@0.5.0: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated samsam@1.1.2: This package has been deprecated in favour of @sinonjs/samsam
+npm WARN deprecated formatio@1.1.1: This package is unmaintained. Use @sinonjs/formatio instead
+npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated graceful-fs@2.0.3: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js
+npm WARN deprecated mkdirp@0.3.0: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated samsam@1.1.3: This package has been deprecated in favour of @sinonjs/samsam
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+
+> core-js@2.6.12 postinstall /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN swagger_petstore@1.0.0 No repository field.
+
+added 370 packages from 552 contributors and audited 371 packages in 7.325s
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+found 17 vulnerabilities (3 low, 2 moderate, 10 high, 2 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run test ******
+
+
+> swagger_petstore@1.0.0 test /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___
+> mocha --compilers js:babel-core/register --recursive
+
+/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/node_modules/babel-core/lib/transformation/file/index.js:558
+      throw err;
+      ^
+
+SyntaxError: /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/src/model/EnumClass.js: Unexpected token (36:8)
+  34 |          * @const
+  35 |          */
+> 36 |         -efg = "-efg";
+     |         ^
+  37 | 
+  38 |     
+  39 |         /**
+    at Parser.pp$5.raise (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp$3.parseIdentifier (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:4332:10)
+    at Parser.pp$3.parsePropertyName (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:4156:96)
+    at Parser.pp$1.parseClassBody (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:2493:23)
+    at Parser.pp$1.parseClass (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:2406:8)
+    at Parser.pp$1.parseExport (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:2642:19)
+    at Parser.pp$1.parseStatement (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:1884:74)
+    at Parser.pp$1.parseBlockBody (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:2268:21)
+    at Parser.pp$1.parseTopLevel (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:1778:8)
+    at Parser.parse (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:1673:17)
+    at parse (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babylon/lib/index.js:7305:37)
+    at File.parse (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/node_modules/babel-core/lib/transformation/file/index.js:485:15)
+    at File.parseCode (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/node_modules/babel-core/lib/transformation/file/index.js:570:20)
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/node_modules/babel-core/lib/transformation/pipeline.js:49:12
+    at File.wrap (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/node_modules/babel-core/lib/transformation/file/index.js:532:16)
+    at Pipeline.transform (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/node_modules/babel-core/lib/transformation/pipeline.js:47:17)
+    at Object.transformFileSync (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/node_modules/babel-core/lib/api/node.js:152:10)
+    at compile (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/lib/node.js:118:20)
+    at loader (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/lib/node.js:144:14)
+    at Object.require.extensions.<computed> [as .js] (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/src/index.js:28:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at loader (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.<computed> [as .js] (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/test/api/AnotherFakeApi.spec.js:20:35
+    at Object.<anonymous> (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/test/api/AnotherFakeApi.spec.js:14:2)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at loader (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.<computed> [as .js] (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/mocha/lib/mocha.js:216:27
+    at Array.forEach (<anonymous>)
+    at Mocha.loadFiles (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/mocha/lib/mocha.js:213:14)
+    at Mocha.run (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/mocha/lib/mocha.js:453:10)
+    at Object.<anonymous> (/home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6___petstore-with-fake-endpoints___/node_modules/mocha/bin/_mocha:393:18)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 {
+  pos: 730,
+  loc: Position { line: 36, column: 8 },
+  _babel: true,
+  codeFrame: '  34 |          * @const\n' +
+    '  35 |          */\n' +
+    '> 36 |         -efg = "-efg";\n' +
+    '     |         ^\n' +
+    '  37 | \n' +
+    '  38 |     \n' +
+    '  39 |         /**'
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! swagger_petstore@1.0.0 test: `mocha --compilers js:babel-core/register --recursive`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the swagger_petstore@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/runner/.npm/_logs/2023-01-19T15_16_53_643Z-debug.log

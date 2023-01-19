@@ -1,0 +1,148 @@
+
+****** BUILD ******
+
+
+****** executing: npm i ******
+
+npm WARN deprecated @angular/http@5.2.11: Package no longer supported. Use @angular/common instead, see https://angular.io/guide/deprecations#angularhttp
+npm WARN deprecated browserslist@2.11.3: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+npm WARN deprecated rollup-plugin-node-resolve@3.4.0: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-node-resolve.
+npm WARN deprecated rollup-plugin-commonjs@8.3.0: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-commonjs.
+npm WARN deprecated chokidar@1.7.0: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated request@2.81.0: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated har-validator@4.2.1: this library is no longer supported
+npm WARN deprecated hawk@3.1.3: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated cryptiles@2.0.5: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated sntp@1.0.9: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm WARN deprecated hoek@2.16.3: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+
+> node-sass@4.14.1 install /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.14.1/linux-x64-72_binding.node
+Download complete
+Binary saved to /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___/node_modules/node-sass/vendor/linux-x64-72/binding.node
+Caching binary to /home/runner/.npm/node-sass/4.14.1/linux-x64-72_binding.node
+
+> core-js@2.6.12 postinstall /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> node-sass@4.14.1 postinstall /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___/node_modules/node-sass/vendor/linux-x64-72/binding.node
+Testing binary
+Binary is fine
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN @angular/compiler-cli@5.2.11 requires a peer of typescript@>=2.4.2 <2.7 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/core@5.2.11 requires a peer of zone.js@^0.8.4 but none is installed. You must install peer dependencies yourself.
+npm WARN @swagger/angular2-typescript-petstore@0.0.1 No repository field.
+
+added 589 packages from 498 contributors and audited 592 packages in 14.051s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 37 vulnerabilities (4 low, 13 moderate, 17 high, 3 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run build ******
+
+
+> @swagger/angular2-typescript-petstore@0.0.1 build /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___
+> ng-packagr -p ng-package.json
+
+Building Angular Package
+Building entry point '@swagger/angular2-typescript-petstore'
+Cleaning build directory
+Rendering Stylesheets
+Rendering Templates
+Compiling TypeScript sources through ngc
+Bundling to FESM15
+Bundling to FESM5
+Bundling to UMD
+Minifying UMD bundle
+WARN: Side effects in initialization of unused variable pa [0:145,12]
+WARN: Side effects in initialization of unused variable Na [0:227,12]
+WARN: Side effects in initialization of unused variable Va [0:248,12]
+WARN: Side effects in initialization of unused variable b0 [0:269,12]
+WARN: Side effects in initialization of unused variable j0 [0:290,12]
+WARN: Side effects in initialization of unused variable t0 [0:321,12]
+WARN: Side effects in initialization of unused variable B0 [0:350,12]
+WARN: Condition always false [0:397,22]
+WARN: Dropping side-effect-free statement [0:397,22]
+WARN: Dropping unreachable code [0:400,12]
+WARN: Condition always false [0:447,61]
+WARN: Side effects in initialization of unused variable U0 [0:383,12]
+WARN: Side effects in initialization of unused variable W0 [0:391,12]
+WARN: Side effects in initialization of unused variable X0 [0:395,12]
+WARN: Condition always false [0:486,22]
+WARN: Dropping side-effect-free statement [0:486,22]
+WARN: Dropping unreachable code [0:488,12]
+WARN: Side effects in initialization of unused variable lb [0:474,12]
+WARN: Side effects in initialization of unused variable nb [0:481,12]
+WARN: Side effects in initialization of unused variable ob [0:484,12]
+WARN: Side effects in initialization of unused variable xb [0:522,12]
+WARN: Condition always false [0:556,22]
+WARN: Dropping side-effect-free statement [0:556,22]
+WARN: Dropping unreachable code [0:558,12]
+WARN: Side effects in initialization of unused variable Gb [0:551,12]
+WARN: Side effects in initialization of unused variable Hb [0:554,12]
+WARN: Side effects in initialization of unused variable _b [0:631,12]
+WARN: Side effects in initialization of unused variable b1 [0:638,12]
+WARN: Side effects in initialization of unused variable u1 [0:710,12]
+WARN: Side effects in initialization of unused variable w1 [0:718,12]
+WARN: Side effects in initialization of unused variable E1 [0:749,12]
+WARN: Side effects in initialization of unused variable M1 [0:781,12]
+WARN: Side effects in initialization of unused variable U1 [0:814,12]
+WARN: Side effects in initialization of unused variable $1 [0:840,12]
+WARN: Side effects in initialization of unused variable fc [0:868,12]
+WARN: Side effects in initialization of unused variable hc [0:876,12]
+WARN: Condition always false [0:917,22]
+WARN: Dropping side-effect-free statement [0:917,22]
+WARN: Dropping unreachable code [0:920,12]
+WARN: Condition always false [0:931,97]
+WARN: Side effects in initialization of unused variable qc [0:904,12]
+WARN: Side effects in initialization of unused variable sc [0:912,12]
+WARN: Side effects in initialization of unused variable tc [0:915,12]
+WARN: Condition always false [0:978,114]
+WARN: Side effects in initialization of unused variable Ec [0:951,12]
+WARN: Side effects in initialization of unused variable Gc [0:958,12]
+WARN: Side effects in initialization of unused variable e2 [0:1058,12]
+WARN: Side effects in initialization of unused variable s2 [0:1109,12]
+WARN: Side effects in initialization of unused variable M2 [0:1180,12]
+WARN: Side effects in initialization of unused variable U2 [0:1207,12]
+WARN: Side effects in initialization of unused variable ad [0:1234,12]
+WARN: Side effects in initialization of unused variable Id [0:1360,12]
+WARN: Side effects in initialization of unused variable t [0:1393,4]
+WARN: Side effects in initialization of unused variable u [0:1418,4]
+WARN: Side effects in initialization of unused variable v [0:1433,4]
+WARN: Side effects in initialization of unused variable x [0:1450,4]
+Relocating source maps
+Copying staged files
+Writing package metadata
+Removing scripts section in package.json as it's considered a potential security vulnerability.
+Built @swagger/angular2-typescript-petstore
+Creating tarball archive (.tgz)
+Built Angular Package!
+- from: /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___
+- to:   /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore-with-fake-endpoints___/dist
+(node:1922) UnhandledPromiseRejectionWarning: Error: ENOENT: no such file or directory, open '.ng_pkg_build/swagger-angular2-typescript-petstore/out/node_modules/fast-deep-equal/es6/react.d.ts'
+(node:1922) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:1922) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
