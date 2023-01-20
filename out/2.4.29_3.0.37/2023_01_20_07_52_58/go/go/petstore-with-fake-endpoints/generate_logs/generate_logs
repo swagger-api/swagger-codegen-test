@@ -1,0 +1,179 @@
+
+****** generate ******
+
+LANGUAGE go
+JOB_NAME go___petstore-with-fake-endpoints___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/modules/swagger-codegen/src/test/resources/2_0/petstore-with-fake-endpoints-models-for-testing.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/modules/swagger-codegen/src/test/resources/2_0/petstore-with-fake-endpoints-models-for-testing.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/modules/swagger-codegen/src/test/resources/2_0/petstore-with-fake-endpoints-models-for-testing.yaml
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_additional_properties_class.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/AdditionalPropertiesClass.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_animal.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Animal.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_animal_farm.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/AnimalFarm.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_array_of_array_of_number_only.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/ArrayOfArrayOfNumberOnly.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_array_of_number_only.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/ArrayOfNumberOnly.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_array_test.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/ArrayTest.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_boolean.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Boolean.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_capitalization.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Capitalization.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_cat.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Cat.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_category.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Category.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_class_model.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/ClassModel.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_client.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Client.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_dog.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Dog.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_enum_arrays.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/EnumArrays.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_enum_class.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/EnumClass.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_enum_test.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/EnumTest.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_format_test.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/FormatTest.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_has_only_read_only.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/HasOnlyReadOnly.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_ints.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Ints.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_list.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/List.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_map_test.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/MapTest.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_mixed_properties_and_additional_properties_class.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/MixedPropertiesAndAdditionalPropertiesClass.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_200_response.go
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to model_200_response
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Model200Response.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_api_response.go
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/ModelApiResponse.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_return.go
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - Return (reserved word) cannot be used as model name. Renamed to model_Return
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/ModelReturn.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_name.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Name.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_number_only.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/NumberOnly.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_numbers.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Numbers.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_order.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Order.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_outer_boolean.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/OuterBoolean.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_outer_composite.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/OuterComposite.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_outer_enum.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/OuterEnum.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_outer_number.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/OuterNumber.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_outer_string.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/OuterString.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_pet.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Pet.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_read_only_first.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/ReadOnlyFirst.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_special_model_name.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/SpecialModelName.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_tag.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/Tag.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/model_user.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/User.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/api_another_fake.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/AnotherFakeApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/api_fake.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/FakeApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/api_fake_classname_tags123.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/FakeClassnameTags123Api.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/api_pet.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/PetApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/api_store.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/StoreApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/api_user.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/docs/UserApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/api/swagger.yaml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/README.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/git_push.sh
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/.gitignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/configuration.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/client.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/response.go
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/.travis.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go___petstore-with-fake-endpoints___/.swagger-codegen/VERSION

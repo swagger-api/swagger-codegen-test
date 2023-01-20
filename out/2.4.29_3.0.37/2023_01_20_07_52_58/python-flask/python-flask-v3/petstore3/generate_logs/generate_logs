@@ -1,0 +1,46 @@
+
+****** generate ******
+
+LANGUAGE python-flask
+JOB_NAME python-flask-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+08:10:30.574 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+08:10:30.909 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/address.py
+08:10:30.942 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/api_response.py
+08:10:30.963 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/category.py
+08:10:30.999 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/customer.py
+08:10:31.037 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/order.py
+08:10:31.059 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/pet.py
+08:10:31.077 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/tag.py
+08:10:31.096 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/user.py
+08:10:31.273 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/controllers/pet_controller.py
+08:10:31.285 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/test/test_pet_controller.py
+08:10:31.313 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/controllers/store_controller.py
+08:10:31.322 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/test/test_store_controller.py
+08:10:31.378 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/controllers/user_controller.py
+08:10:31.388 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/test/test_user_controller.py
+08:10:31.536 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/README.md
+08:10:31.540 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/setup.py
+08:10:31.541 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/tox.ini
+08:10:31.542 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/test-requirements.txt
+08:10:31.544 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/requirements.txt
+08:10:31.546 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/git_push.sh
+08:10:31.551 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/.gitignore
+08:10:31.554 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/.travis.yml
+08:10:31.558 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/Dockerfile
+08:10:31.559 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/.dockerignore
+08:10:31.561 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/__init__.py
+08:10:31.563 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/__main__.py
+08:10:31.564 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/encoder.py
+08:10:31.567 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/util.py
+08:10:31.573 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/type_util.py
+08:10:31.574 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/controllers/__init__.py
+08:10:31.575 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/__init__.py
+08:10:31.580 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/models/base_model_.py
+08:10:31.582 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/test/__init__.py
+08:10:31.584 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/swagger/swagger.yaml
+08:10:31.587 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/swagger_server/controllers/authorization_controller.py
+08:10:31.592 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/.swagger-codegen-ignore
+08:10:31.593 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3___/.swagger-codegen/VERSION

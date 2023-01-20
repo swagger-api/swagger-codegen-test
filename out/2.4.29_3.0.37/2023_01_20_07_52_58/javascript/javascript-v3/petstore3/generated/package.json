@@ -1,0 +1,27 @@
+{
+  "name": "swagger_petstore___open_api_30",
+  "version": "1.0.5",
+  "description": "This_is_a_sample_Pet_Store_Server_based_on_the_OpenAPI_3_0_specification___You_can_find_out_more_aboutSwagger_at__httpswagger_io_httpswagger_io__In_the_third_iteration_of_the_pet_store_weve_switched_to_the_design_first_approachYou_can_now_help_us_improve_the_API_whether_its_by_making_changes_to_the_definition_itself_or_to_the_code_That_way_with_time_we_can_improve_the_API_in_general_and_expose_some_of_the_new_features_in_OAS3_Some_useful_links___The_Pet_Store_repository_httpsgithub_comswagger_apiswagger_petstore___The_source_API_definition_for_the_Pet_Store_httpsgithub_comswagger_apiswagger_petstoreblobmastersrcmainresourcesopenapi_yaml",
+  "license": "Apache 2.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "expect.js": "~0.3.1",
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3"
+  }
+}

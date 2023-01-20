@@ -1,0 +1,60 @@
+
+****** generate ******
+
+LANGUAGE jaxrs
+JOB_NAME jaxrs-use-tags-v3___petstore3fake___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+Exception in thread "main" java.lang.RuntimeException: Can't load config class with name jaxrs Available: dart
+aspnetcore
+csharp
+csharp-dotnet2
+go
+go-server
+dynamic-html
+html
+html2
+java
+jaxrs-cxf-client
+jaxrs-cxf
+inflector
+jaxrs-cxf-cdi
+jaxrs-spec
+jaxrs-jersey
+jaxrs-di
+jaxrs-resteasy-eap
+jaxrs-resteasy
+micronaut
+spring
+nodejs-server
+openapi
+openapi-yaml
+kotlin-client
+kotlin-server
+php
+python
+python-flask
+r
+ruby
+scala
+scala-akka-http-server
+swift3
+swift4
+swift5
+typescript-angular
+typescript-axios
+typescript-fetch
+javascript
+
+	at io.swagger.codegen.v3.CodegenConfigLoader.forName(CodegenConfigLoader.java:31)
+	at io.swagger.codegen.v3.cli.SwaggerCodegen.main(SwaggerCodegen.java:96)
+Caused by: java.lang.ClassNotFoundException: jaxrs
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at io.swagger.codegen.v3.CodegenConfigLoader.forName(CodegenConfigLoader.java:29)
+	... 1 more
