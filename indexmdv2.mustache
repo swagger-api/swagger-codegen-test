@@ -1,7 +1,7 @@
-# Codegen Test Result
+# Codegen Release Report V2
 {{#commits}}
 
-## Version Report For {{v2_version}}/{{v3_version}} {{timestamp}}
+## Version Report For {{v2_version}} {{timestamp}}
 #### [{{short_hash}}](https://github.com/swagger-api/swagger-codegen/commit/{{commit}})
 #### [{{short_commit}}](https://github.com/swagger-api/swagger-codegen/commit/{{commit}})
 |||
@@ -19,14 +19,11 @@
 {{#languagesv2}}
 |{{codegen_version}}|{{name}}|{{total_runs}}|{{successful_runs}}|{{generate_error_count}}|{{build_error_count}}|{{build_failure_count}}|{{regression_count}}|
 {{/languagesv2}}
-{{#languagesv3}}
-|{{codegen_version}}|{{name}}|{{total_runs}}|{{successful_runs}}|{{generate_error_count}}|{{build_error_count}}|{{build_failure_count}}|{{regression_count}}|
-{{/languagesv3}}
 
 ### Runs
 |Version|Language|Codegen Version|Job|Spec|Generate Outcome|Build Outcome|Generated Folder|
 |-|-|-|-|-|-|-|-|
 {{#runs}}
-|{{codegen_version}}|{{language}}|{{v2_version}}/{{v3_version}}|{{job}}|[{{spec}}]({{spec_url}})|{{#generate_error}}***{{/generate_error}}{{generate_outcome}}{{#generate_error}}***{{/generate_error}}|{{#is_regression}}***REGRESSION {{build_outcome}}***{{/is_regression}}{{^is_regression}}{{#build_error}}***{{/build_error}}{{build_outcome}}{{#build_error}}***{{/build_error}}{{/is_regression}}|{{#is_success_generation}}[View]({{generated_folder_link}}){{/is_success_generation}}|
+|{{codegen_version}}|{{language}}|{{v2_version}}|{{job}}|[{{spec}}]({{spec_url}})|{{#generate_error}}***{{/generate_error}}{{generate_outcome}}{{#generate_error}}***{{/generate_error}}|{{#is_regression}}***REGRESSION {{build_outcome}}***{{/is_regression}}{{^is_regression}}{{#build_error}}***{{/build_error}}{{build_outcome}}{{#build_error}}***{{/build_error}}{{/is_regression}}|{{#is_success_generation}}[View]({{generated_folder_link}}){{/is_success_generation}}|
 {{/runs}}
 {{/commits}}

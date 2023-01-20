@@ -22,7 +22,7 @@ CODEGEN_VERSION_V3 = 'latest'
 
 FULL_SCRIPT = True
 DATA_FILE = 'config/js-java-python-12-requests-2-specs.json'
-
+# DATA_FILE = 'config/release-110-requests-2-specs.json'
 dataJson = None
 sha = ''
 
