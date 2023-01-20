@@ -1,0 +1,58 @@
+
+****** generate ******
+
+LANGUAGE go
+JOB_NAME go-with-xml___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/model_category.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/Category.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/model_api_response.go
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/ModelApiResponse.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/model_order.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/Order.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/model_pet.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/Pet.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/model_tag.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/Tag.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/model_user.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/User.md
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] WARN io.swagger.codegen.languages.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/api_pet.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/PetApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/api_store.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/StoreApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/api_user.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/docs/UserApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/api/swagger.yaml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/README.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/git_push.sh
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/.gitignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/configuration.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/client.go
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/response.go
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/.travis.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-with-xml___petstore___/.swagger-codegen/VERSION

@@ -1,0 +1,37 @@
+
+****** generate ******
+
+LANGUAGE scala
+JOB_NAME scala-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+14:00:35.198 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+14:00:35.327 [Thread-1] WARN  i.s.c.v.g.scala.ScalaClientCodegen - Type (reserved word) cannot be used as model name. Renamed to ModelType
+14:00:35.456 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/Address.scala
+14:00:35.466 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/ApiResponse.scala
+14:00:35.474 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/Category.scala
+14:00:35.481 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/Customer.scala
+14:00:35.489 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/Order.scala
+14:00:35.496 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/Pet.scala
+14:00:35.502 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/Tag.scala
+14:00:35.508 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/model/User.scala
+14:00:35.775 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/PetApi.scala
+14:00:35.809 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/StoreApi.scala
+14:00:35.843 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala
+14:00:35.853 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/pom.xml
+14:00:35.857 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/ApiInvoker.scala
+14:00:35.858 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/AsyncClient.scala
+14:00:35.864 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/git_push.sh
+14:00:35.872 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/.gitignore
+14:00:35.874 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/build.gradle
+14:00:35.875 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/settings.gradle
+14:00:35.876 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/gradle.properties
+14:00:35.878 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/gradlew
+14:00:35.879 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/gradlew.bat
+14:00:35.880 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/gradle/wrapper/gradle-wrapper.properties
+14:00:35.881 [Thread-1] WARN  i.s.codegen.v3.DefaultGenerator - can't open handlebars/scala/client/gradle-wrapper.jar for input
+14:00:35.882 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/build.sbt
+14:00:35.891 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/README.md
+14:00:35.894 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/.swagger-codegen-ignore
+14:00:35.894 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/.swagger-codegen/VERSION

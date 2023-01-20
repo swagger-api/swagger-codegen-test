@@ -1,0 +1,142 @@
+
+****** BUILD ******
+
+
+****** executing: sbt compile ******
+
+Downloading sbt launcher for 1.8.2:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.8.2/sbt-launch-1.8.2.jar
+    To  /home/runner/.sbt/launchers/1.8.2/sbt-launch.jar
+Downloading sbt launcher 1.8.2 md5 hash:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.8.2/sbt-launch-1.8.2.jar.md5
+    To  /home/runner/.sbt/launchers/1.8.2/sbt-launch.jar.md5
+/home/runner/.sbt/launchers/1.8.2/sbt-launch.jar: OK
+[info] [launcher] getting org.scala-sbt sbt 1.8.2  (this may take some time)...
+[info] [launcher] getting Scala 2.12.17 (for sbt)...
+[0m[[0m[0minfo[0m] [0m[0mUpdated file /home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/project/build.properties: set sbt.version to 1.8.2[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.2 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/project[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project scalaz___petstore-with-fake-endpoints___ from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to scalaz___petstore-with-fake-endpoints___ (in build file:/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/)[0m
+[0m[[0m[0minfo[0m] [0m[0mExecuting in batch mode. For better performance use sbt's shell[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 47 Scala sources to /home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/target/scala-2.11/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.11' for Scala 2.11.8. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 9.735s.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/AnimalFarm.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject AnimalFarm {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/AnimalFarm.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/Boolean.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject Boolean {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/Boolean.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumArrays.scala:42:14: ';' expected but '[' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  object List[ArrayEnum] {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumArrays.scala:51:42: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val List[ArrayEnum]EnumEncoder: EncodeJson[List[ArrayEnum]] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumArrays.scala:54:1: '=' expected but ';' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val List[ArrayEnum]EnumDecoder: DecodeJson[List[ArrayEnum]] =[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumArrays.scala:54:42: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val List[ArrayEnum]EnumDecoder: DecodeJson[List[ArrayEnum]] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumArrays.scala:57:1: '=' expected but ';' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val EnumArraysCodecJson: CodecJson[EnumArrays] = CodecJson.derive[EnumArrays][0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumClass.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject EnumClass {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumClass.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:24:15: empty quoted identifier[0m
+[0m[[0m[31merror[0m] [0m[0m  case object `` extends EnumString[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:30:25: empty quoted identifier[0m
+[0m[[0m[31merror[0m] [0m[0m      case "``" => Some(``)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:37:12: empty quoted identifier[0m
+[0m[[0m[31merror[0m] [0m[0m      case `` => "``"[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:49:15: empty quoted identifier[0m
+[0m[[0m[31merror[0m] [0m[0m  case object `` extends EnumStringRequired[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:55:25: empty quoted identifier[0m
+[0m[[0m[31merror[0m] [0m[0m      case "``" => Some(``)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:62:12: empty quoted identifier[0m
+[0m[[0m[31merror[0m] [0m[0m      case `` => "``"[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:32:5: ')' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:38:5: '=>' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:57:5: ')' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/EnumTest.scala:63:5: '=>' expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/Ints.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject Ints {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/Ints.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/MapTest.scala:20:13: ';' expected but '[' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  object Map[String, Inner] {[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/MapTest.scala:29:45: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val Map[String, Inner]EnumEncoder: EncodeJson[Map[String, Inner]] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/MapTest.scala:32:1: '=' expected but ';' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val Map[String, Inner]EnumDecoder: DecodeJson[Map[String, Inner]] =[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/MapTest.scala:32:45: illegal start of simple pattern[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val Map[String, Inner]EnumDecoder: DecodeJson[Map[String, Inner]] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/MapTest.scala:35:1: '=' expected but ';' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val MapTestCodecJson: CodecJson[MapTest] = CodecJson.derive[MapTest][0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/Numbers.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject Numbers {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/Numbers.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterBoolean.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject OuterBoolean {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterBoolean.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterEnum.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject OuterEnum {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterEnum.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterNumber.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject OuterNumber {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterNumber.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterString.scala:14:1: identifier expected but 'object' found.[0m
+[0m[[0m[31merror[0m] [0m[0mobject OuterString {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scalaz___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/OuterString.scala:20:2: ':' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m38 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 12 s, completed Jan 20, 2023 1:52:59 PM[0m
+[0J
