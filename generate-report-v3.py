@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import sys
+import os
 from operator import attrgetter
 from csv import reader
 from datetime import datetime
@@ -41,7 +42,7 @@ def deserializeRun(row):
 
 def generateReport(outFolder, newestSpecV3, oldestSpecV3):
   global timestamp
-  results_file = open(outFolder + "results.csv", "r")
+  results_file = open("out/results.csv", "r")
   csv_reader = reader(results_file)
 
   index = 0
@@ -119,12 +120,14 @@ def generateReport(outFolder, newestSpecV3, oldestSpecV3):
   for suiteKey in suitesKeys:
     commit = suitesMap[suiteKey]
     commit.runs = multisort(list(commit.runs), (('codegen_version', False), ('language', False)))
-    commit.total_runs = len(commit.runs)
+    commit.total_runs = 0
+    # commit.total_runs = len(commit.runs)
 
     for run in commit.runs:
       previous_run = None
       if run.codegen_version != "v3":
         continue
+      commit.total_runs += 1
       if previous_commit is not None:
         previous_run = run.find_match(previous_commit.runs)
       if run.generate_outcome != "success":
@@ -183,19 +186,20 @@ def generateReport(outFolder, newestSpecV3, oldestSpecV3):
     suitesKeys = suitesMap.keys()
 
   commits = list()
-  for suiteKey in suitesKeys:
-    print ("SUITE " + str(suiteKey))
-    commit = suitesMap[suiteKey]
-    langKeysv3 = sorted(commit.languagesv3.keys(), reverse = False)
-    langsv3 = list()
-    for langKeyv3 in langKeysv3:
-      langsv3.append(commit.languagesv3[langKeyv3])
-    commit.languagesv3 = multisort(list(langsv3), (('codegen_version', False), ('name', False)))
-    commits.append(commit)
+  commit = suiteNew
+  langKeysv3 = sorted(commit.languagesv3.keys(), reverse = False)
+  langsv3 = list()
+  for langKeyv3 in langKeysv3:
+    langsv3.append(commit.languagesv3[langKeyv3])
+  commit.languagesv3 = multisort(list(langsv3), (('codegen_version', False), ('name', False)))
+  commits.append(commit)
+
+  if not os.path.exists(outFolder):
+    os.makedirs(outFolder)
 
   with open('indexmdv3.mustache', 'r') as template:
     output = chevron.render(template, {'commits': commits})
-    file = outFolder + "reportV3Release_" + newestSpecV3 + "_" + oldestSpecV3 + "_" + timestamp + ".md"
+    file = outFolder + newestSpecV3 + ".md"
     result_file = open(file, "wt")
     result_file.write(output)
     result_file.close()
@@ -205,7 +209,7 @@ def main():
   global timestamp
 
   timestamp = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-  generateReport("out/", sys.argv[1], sys.argv[2])
+  generateReport("reports/releases/" + sys.argv[1] + "/", sys.argv[1], sys.argv[2])
 
 # here start main
 main()

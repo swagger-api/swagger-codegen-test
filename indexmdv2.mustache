@@ -24,6 +24,8 @@
 |Version|Language|Codegen Version|Job|Spec|Generate Outcome|Build Outcome|Generated Folder|
 |-|-|-|-|-|-|-|-|
 {{#runs}}
+{{#isV2}}
 |{{codegen_version}}|{{language}}|{{v2_version}}|{{job}}|[{{spec}}]({{spec_url}})|{{#generate_error}}***{{/generate_error}}{{generate_outcome}}{{#generate_error}}***{{/generate_error}}|{{#is_regression}}***REGRESSION {{build_outcome}}***{{/is_regression}}{{^is_regression}}{{#build_error}}***{{/build_error}}{{build_outcome}}{{#build_error}}***{{/build_error}}{{/is_regression}}|{{#is_success_generation}}[View]({{generated_folder_link}}){{/is_success_generation}}|
+{{/isV2}}
 {{/runs}}
 {{/commits}}

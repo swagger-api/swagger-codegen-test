@@ -4,14 +4,18 @@
 
 * test-framework.py
 * generate-report.py
-* test-framework-data.json
-* test-framework-data-....json
+* generate-report-v2.py
+* generate-report-v3.py 
+* config/release-110-requests-2-specs.json
+* config/*.json
 
 `test-framework.py` invokes GH workflow and analyze result into a result(s).csv
 
-`test-framework-data.json` defines tests to run
+`config/*.json` defines tests to run
 
-`generate-report.py` generates HTML report, either of all or 2 specific versions
+`generate-report.py` generates HTML/Markdown report, either of all or 2 specific versions
+`generate-report-v2.py` generates Markdown report for a specific v2 version, comparing with specified older v2 version
+`generate-report-v3.py` generates Markdown report for a specific v3 version, comparing with specified older v3 version
 
 related codegen test workflows are invoked in `swagger-codegen` repo (they must be defined in master branch)
 
@@ -84,6 +88,20 @@ v2 newest version to compare (e.g. `latest` for snapshot, or `2.4.19`)
 v3 newest version to compare (e.g. `latest` for snapshot, or `3.0.25`)
 v2 oldest version to compare (e.g. `latest` for snapshot, or `2.4.18`)
 v3 oldest version to compare (e.g. `latest` for snapshot, or `3.0.24`)
+
+
+To generate V3 specific release report run
+
+```
+chmod +x generate-report.py
+python3 ./generate-report-v3.py 3.0.37 3.0.38  
+```
+
+
+where the parameters are in order:
+
+v3 release version (e.g. `latest` for snapshot, or `3.0.25`)
+v3 oldest version to compare (e.g. `3.0.24`)
 
 
 ### GH WORKFLOW
