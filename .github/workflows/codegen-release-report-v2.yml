@@ -1,0 +1,49 @@
+name: Codegen V2 Release Report
+
+on:
+  # execute on demand
+  workflow_dispatch:
+    branches: ["main"]
+    inputs:
+      release:
+        description: 'V2 release version'
+        required: true
+      previousRelease:
+        description: 'previous V2 release version'
+        required: true
+
+jobs:
+
+  run-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: runTestReport
+        id: runTestReport
+        run: |
+          echo "python version"
+          python --version
+          pip --version
+          echo "installing packages"
+          pip install chevron
+          echo "running V2 release report with Versions: ${{ env.V2_RELEASE }} ${{ env.V2_PREVIOUS_RELEASE }}"
+          python ./generate-report-v2.py ${{ env.V2_RELEASE }} ${{ env.V2_PREVIOUS_RELEASE }}
+      - id: logCommitResult
+        run: |
+          echo "committing result into develop or master branch"
+          ls -la reports/releases
+      - uses: EndBug/add-and-commit@v7
+        id: commitResult
+        with:
+          add: 'releases/reports'
+          message: 'Add codegen V2 release report (GH Workflow codegen-release-report-v2.yml)'
+          push: true
+    env:
+      V2_RELEASE: ${{ github.event.inputs.release }}
+      V2_PREVIOUS_RELEASE: ${{ github.event.inputs.previousRelease }}
