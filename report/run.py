@@ -1,6 +1,6 @@
 class Run:
 
-    def __init__(self, commit=None, timestamp=None, language=None, job=None, spec=None, generate_outcome=None, build_outcome=None, generate_error=None, build_error=None, is_regression=None, codegen_version=None, v2_version=None, v3_version=None, spec_url=None, generated_folder_link=None):
+    def __init__(self, commit=None, timestamp=None, language=None, job=None, spec=None, generate_outcome=None, build_outcome=None, generate_error=None, build_error=None, is_regression=None, codegen_version=None, v2_version=None, v3_version=None, spec_url=None, generated_folder_link=None, isV2=False):
         self.commit = commit
         self.timestamp = timestamp
         self.language = language
@@ -17,6 +17,7 @@ class Run:
         self.v3_version = v3_version
         self.spec_url = spec_url
         self.generated_folder_link = generated_folder_link
+        self.isV2 = isV2
 
     def find_match(self, runs):
         for run in runs:
