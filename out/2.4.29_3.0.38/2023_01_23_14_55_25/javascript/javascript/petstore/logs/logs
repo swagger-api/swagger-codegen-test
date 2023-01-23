@@ -1,0 +1,143 @@
+
+****** BUILD ******
+
+
+****** executing: npm install ******
+
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated superagent@3.7.0: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+npm WARN deprecated formatio@1.1.1: This package is unmaintained. Use @sinonjs/formatio instead
+npm WARN deprecated jade@0.26.3: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated mkdirp@0.5.0: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated samsam@1.1.2: This package has been deprecated in favour of @sinonjs/samsam
+npm WARN deprecated samsam@1.1.3: This package has been deprecated in favour of @sinonjs/samsam
+npm WARN deprecated mkdirp@0.3.0: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+npm WARN deprecated graceful-fs@2.0.3: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN swagger_petstore@1.0.5 No repository field.
+npm WARN swagger_petstore@1.0.5 license should be a valid SPDX license expression
+
+added 65 packages from 431 contributors and audited 65 packages in 2.063s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 9 vulnerabilities (1 low, 2 moderate, 4 high, 2 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run test ******
+
+
+> swagger_petstore@1.0.5 test /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript___petstore___
+> mocha --recursive
+
+
+
+  (package)
+    PetApi
+      addPet
+        ✓ should call addPet successfully
+      deletePet
+        ✓ should call deletePet successfully
+      findPetsByStatus
+        ✓ should call findPetsByStatus successfully
+      findPetsByTags
+        ✓ should call findPetsByTags successfully
+      getPetById
+        ✓ should call getPetById successfully
+      updatePet
+        ✓ should call updatePet successfully
+      updatePetWithForm
+        ✓ should call updatePetWithForm successfully
+      uploadFile
+        ✓ should call uploadFile successfully
+
+  (package)
+    StoreApi
+      deleteOrder
+        ✓ should call deleteOrder successfully
+      getInventory
+        ✓ should call getInventory successfully
+      getOrderById
+        ✓ should call getOrderById successfully
+      placeOrder
+        ✓ should call placeOrder successfully
+
+  (package)
+    UserApi
+      createUser
+        ✓ should call createUser successfully
+      createUsersWithArrayInput
+        ✓ should call createUsersWithArrayInput successfully
+      createUsersWithListInput
+        ✓ should call createUsersWithListInput successfully
+      deleteUser
+        ✓ should call deleteUser successfully
+      getUserByName
+        ✓ should call getUserByName successfully
+      loginUser
+        ✓ should call loginUser successfully
+      logoutUser
+        ✓ should call logoutUser successfully
+      updateUser
+        ✓ should call updateUser successfully
+
+  (package)
+    ApiResponse
+      ✓ should create an instance of ApiResponse
+      ✓ should have the property code (base name: "code")
+      ✓ should have the property type (base name: "type")
+      ✓ should have the property message (base name: "message")
+
+  (package)
+    Category
+      ✓ should create an instance of Category
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    Order
+      ✓ should create an instance of Order
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property petId (base name: "petId")
+      ✓ should have the property quantity (base name: "quantity")
+      ✓ should have the property shipDate (base name: "shipDate")
+      ✓ should have the property status (base name: "status")
+      ✓ should have the property complete (base name: "complete")
+
+  (package)
+    Pet
+      ✓ should create an instance of Pet
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property category (base name: "category")
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property photoUrls (base name: "photoUrls")
+      ✓ should have the property tags (base name: "tags")
+      ✓ should have the property status (base name: "status")
+
+  (package)
+    Tag
+      ✓ should create an instance of Tag
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    User
+      ✓ should create an instance of User
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property username (base name: "username")
+      ✓ should have the property firstName (base name: "firstName")
+      ✓ should have the property lastName (base name: "lastName")
+      ✓ should have the property email (base name: "email")
+      ✓ should have the property password (base name: "password")
+      ✓ should have the property phone (base name: "phone")
+      ✓ should have the property userStatus (base name: "userStatus")
+
+
+  53 passing (38ms)
+
+
+****** executed all buildcommand ******
+

@@ -1,0 +1,62 @@
+
+****** BUILD ******
+
+
+****** executing: sbt compile ******
+
+Downloading sbt launcher for 1.8.2:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.8.2/sbt-launch-1.8.2.jar
+    To  /home/runner/.sbt/launchers/1.8.2/sbt-launch.jar
+Downloading sbt launcher 1.8.2 md5 hash:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.8.2/sbt-launch-1.8.2.jar.md5
+    To  /home/runner/.sbt/launchers/1.8.2/sbt-launch.jar.md5
+/home/runner/.sbt/launchers/1.8.2/sbt-launch.jar: OK
+[info] [launcher] getting org.scala-sbt sbt 1.8.2  (this may take some time)...
+[info] [launcher] getting Scala 2.12.17 (for sbt)...
+[0m[[0m[0minfo[0m] [0m[0mUpdated file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/project/build.properties: set sbt.version to 1.8.2[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.2 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/project[0m
+/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/build.sbt:31: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+publishArtifact in (Compile, packageDoc) := false
+                ^
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project scala-v3___petstore3___ from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to swagger-scala-client (in build file:/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/)[0m
+[0m[[0m[0minfo[0m] [0m[0mExecuting in batch mode. For better performance use sbt's shell[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 13 Scala sources to /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/target/scala-2.11/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.11' for Scala 2.11.12. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 10.156s.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala:269:88: username is already defined as value username[0m
+[0m[[0m[31merror[0m] [0m[0m  def updateUser(username: String, body: Option[User] = None, id: Option[Long] = None, username: Option[String] = None, firstName: Option[String] = None, lastName: Option[String] = None, email: Option[String] = None, password: Option[String] = None, phone: Option[String] = None, userStatus: Option[Integer] = None) = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala:293:93: username is already defined as value username[0m
+[0m[[0m[31merror[0m] [0m[0m  def updateUserAsync(username: String, body: Option[User] = None, id: Option[Long] = None, username: Option[String] = None, firstName: Option[String] = None, lastName: Option[String] = None, email: Option[String] = None, password: Option[String] = None, phone: Option[String] = None, userStatus: Option[Integer] = None) = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala:420:5: username is already defined as value username[0m
+[0m[[0m[31merror[0m] [0m[0m    username: Option[String] = None,[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala:294:25: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m      helper.updateUser(username, body, id, username, firstName, lastName, email, password, phone, userStatus)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala:270:50: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m    val await = Try(Await.result(updateUserAsync(username, body, id, username, firstName, lastName, email, password, phone, userStatus), Duration.Inf))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala:430:46: ambiguous reference to overloaded definition,[0m
+[0m[[0m[31merror[0m] [0m[0mboth value username of type Option[String][0m
+[0m[[0m[31merror[0m] [0m[0mand  value username of type String[0m
+[0m[[0m[31merror[0m] [0m[0mmatch expected type ?[0m
+[0m[[0m[31merror[0m] [0m[0m      replaceAll("\\{" + "username" + "\\}", username.toString))[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3___/src/main/scala/io/swagger/client/api/UserApi.scala:436:9: ambiguous reference to overloaded definition,[0m
+[0m[[0m[31merror[0m] [0m[0mboth value username of type Option[String][0m
+[0m[[0m[31merror[0m] [0m[0mand  value username of type String[0m
+[0m[[0m[31merror[0m] [0m[0mmatch expected type ?[0m
+[0m[[0m[31merror[0m] [0m[0m    if (username == null) throw new Exception("Missing required parameter 'username' when calling UserApi->updateUser")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 14 s, completed Jan 23, 2023 3:15:02 PM[0m
+[0J

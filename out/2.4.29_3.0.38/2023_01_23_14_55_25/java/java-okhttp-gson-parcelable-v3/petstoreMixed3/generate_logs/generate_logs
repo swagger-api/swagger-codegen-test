@@ -1,0 +1,451 @@
+
+****** generate ******
+
+LANGUAGE java
+JOB_NAME java-okhttp-gson-parcelable-v3___petstoreMixed3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstoreMixed3.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstoreMixed3.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+15:06:56.922 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+15:06:56.975 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.976 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.977 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.977 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.978 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.978 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.978 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.981 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.983 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:56.984 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.984 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.986 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.986 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.987 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.987 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.988 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.988 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:56.988 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.002 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.002 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.003 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.005 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.005 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.006 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.006 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.006 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.040 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.042 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.042 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.044 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.044 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.045 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.045 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.046 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.046 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.046 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.047 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.047 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.048 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.048 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.051 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.051 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.051 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.052 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.053 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.053 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.053 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.054 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.060 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.061 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.062 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.062 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.063 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.069 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.070 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.070 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.070 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.070 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.071 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.071 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.072 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.072 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.072 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.081 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.081 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.082 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.083 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.083 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.083 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.098 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.099 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.100 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.100 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.100 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.101 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.102 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.102 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.102 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.103 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:57.123 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.123 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.123 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.124 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.125 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.131 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Float (reserved word) cannot be used as model name. Renamed to ModelFloat
+15:06:57.131 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Double (reserved word) cannot be used as model name. Renamed to ModelDouble
+15:06:57.131 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Byte (reserved word) cannot be used as model name. Renamed to ModelByte
+15:06:57.132 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Float (reserved word) cannot be used as model name. Renamed to ModelFloat
+15:06:57.132 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Double (reserved word) cannot be used as model name. Renamed to ModelDouble
+15:06:57.132 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Byte (reserved word) cannot be used as model name. Renamed to ModelByte
+15:06:57.133 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Float (reserved word) cannot be used as model name. Renamed to ModelFloat
+15:06:57.133 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Double (reserved word) cannot be used as model name. Renamed to ModelDouble
+15:06:57.133 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Byte (reserved word) cannot be used as model name. Renamed to ModelByte
+15:06:57.134 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - _123List (model name starts with number) cannot be used as model name. Renamed to Model123List
+15:06:57.134 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.135 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - _123Number (model name starts with number) cannot be used as model name. Renamed to Model123Number
+15:06:57.145 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.145 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.146 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.150 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.150 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.153 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.153 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.153 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.153 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.154 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.154 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.154 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:57.154 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.155 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.155 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.155 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.155 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.156 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.156 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.156 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.156 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.157 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.157 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.157 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.157 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.157 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:57.158 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.158 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:57.351 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AdditionalPropertiesClass.java
+15:06:57.358 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AdditionalPropertiesClass.md
+15:06:57.406 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AllOfPupPetsItems.java
+15:06:57.412 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AllOfPupPetsItems.md
+15:06:57.449 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AllOfSubCategoryCategory.java
+15:06:57.454 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AllOfSubCategoryCategory.md
+15:06:57.488 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AllOfSubCategoryPetsItems.java
+15:06:57.492 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AllOfSubCategoryPetsItems.md
+15:06:57.528 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AllPetsResponse.java
+15:06:57.536 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AllPetsResponse.md
+15:06:57.598 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Animal.java
+15:06:57.605 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Animal.md
+15:06:57.671 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AnimalAnimalIdBody.java
+15:06:57.679 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AnimalAnimalIdBody.md
+15:06:57.737 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AnimalFarm.java
+15:06:57.744 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AnimalFarm.md
+15:06:57.755 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/AnyOfparrotBodyParrotsItems.java
+15:06:57.762 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AnyOfparrotBodyParrotsItems.md
+15:06:57.819 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ArrayOfArrayOfNumberOnly.java
+15:06:57.827 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ArrayOfArrayOfNumberOnly.md
+15:06:57.883 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ArrayOfNumberOnly.java
+15:06:57.890 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ArrayOfNumberOnly.md
+15:06:57.946 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ArrayTest.java
+15:06:57.953 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ArrayTest.md
+15:06:58.018 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Capitalization.java
+15:06:58.026 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Capitalization.md
+15:06:58.074 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Cat.java
+15:06:58.079 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Cat.md
+15:06:58.108 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Category.java
+15:06:58.113 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Category.md
+15:06:58.140 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ClassModel.java
+15:06:58.144 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ClassModel.md
+15:06:58.173 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Client.java
+15:06:58.177 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Client.md
+15:06:58.207 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Dog.java
+15:06:58.211 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Dog.md
+15:06:58.241 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/DogDogIdBody.java
+15:06:58.246 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/DogDogIdBody.md
+15:06:58.277 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/EnumArrays.java
+15:06:58.286 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/EnumArrays.md
+15:06:58.293 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/EnumClass.java
+15:06:58.295 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/EnumClass.md
+15:06:58.324 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/EnumFormBody.java
+15:06:58.327 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/EnumFormBody.md
+15:06:58.354 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/EnumTest.java
+15:06:58.357 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/EnumTest.md
+15:06:58.374 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/FakeBody.java
+15:06:58.378 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/FakeBody.md
+15:06:58.396 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/FakeBody1.java
+15:06:58.399 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/FakeBody1.md
+15:06:58.415 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/FakeJsonFormDataBody.java
+15:06:58.417 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/FakeJsonFormDataBody.md
+15:06:58.434 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/FormatTest.java
+15:06:58.437 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/FormatTest.md
+15:06:58.461 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/HasOnlyReadOnly.java
+15:06:58.464 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/HasOnlyReadOnly.md
+15:06:58.482 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/InlineResponse200.java
+15:06:58.485 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/InlineResponse200.md
+15:06:58.488 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/InlineResponse2001.java
+15:06:58.491 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/InlineResponse2001.md
+15:06:58.507 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/List.java
+15:06:58.510 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/List.md
+15:06:58.525 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Macaw.java
+15:06:58.528 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Macaw.md
+15:06:58.555 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/MapTest.java
+15:06:58.557 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/MapTest.md
+15:06:58.576 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/MixedPropertiesAndAdditionalPropertiesClass.java
+15:06:58.580 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/MixedPropertiesAndAdditionalPropertiesClass.md
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.581 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.582 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.583 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.602 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Model200Response.java
+15:06:58.603 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - 200_response (model name starts with number) cannot be used as model name. Renamed to Model200Response
+15:06:58.606 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Model200Response.md
+15:06:58.607 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.607 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.608 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.608 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.608 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.609 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.609 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.609 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.626 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ModelApiResponse.java
+15:06:58.627 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.634 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ModelApiResponse.md
+15:06:58.636 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.636 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.636 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.636 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.636 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.637 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.637 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:58.637 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.637 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.637 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.655 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ModelReturn.java
+15:06:58.655 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - Return (reserved word) cannot be used as model name. Renamed to ModelReturn
+15:06:58.657 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ModelReturn.md
+15:06:58.674 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Name.java
+15:06:58.676 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Name.md
+15:06:58.697 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/NullableEnumModel.java
+15:06:58.700 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/NullableEnumModel.md
+15:06:58.722 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/NumberOnly.java
+15:06:58.725 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/NumberOnly.md
+15:06:58.733 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OneOfAllPetsResponseItems.java
+15:06:58.735 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OneOfAllPetsResponseItems.md
+15:06:58.739 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OneOfPartMasterDestination.java
+15:06:58.745 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OneOfPartMasterDestination.md
+15:06:58.748 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OneOfPartMasterOrigin.java
+15:06:58.751 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OneOfPartMasterOrigin.md
+15:06:58.754 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OneOfPup.java
+15:06:58.756 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OneOfPup.md
+15:06:58.759 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OneOfSinglePetResponsePet.java
+15:06:58.762 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OneOfSinglePetResponsePet.md
+15:06:58.765 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OneOfinlineResponse200ParrotsItems.java
+15:06:58.767 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OneOfinlineResponse200ParrotsItems.md
+15:06:58.770 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OneOfvalMembersValMemberItems.java
+15:06:58.775 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OneOfvalMembersValMemberItems.md
+15:06:58.795 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Order.java
+15:06:58.798 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Order.md
+15:06:58.814 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OuterComposite.java
+15:06:58.817 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OuterComposite.md
+15:06:58.822 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/OuterEnum.java
+15:06:58.824 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/OuterEnum.md
+15:06:58.839 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Parakeet.java
+15:06:58.842 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Parakeet.md
+15:06:58.860 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ParrotBody.java
+15:06:58.863 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ParrotBody.md
+15:06:58.868 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ParrotBody1.java
+15:06:58.870 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ParrotBody1.md
+15:06:58.891 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/PartFour.java
+15:06:58.894 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PartFour.md
+15:06:58.910 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/PartMaster.java
+15:06:58.915 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PartMaster.md
+15:06:58.930 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/PartOne.java
+15:06:58.933 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PartOne.md
+15:06:58.957 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/PartThree.java
+15:06:58.960 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PartThree.md
+15:06:58.976 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/PartTwo.java
+15:06:58.979 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PartTwo.md
+15:06:59.007 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Pet.java
+15:06:59.009 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Pet.md
+15:06:59.028 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/PetIdUploadImageBody.java
+15:06:59.032 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PetIdUploadImageBody.md
+15:06:59.046 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/PetPetIdBody.java
+15:06:59.049 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PetPetIdBody.md
+15:06:59.066 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Pup.java
+15:06:59.069 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Pup.md
+15:06:59.084 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ReadOnlyFirst.java
+15:06:59.087 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ReadOnlyFirst.md
+15:06:59.106 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/SinglePetResponse.java
+15:06:59.111 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/SinglePetResponse.md
+15:06:59.129 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/SpecialModelName.java
+15:06:59.131 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/SpecialModelName.md
+15:06:59.147 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/SubCategory.java
+15:06:59.150 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/SubCategory.md
+15:06:59.163 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Tag.java
+15:06:59.165 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Tag.md
+15:06:59.179 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/User.java
+15:06:59.182 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/User.md
+15:06:59.195 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/UserWrapper.java
+15:06:59.197 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/UserWrapper.md
+15:06:59.211 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/Users.java
+15:06:59.213 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/Users.md
+15:06:59.226 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ValMemberChoice1.java
+15:06:59.229 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ValMemberChoice1.md
+15:06:59.242 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ValMemberChoice2.java
+15:06:59.244 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ValMemberChoice2.md
+15:06:59.259 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/model/ValMembers.java
+15:06:59.261 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ValMembers.md
+15:06:59.305 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.306 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.308 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.308 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.308 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.308 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.311 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.312 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.312 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.314 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.315 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.315 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.315 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.315 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.316 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.317 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.317 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.317 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.317 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.317 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.318 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.318 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.318 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.318 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.319 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.319 [Thread-1] WARN  i.s.c.v.g.java.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+15:06:59.319 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.319 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.320 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.320 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.320 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.320 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.321 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.321 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.401 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.402 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.403 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.403 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.403 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.403 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.403 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.403 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.403 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.409 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.409 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.409 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.409 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.409 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.409 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - String to be sanitized is null. Default to Object
+15:06:59.430 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/AnimalApi.java
+15:06:59.433 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/AnimalApiTest.java
+15:06:59.442 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AnimalApi.md
+15:06:59.455 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/AnotherFakeApi.java
+15:06:59.458 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/AnotherFakeApiTest.java
+15:06:59.466 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/AnotherFakeApi.md
+15:06:59.478 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/DogApi.java
+15:06:59.480 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/DogApiTest.java
+15:06:59.485 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/DogApi.md
+15:06:59.498 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/FakeApi.java
+15:06:59.501 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/FakeApiTest.java
+15:06:59.507 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/FakeApi.md
+15:06:59.518 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/FakeClassnameTags123Api.java
+15:06:59.520 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/FakeClassnameTags123ApiTest.java
+15:06:59.524 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/FakeClassnameTags123Api.md
+15:06:59.534 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/MasterApi.java
+15:06:59.536 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/MasterApiTest.java
+15:06:59.541 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/MasterApi.md
+15:06:59.551 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/ParrotApi.java
+15:06:59.553 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/ParrotApiTest.java
+15:06:59.558 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/ParrotApi.md
+15:06:59.570 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/PetApi.java
+15:06:59.572 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/PetApiTest.java
+15:06:59.578 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/PetApi.md
+15:06:59.588 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/StoreApi.java
+15:06:59.591 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/StoreApiTest.java
+15:06:59.596 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/StoreApi.md
+15:06:59.607 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/api/UserApi.java
+15:06:59.609 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/test/java/io/swagger/client/api/UserApiTest.java
+15:06:59.615 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/docs/UserApi.md
+15:06:59.617 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/pom.xml
+15:06:59.623 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/README.md
+15:06:59.624 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/build.gradle
+15:06:59.625 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/build.sbt
+15:06:59.626 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/settings.gradle
+15:06:59.627 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/gradle.properties
+15:06:59.627 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/AndroidManifest.xml
+15:06:59.628 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/.travis.yml
+15:06:59.632 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/ApiClient.java
+15:06:59.633 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/StringUtil.java
+15:06:59.634 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/auth/HttpBasicAuth.java
+15:06:59.635 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/auth/ApiKeyAuth.java
+15:06:59.637 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/auth/OAuth.java
+15:06:59.638 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/auth/OAuthFlow.java
+15:06:59.638 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/gradlew
+15:06:59.639 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/gradlew.bat
+15:06:59.640 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/gradle/wrapper/gradle-wrapper.properties
+15:06:59.641 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/gradle/wrapper/gradle-wrapper.jar
+15:06:59.642 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/git_push.sh
+15:06:59.642 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/.gitignore
+15:06:59.644 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/ApiException.java
+15:06:59.645 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/Configuration.java
+15:06:59.646 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/Pair.java
+15:06:59.647 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/auth/Authentication.java
+15:06:59.648 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/ApiCallback.java
+15:06:59.649 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/ApiResponse.java
+15:06:59.653 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/JSON.java
+15:06:59.654 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/ProgressRequestBody.java
+15:06:59.655 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/ProgressResponseBody.java
+15:06:59.656 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/src/main/java/io/swagger/client/GzipRequestInterceptor.java
+15:06:59.660 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/.swagger-codegen-ignore
+15:06:59.660 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/java-okhttp-gson-parcelable-v3___petstoreMixed3___/.swagger-codegen/VERSION

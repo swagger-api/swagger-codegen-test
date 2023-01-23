@@ -1,0 +1,33 @@
+
+****** generate ******
+
+LANGUAGE kotlin-server
+JOB_NAME kotlin-server-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+15:11:38.542 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+15:11:38.831 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/Address.kt
+15:11:38.850 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/ApiResponse.kt
+15:11:38.864 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/Category.kt
+15:11:38.879 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/Customer.kt
+15:11:38.920 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/Order.kt
+15:11:38.951 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/Pet.kt
+15:11:38.961 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/Tag.kt
+15:11:38.981 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/models/User.kt
+15:11:39.131 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/apis/PetApi.kt
+15:11:39.144 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/apis/StoreApi.kt
+15:11:39.168 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/apis/UserApi.kt
+15:11:39.181 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/README.md
+15:11:39.183 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/Dockerfile
+15:11:39.185 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/build.gradle
+15:11:39.186 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/settings.gradle
+15:11:39.186 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/gradle.properties
+15:11:39.200 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/AppMain.kt
+15:11:39.205 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/Configuration.kt
+15:11:39.215 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/Paths.kt
+15:11:39.218 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/resources/application.conf
+15:11:39.219 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/resources/logback.xml
+15:11:39.220 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/src/main/kotlin/io/swagger/server/infrastructure/ApiKeyAuth.kt
+15:11:39.223 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/.swagger-codegen-ignore
+15:11:39.224 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3___/.swagger-codegen/VERSION

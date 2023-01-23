@@ -1,0 +1,247 @@
+
+****** BUILD ******
+
+
+****** executing: python3 setup.py install --user ******
+
+running install
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running bdist_egg
+running egg_info
+creating swagger_client.egg-info
+writing swagger_client.egg-info/PKG-INFO
+writing dependency_links to swagger_client.egg-info/dependency_links.txt
+writing requirements to swagger_client.egg-info/requires.txt
+writing top-level names to swagger_client.egg-info/top_level.txt
+writing manifest file 'swagger_client.egg-info/SOURCES.txt'
+reading manifest file 'swagger_client.egg-info/SOURCES.txt'
+writing manifest file 'swagger_client.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/swagger_client
+copying swagger_client/configuration.py -> build/lib/swagger_client
+copying swagger_client/rest.py -> build/lib/swagger_client
+copying swagger_client/__init__.py -> build/lib/swagger_client
+copying swagger_client/api_client.py -> build/lib/swagger_client
+creating build/lib/test
+copying test/test_address.py -> build/lib/test
+copying test/test_user_api.py -> build/lib/test
+copying test/test_customer.py -> build/lib/test
+copying test/test_store_api.py -> build/lib/test
+copying test/test_user.py -> build/lib/test
+copying test/test_tag.py -> build/lib/test
+copying test/test_pet_api.py -> build/lib/test
+copying test/test_pet.py -> build/lib/test
+copying test/__init__.py -> build/lib/test
+copying test/test_order.py -> build/lib/test
+copying test/test_api_response.py -> build/lib/test
+copying test/test_category.py -> build/lib/test
+creating build/lib/swagger_client/models
+copying swagger_client/models/pet.py -> build/lib/swagger_client/models
+copying swagger_client/models/category.py -> build/lib/swagger_client/models
+copying swagger_client/models/address.py -> build/lib/swagger_client/models
+copying swagger_client/models/api_response.py -> build/lib/swagger_client/models
+copying swagger_client/models/tag.py -> build/lib/swagger_client/models
+copying swagger_client/models/order.py -> build/lib/swagger_client/models
+copying swagger_client/models/user.py -> build/lib/swagger_client/models
+copying swagger_client/models/__init__.py -> build/lib/swagger_client/models
+copying swagger_client/models/customer.py -> build/lib/swagger_client/models
+creating build/lib/swagger_client/api
+copying swagger_client/api/user_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/store_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/pet_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/__init__.py -> build/lib/swagger_client/api
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/swagger_client
+creating build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/pet.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/category.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/address.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/api_response.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/tag.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/order.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/user.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/customer.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/configuration.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/rest.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/api_client.py -> build/bdist.linux-x86_64/egg/swagger_client
+creating build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/user_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/store_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/pet_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+creating build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_address.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_user_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_customer.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_store_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_user.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_tag.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_pet_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_pet.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/__init__.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_order.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_api_response.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_category.py -> build/bdist.linux-x86_64/egg/test
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/pet.py to pet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/category.py to category.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/address.py to address.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/api_response.py to api_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/tag.py to tag.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/order.py to order.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/user.py to user.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/customer.py to customer.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/configuration.py to configuration.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/rest.py to rest.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api_client.py to api_client.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/user_api.py to user_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/store_api.py to store_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/pet_api.py to pet_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_address.py to test_address.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_user_api.py to test_user_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_customer.py to test_customer.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_store_api.py to test_store_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_user.py to test_user.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_tag.py to test_tag.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_pet_api.py to test_pet_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_pet.py to test_pet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_order.py to test_order.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_api_response.py to test_api_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_category.py to test_category.cpython-311.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+creating dist
+creating 'dist/swagger_client-1.0.0-py3.11.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing swagger_client-1.0.0-py3.11.egg
+Copying swagger_client-1.0.0-py3.11.egg to /home/runner/.local/lib/python3.11/site-packages
+Adding swagger-client 1.0.0 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/swagger_client-1.0.0-py3.11.egg
+Processing dependencies for swagger-client==1.0.0
+Searching for python-dateutil
+Reading https://pypi.org/simple/python-dateutil/
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-1.4 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning:  is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-1.4.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-1.5 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.2 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.3 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.4.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.4.1.post1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.4.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.4.2 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.5.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.5.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.5.2 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.5.3 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.6.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.6.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.7.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.7.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.7.2 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.7.3 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.7.4 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.7.5 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.8.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.8.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: dateutil-2.8.2 is an invalid version and will not be supported in a future release
+  warnings.warn(
+Downloading https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl#sha256=961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9
+Best match: python-dateutil 2.8.2
+Processing python_dateutil-2.8.2-py2.py3-none-any.whl
+Installing python_dateutil-2.8.2-py2.py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding python-dateutil 2.8.2 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/python_dateutil-2.8.2-py3.11.egg
+Searching for certifi
+Reading https://pypi.org/simple/certifi/
+Downloading https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl#sha256=4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
+Best match: certifi 2022.12.7
+Processing certifi-2022.12.7-py3-none-any.whl
+Installing certifi-2022.12.7-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding certifi 2022.12.7 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/certifi-2022.12.7-py3.11.egg
+Searching for six>=1.10
+Reading https://pypi.org/simple/six/
+Downloading https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl#sha256=8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
+Best match: six 1.16.0
+Processing six-1.16.0-py2.py3-none-any.whl
+Installing six-1.16.0-py2.py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding six 1.16.0 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/six-1.16.0-py3.11.egg
+Searching for urllib3>=1.15
+Reading https://pypi.org/simple/urllib3/
+Downloading https://files.pythonhosted.org/packages/a2/e6/439fae33e93f8aa172d339928f7a7766bd3a5c6c1e1ef2f786d73ca9b52c/urllib3-2.0.0a3-py3-none-any.whl#sha256=db93f543bdff5ca96a0f1133028b7f50dc998a0c78df75dd08dfc37fafcaa520
+Best match: urllib3 2.0.0a3
+Processing urllib3-2.0.0a3-py3-none-any.whl
+Installing urllib3-2.0.0a3-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding urllib3 2.0.0a3 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/urllib3-2.0.0a3-py3.11.egg
+Finished processing dependencies for swagger-client==1.0.0
+
+****** executing: pip3 install nose2 --user ******
+
+Collecting nose2
+  Downloading nose2-0.12.0-py2.py3-none-any.whl (152 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 152.8/152.8 kB 3.0 MB/s eta 0:00:00
+Installing collected packages: nose2
+Successfully installed nose2-0.12.0
+
+****** executing: python3 -m nose2 ******
+
+...........................
+----------------------------------------------------------------------
+Ran 27 tests in 0.141s
+
+OK
+
+****** executed all buildcommand ******
+
