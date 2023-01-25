@@ -1,0 +1,43 @@
+# coding: utf-8
+
+# flake8: noqa
+from __future__ import absolute_import
+# import models into model package
+from swagger_server.models.all_of_sub_category_category import AllOfSubCategoryCategory
+from swagger_server.models.all_of_sub_category_pets_items import AllOfSubCategoryPetsItems
+from swagger_server.models.all_pets_response import AllPetsResponse
+from swagger_server.models.any_ofparrot_body_parrots_items import AnyOfparrotBodyParrotsItems
+from swagger_server.models.api_response import ApiResponse
+from swagger_server.models.cat import Cat
+from swagger_server.models.category import Category
+from swagger_server.models.dog import Dog
+from swagger_server.models.inline_response200 import InlineResponse200
+from swagger_server.models.inline_response2001 import InlineResponse2001
+from swagger_server.models.macaw import Macaw
+from swagger_server.models.nullable_enum_model import NullableEnumModel
+from swagger_server.models.one_of_all_pets_response_items import OneOfAllPetsResponseItems
+from swagger_server.models.one_of_part_master_destination import OneOfPartMasterDestination
+from swagger_server.models.one_of_part_master_origin import OneOfPartMasterOrigin
+from swagger_server.models.one_of_pet_part_items import OneOfPetPartItems
+from swagger_server.models.one_of_pup import OneOfPup
+from swagger_server.models.one_ofinline_response200_parrots_items import OneOfinlineResponse200ParrotsItems
+from swagger_server.models.one_ofval_members_val_member_items import OneOfvalMembersValMemberItems
+from swagger_server.models.order import Order
+from swagger_server.models.parakeet import Parakeet
+from swagger_server.models.parrot_body import ParrotBody
+from swagger_server.models.parrot_body1 import ParrotBody1
+from swagger_server.models.part_four import PartFour
+from swagger_server.models.part_master import PartMaster
+from swagger_server.models.part_one import PartOne
+from swagger_server.models.part_three import PartThree
+from swagger_server.models.part_two import PartTwo
+from swagger_server.models.pet import Pet
+from swagger_server.models.pet_pet_id_body import PetPetIdBody
+from swagger_server.models.pup import Pup
+from swagger_server.models.sub_category import SubCategory
+from swagger_server.models.tag import Tag
+from swagger_server.models.test import Test
+from swagger_server.models.user import User
+from swagger_server.models.val_member_choice1 import ValMemberChoice1
+from swagger_server.models.val_member_choice2 import ValMemberChoice2
+from swagger_server.models.val_members import ValMembers

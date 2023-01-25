@@ -1,0 +1,20 @@
+
+****** generate ******
+
+LANGUAGE typescript-angular
+JOB_NAME typescript-angular-v8-with-interface-v3___petstore3fake___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3fake.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+10:49:53.477 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+Exception in thread "Thread-1" java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at io.swagger.codegen.v3.utils.SemVer.<init>(SemVer.java:11)
+	at io.swagger.codegen.v3.generators.typescript.TypeScriptAngularClientCodegen.determineNgVersion(TypeScriptAngularClientCodegen.java:197)
+	at io.swagger.codegen.v3.generators.typescript.TypeScriptAngularClientCodegen.processOpts(TypeScriptAngularClientCodegen.java:113)
+	at io.swagger.codegen.v3.DefaultGenerator.configureGeneratorProperties(DefaultGenerator.java:215)
+	at io.swagger.codegen.v3.DefaultGenerator.generate(DefaultGenerator.java:782)
+	at io.swagger.codegen.v3.cli.cmd.Generate.run(Generate.java:388)
+	at java.lang.Thread.run(Thread.java:750)

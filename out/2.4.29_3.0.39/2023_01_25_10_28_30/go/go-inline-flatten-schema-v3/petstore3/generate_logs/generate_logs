@@ -1,0 +1,61 @@
+
+****** generate ******
+
+LANGUAGE go
+JOB_NAME go-inline-flatten-schema-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+10:45:02.065 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+10:45:02.233 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.235 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.236 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.236 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.237 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.245 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.246 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.246 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.247 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.247 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.251 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.433 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_address.go
+10:45:02.448 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/Address.md
+10:45:02.467 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_category.go
+10:45:02.478 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/Category.md
+10:45:02.496 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_customer.go
+10:45:02.507 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/Customer.md
+10:45:02.507 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.508 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.508 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.509 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.510 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.534 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_api_response.go
+10:45:02.536 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.539 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/ModelApiResponse.md
+10:45:02.554 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_order.go
+10:45:02.568 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/Order.md
+10:45:02.577 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_pet.go
+10:45:02.585 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/Pet.md
+10:45:02.597 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_tag.go
+10:45:02.601 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/Tag.md
+10:45:02.613 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/model_user.go
+10:45:02.617 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/User.md
+10:45:02.751 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.753 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.753 [Thread-1] WARN  i.s.c.v.g.go.AbstractGoCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to model_ApiResponse
+10:45:02.861 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/api_pet.go
+10:45:02.880 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/PetApi.md
+10:45:02.907 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/api_store.go
+10:45:02.916 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/StoreApi.md
+10:45:02.937 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/api_user.go
+10:45:02.946 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/docs/UserApi.md
+10:45:03.013 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/api/swagger.yaml
+10:45:03.021 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/README.md
+10:45:03.023 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/git_push.sh
+10:45:03.023 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/.gitignore
+10:45:03.041 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/configuration.go
+10:45:03.046 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/client.go
+10:45:03.048 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/response.go
+10:45:03.048 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/.travis.yml
+10:45:03.056 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/.swagger-codegen-ignore
+10:45:03.057 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/go-inline-flatten-schema-v3___petstore3___/.swagger-codegen/VERSION

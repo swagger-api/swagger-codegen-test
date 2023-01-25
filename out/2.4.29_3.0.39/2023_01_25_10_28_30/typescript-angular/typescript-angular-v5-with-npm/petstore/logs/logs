@@ -1,0 +1,560 @@
+
+****** BUILD ******
+
+
+****** executing: npm i ******
+
+npm WARN deprecated @angular/http@5.2.11: Package no longer supported. Use @angular/common instead, see https://angular.io/guide/deprecations#angularhttp
+npm WARN deprecated rollup-plugin-commonjs@9.3.4: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-commonjs.
+npm WARN deprecated rollup-plugin-node-resolve@3.4.0: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-node-resolve.
+npm WARN deprecated chokidar@1.7.0: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+
+> node-sass@4.14.1 install /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.14.1/linux-x64-72_binding.node
+Download complete
+Binary saved to /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/node-sass/vendor/linux-x64-72/binding.node
+Caching binary to /home/runner/.npm/node-sass/4.14.1/linux-x64-72_binding.node
+
+> node-sass@4.14.1 postinstall /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/node-sass/vendor/linux-x64-72/binding.node
+Testing binary
+Binary is fine
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN @angular/compiler-cli@5.2.11 requires a peer of typescript@>=2.4.2 <2.7 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/core@5.2.11 requires a peer of rxjs@^5.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/http@5.2.11 requires a peer of rxjs@^5.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/common@5.2.11 requires a peer of rxjs@^5.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @swagger/angular2-typescript-petstore@0.0.1 No repository field.
+
+added 522 packages from 456 contributors and audited 525 packages in 12.269s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 17 vulnerabilities (2 low, 6 moderate, 9 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run build ******
+
+
+> @swagger/angular2-typescript-petstore@0.0.1 build /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___
+> ng-packagr -p ng-package.json
+
+Building Angular Package
+Building entry point '@swagger/angular2-typescript-petstore'
+Rendering Stylesheets
+Rendering Templates
+Compiling TypeScript sources through ngc
+
+BUILD ERROR
+node_modules/@types/node/assert.d.ts(12,72): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(279,72): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(449,98): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(449,105): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(449,108): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(481,102): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(481,109): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(481,112): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(783,51): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(783,57): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(783,60): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(941,65): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(172,37): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(172,67): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(172,75): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(173,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/buffer.d.ts(2248,37): error TS1005: ',' expected.
+node_modules/@types/node/buffer.d.ts(2249,27): error TS1005: ',' expected.
+node_modules/@types/node/buffer.d.ts(2250,25): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(2252,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/buffer.d.ts(2255,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(11,34): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(11,65): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(12,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(13,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(15,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(17,29): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(19,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(21,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(23,19): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(23,34): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(25,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(27,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(29,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(31,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(33,21): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(33,27): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(37,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(39,31): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(39,37): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(41,22): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(41,28): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(43,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(45,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(47,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(51,40): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(51,77): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(52,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(53,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(64,13): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(65,17): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(66,17): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(67,6): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(67,12): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(69,24): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(69,32): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(72,13): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(73,17): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(74,17): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(75,6): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(75,12): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(108,34): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(108,73): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(109,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(112,22): error TS1005: ')' expected.
+node_modules/@types/node/dom-events.d.ts(112,46): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(112,57): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(112,58): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(120,40): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(120,85): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(121,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(124,18): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(124,19): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(67,48): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(67,71): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(67,96): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(67,97): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(68,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(71,13): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(71,14): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(74,44): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(74,67): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(74,88): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(74,89): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(75,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(78,13): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(78,14): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(79,22): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(79,28): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(80,29): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(80,38): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(116,42): error TS1005: '>' expected.
+node_modules/@types/node/globals.d.ts(116,49): error TS1003: Identifier expected.
+node_modules/@types/node/globals.d.ts(116,66): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(116,67): error TS1131: Property or signature expected.
+node_modules/@types/node/globals.d.ts(116,83): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(116,85): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(116,86): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(117,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(117,2): error TS1128: Declaration or statement expected.
+node_modules/@types/node/index.d.ts(74,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(75,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(76,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(77,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/perf_hooks.d.ts(615,44): error TS1005: ',' expected.
+node_modules/@types/node/perf_hooks.d.ts(616,27): error TS1005: ',' expected.
+node_modules/@types/node/perf_hooks.d.ts(617,32): error TS1005: ';' expected.
+node_modules/@types/node/perf_hooks.d.ts(619,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/perf_hooks.d.ts(622,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/stream.d.ts(1071,27): error TS1005: ',' expected.
+node_modules/@types/node/stream.d.ts(1071,35): error TS1138: Parameter declaration expected.
+node_modules/@types/node/stream.d.ts(1071,70): error TS1005: '>' expected.
+node_modules/@types/node/stream.d.ts(1071,74): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1071,96): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1071,100): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1071,120): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1071,125): error TS1005: ':' expected.
+node_modules/@types/node/stream.d.ts(1071,144): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1075,81): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1075,119): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1076,13): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1076,79): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1077,13): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1077,20): error TS1005: ')' expected.
+node_modules/@types/node/stream.d.ts(1078,76): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1078,130): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1079,13): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1080,13): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1080,58): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1081,75): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1081,129): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1081,132): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1081,145): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1081,160): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1238,14): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1244,14): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1251,14): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1258,121): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1266,137): error TS1144: '{' or ';' expected.
+node_modules/@types/node/test.d.ts(137,26): error TS1005: ';' expected.
+node_modules/@types/node/test.d.ts(143,16): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(150,17): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(157,21): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(446,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(876,36): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(877,27): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(878,24): error TS1005: ';' expected.
+node_modules/@types/node/url.d.ts(880,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(887,48): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(888,27): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(889,36): error TS1005: ';' expected.
+node_modules/@types/node/url.d.ts(891,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(893,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(894,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1181,45): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1182,27): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1183,32): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1185,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1193,45): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1194,27): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1195,32): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1197,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1199,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1310,49): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1312,13): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1317,50): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1319,13): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1325,19): error TS1005: '>' expected.
+node_modules/@types/node/util.d.ts(1325,57): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1327,6): error TS1109: Expression expected.
+node_modules/@types/node/util.d.ts(1331,25): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1333,17): error TS1136: Property assignment expected.
+node_modules/@types/node/util.d.ts(1333,48): error TS1005: ']' expected.
+node_modules/@types/node/util.d.ts(1333,60): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1333,61): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1337,18): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1338,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1339,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1339,17): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1350,19): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1352,29): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1353,28): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1354,22): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1355,30): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1356,28): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1357,35): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1359,21): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1361,29): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1362,28): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1363,22): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1364,30): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1365,31): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1366,37): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1373,11): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1374,24): error TS1005: ':' expected.
+node_modules/@types/node/util.d.ts(1376,13): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1377,9): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1377,16): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1422,69): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1424,36): error TS1005: ']' expected.
+node_modules/@types/node/util.d.ts(1424,44): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1424,45): error TS1136: Property assignment expected.
+node_modules/@types/node/util.d.ts(1424,57): error TS1005: ':' expected.
+node_modules/@types/node/util.d.ts(1424,102): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1424,103): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1425,36): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1426,31): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1428,34): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1429,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1700,52): error TS1144: '{' or ';' expected.
+node_modules/@types/node/util.d.ts(1700,82): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1700,93): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1700,134): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1700,136): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1700,159): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1786,52): error TS1144: '{' or ';' expected.
+node_modules/@types/node/util.d.ts(1786,77): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1786,88): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1786,124): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1786,126): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1786,140): error TS1005: '(' expected.
+node_modules/@types/node/worker_threads.d.ts(655,49): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(656,27): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(657,37): error TS1005: ';' expected.
+node_modules/@types/node/worker_threads.d.ts(659,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(667,47): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(668,27): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(669,35): error TS1005: ';' expected.
+node_modules/@types/node/worker_threads.d.ts(671,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(679,45): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(680,27): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(681,32): error TS1005: ';' expected.
+node_modules/@types/node/worker_threads.d.ts(682,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(683,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(685,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(686,1): error TS1128: Declaration or statement expected.
+
+Error: node_modules/@types/node/assert.d.ts(12,72): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(279,72): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(449,98): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(449,105): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(449,108): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(481,102): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(481,109): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(481,112): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(783,51): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(783,57): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(783,60): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(941,65): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(172,37): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(172,67): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(172,75): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(173,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/buffer.d.ts(2248,37): error TS1005: ',' expected.
+node_modules/@types/node/buffer.d.ts(2249,27): error TS1005: ',' expected.
+node_modules/@types/node/buffer.d.ts(2250,25): error TS1005: ';' expected.
+node_modules/@types/node/buffer.d.ts(2252,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/buffer.d.ts(2255,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(11,34): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(11,65): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(12,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(13,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(15,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(17,29): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(19,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(21,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(23,19): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(23,34): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(25,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(27,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(29,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(31,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(33,21): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(33,27): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(37,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(39,31): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(39,37): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(41,22): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(41,28): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(43,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(45,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(47,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(51,40): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(51,77): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(52,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(53,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(64,13): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(65,17): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(66,17): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(67,6): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(67,12): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(69,24): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(69,32): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(72,13): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(73,17): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(74,17): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(75,6): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(75,12): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(108,34): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(108,73): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(109,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(112,22): error TS1005: ')' expected.
+node_modules/@types/node/dom-events.d.ts(112,46): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(112,57): error TS1005: ';' expected.
+node_modules/@types/node/dom-events.d.ts(112,58): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(120,40): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(120,85): error TS1005: ',' expected.
+node_modules/@types/node/dom-events.d.ts(121,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/dom-events.d.ts(124,18): error TS1109: Expression expected.
+node_modules/@types/node/dom-events.d.ts(124,19): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(67,48): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(67,71): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(67,96): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(67,97): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(68,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(71,13): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(71,14): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(74,44): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(74,67): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(74,88): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(74,89): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(75,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(78,13): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(78,14): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(79,22): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(79,28): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(80,29): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(80,38): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(116,42): error TS1005: '>' expected.
+node_modules/@types/node/globals.d.ts(116,49): error TS1003: Identifier expected.
+node_modules/@types/node/globals.d.ts(116,66): error TS1005: ';' expected.
+node_modules/@types/node/globals.d.ts(116,67): error TS1131: Property or signature expected.
+node_modules/@types/node/globals.d.ts(116,83): error TS1005: ',' expected.
+node_modules/@types/node/globals.d.ts(116,85): error TS1109: Expression expected.
+node_modules/@types/node/globals.d.ts(116,86): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(117,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/globals.d.ts(117,2): error TS1128: Declaration or statement expected.
+node_modules/@types/node/index.d.ts(74,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(75,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(76,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(77,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/perf_hooks.d.ts(615,44): error TS1005: ',' expected.
+node_modules/@types/node/perf_hooks.d.ts(616,27): error TS1005: ',' expected.
+node_modules/@types/node/perf_hooks.d.ts(617,32): error TS1005: ';' expected.
+node_modules/@types/node/perf_hooks.d.ts(619,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/perf_hooks.d.ts(622,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/stream.d.ts(1071,27): error TS1005: ',' expected.
+node_modules/@types/node/stream.d.ts(1071,35): error TS1138: Parameter declaration expected.
+node_modules/@types/node/stream.d.ts(1071,70): error TS1005: '>' expected.
+node_modules/@types/node/stream.d.ts(1071,74): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1071,96): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1071,100): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1071,120): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1071,125): error TS1005: ':' expected.
+node_modules/@types/node/stream.d.ts(1071,144): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1075,81): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1075,119): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1076,13): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1076,79): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1077,13): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1077,20): error TS1005: ')' expected.
+node_modules/@types/node/stream.d.ts(1078,76): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1078,130): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1079,13): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1080,13): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1080,58): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1081,75): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1081,129): error TS1005: ';' expected.
+node_modules/@types/node/stream.d.ts(1081,132): error TS1109: Expression expected.
+node_modules/@types/node/stream.d.ts(1081,145): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1081,160): error TS1005: '(' expected.
+node_modules/@types/node/stream.d.ts(1238,14): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1244,14): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1251,14): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1258,121): error TS1144: '{' or ';' expected.
+node_modules/@types/node/stream.d.ts(1266,137): error TS1144: '{' or ';' expected.
+node_modules/@types/node/test.d.ts(137,26): error TS1005: ';' expected.
+node_modules/@types/node/test.d.ts(143,16): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(150,17): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(157,21): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(446,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(876,36): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(877,27): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(878,24): error TS1005: ';' expected.
+node_modules/@types/node/url.d.ts(880,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(887,48): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(888,27): error TS1005: ',' expected.
+node_modules/@types/node/url.d.ts(889,36): error TS1005: ';' expected.
+node_modules/@types/node/url.d.ts(891,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(893,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/url.d.ts(894,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1181,45): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1182,27): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1183,32): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1185,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1193,45): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1194,27): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1195,32): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1197,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1199,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1310,49): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1312,13): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1317,50): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1319,13): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1325,19): error TS1005: '>' expected.
+node_modules/@types/node/util.d.ts(1325,57): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1327,6): error TS1109: Expression expected.
+node_modules/@types/node/util.d.ts(1331,25): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1333,17): error TS1136: Property assignment expected.
+node_modules/@types/node/util.d.ts(1333,48): error TS1005: ']' expected.
+node_modules/@types/node/util.d.ts(1333,60): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1333,61): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1337,18): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1338,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1339,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1339,17): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1350,19): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1352,29): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1353,28): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1354,22): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1355,30): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1356,28): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1357,35): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1359,21): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1361,29): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1362,28): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1363,22): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1364,30): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1365,31): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1366,37): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1373,11): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1374,24): error TS1005: ':' expected.
+node_modules/@types/node/util.d.ts(1376,13): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1377,9): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1377,16): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1422,69): error TS1005: ';' expected.
+node_modules/@types/node/util.d.ts(1424,36): error TS1005: ']' expected.
+node_modules/@types/node/util.d.ts(1424,44): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1424,45): error TS1136: Property assignment expected.
+node_modules/@types/node/util.d.ts(1424,57): error TS1005: ':' expected.
+node_modules/@types/node/util.d.ts(1424,102): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1424,103): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1425,36): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1426,31): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1428,34): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1429,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/util.d.ts(1700,52): error TS1144: '{' or ';' expected.
+node_modules/@types/node/util.d.ts(1700,82): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1700,93): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1700,134): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1700,136): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1700,159): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1786,52): error TS1144: '{' or ';' expected.
+node_modules/@types/node/util.d.ts(1786,77): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1786,88): error TS1005: ')' expected.
+node_modules/@types/node/util.d.ts(1786,124): error TS1005: '(' expected.
+node_modules/@types/node/util.d.ts(1786,126): error TS1005: ',' expected.
+node_modules/@types/node/util.d.ts(1786,140): error TS1005: '(' expected.
+node_modules/@types/node/worker_threads.d.ts(655,49): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(656,27): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(657,37): error TS1005: ';' expected.
+node_modules/@types/node/worker_threads.d.ts(659,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(667,47): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(668,27): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(669,35): error TS1005: ';' expected.
+node_modules/@types/node/worker_threads.d.ts(671,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(679,45): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(680,27): error TS1005: ',' expected.
+node_modules/@types/node/worker_threads.d.ts(681,32): error TS1005: ';' expected.
+node_modules/@types/node/worker_threads.d.ts(682,9): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(683,13): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(685,5): error TS1128: Declaration or statement expected.
+node_modules/@types/node/worker_threads.d.ts(686,1): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (/home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/ng-packagr/lib/ngc/compile-source-files.js:53:68)
+    at Generator.next (<anonymous>)
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/ng-packagr/lib/ngc/compile-source-files.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/ng-packagr/lib/ngc/compile-source-files.js:3:12)
+    at Object.compileSourceFiles (/home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/ng-packagr/lib/ngc/compile-source-files.js:19:12)
+    at Object.<anonymous> (/home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/ng-packagr/lib/ng-v5/entry-point/ts/compile-ngc.transform.js:26:32)
+    at Generator.next (<anonymous>)
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v5-with-npm___petstore___/node_modules/ng-packagr/lib/ng-v5/entry-point/ts/compile-ngc.transform.js:7:71
+    at new Promise (<anonymous>)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 111
+npm ERR! @swagger/angular2-typescript-petstore@0.0.1 build: `ng-packagr -p ng-package.json`
+npm ERR! Exit status 111
+npm ERR! 
+npm ERR! Failed at the @swagger/angular2-typescript-petstore@0.0.1 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/runner/.npm/_logs/2023-01-25T10_43_21_558Z-debug.log

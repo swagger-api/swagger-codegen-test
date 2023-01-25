@@ -1,0 +1,72 @@
+
+****** BUILD ******
+
+
+****** executing: npm install ******
+
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 56 packages from 117 contributors and audited 56 packages in 2.856s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+****** executing: npm run build ******
+
+
+> @swagger/jquery-typescript-petstore@1.0.0 build /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-node-with-npm___petstore___
+> tsc
+
+node_modules/@types/bluebird/index.d.ts(42,47): error TS1005: '?' expected.
+node_modules/@types/bluebird/index.d.ts(42,59): error TS1005: ';' expected.
+node_modules/@types/bluebird/index.d.ts(43,34): error TS1110: Type expected.
+node_modules/@types/bluebird/index.d.ts(44,27): error TS1110: Type expected.
+node_modules/@types/bluebird/index.d.ts(54,17): error TS1005: ']' expected.
+node_modules/@types/bluebird/index.d.ts(54,20): error TS1005: ';' expected.
+node_modules/@types/bluebird/index.d.ts(54,39): error TS1005: '(' expected.
+node_modules/@types/bluebird/index.d.ts(54,40): error TS1135: Argument expression expected.
+node_modules/@types/bluebird/index.d.ts(54,66): error TS1005: '(' expected.
+node_modules/@types/bluebird/index.d.ts(55,1): error TS1128: Declaration or statement expected.
+node_modules/@types/bluebird/index.d.ts(58,17): error TS1005: ']' expected.
+node_modules/@types/bluebird/index.d.ts(58,20): error TS1005: ';' expected.
+node_modules/@types/bluebird/index.d.ts(58,25): error TS1005: ';' expected.
+node_modules/@types/bluebird/index.d.ts(58,50): error TS1005: ';' expected.
+node_modules/@types/bluebird/index.d.ts(58,51): error TS1128: Declaration or statement expected.
+node_modules/@types/bluebird/index.d.ts(59,1): error TS1128: Declaration or statement expected.
+node_modules/@types/node/assert.d.ts(12,72): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(279,72): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(449,98): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(449,105): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(449,108): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(481,102): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(481,109): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(481,112): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(783,51): error TS1144: '{' or ';' expected.
+node_modules/@types/node/assert.d.ts(783,57): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(783,60): error TS1005: ';' expected.
+node_modules/@types/node/assert.d.ts(941,65): error TS1005: ';' expected.
+node_modules/@types/node/index.d.ts(74,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(75,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(76,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/index.d.ts(77,1): error TS1084: Invalid 'reference' directive syntax.
+node_modules/@types/node/test.d.ts(137,26): error TS1005: ';' expected.
+node_modules/@types/node/test.d.ts(137,33): error TS1011: An element access expression should take an argument.
+node_modules/@types/node/test.d.ts(143,16): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(150,17): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(157,21): error TS1109: Expression expected.
+node_modules/@types/node/test.d.ts(446,1): error TS1128: Declaration or statement expected.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 2
+npm ERR! @swagger/jquery-typescript-petstore@1.0.0 build: `tsc`
+npm ERR! Exit status 2
+npm ERR! 
+npm ERR! Failed at the @swagger/jquery-typescript-petstore@1.0.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/runner/.npm/_logs/2023-01-25T10_43_09_405Z-debug.log

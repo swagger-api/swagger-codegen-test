@@ -1,0 +1,58 @@
+library swagger.api;
+
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart';
+
+part 'api_client.dart';
+part 'api_helper.dart';
+part 'api_exception.dart';
+part 'auth/authentication.dart';
+part 'auth/api_key_auth.dart';
+part 'auth/oauth.dart';
+part 'auth/http_basic_auth.dart';
+
+part 'api/default_api.dart';
+part 'api/pet_api.dart';
+part 'api/store_api.dart';
+part 'api/user_api.dart';
+part 'model/all_of_sub_category_category.dart';
+part 'model/all_of_sub_category_pets_items.dart';
+part 'model/all_pets_response.dart';
+part 'model/any_ofparrot_body_parrots_items.dart';
+part 'model/api_response.dart';
+part 'model/cat.dart';
+part 'model/category.dart';
+part 'model/dog.dart';
+part 'model/inline_response200.dart';
+part 'model/inline_response2001.dart';
+part 'model/macaw.dart';
+part 'model/nullable_enum_model.dart';
+part 'model/one_of_all_pets_response_items.dart';
+part 'model/one_of_part_master_destination.dart';
+part 'model/one_of_part_master_origin.dart';
+part 'model/one_of_pet_part_items.dart';
+part 'model/one_of_pup.dart';
+part 'model/one_ofinline_response200_parrots_items.dart';
+part 'model/one_ofval_members_val_member_items.dart';
+part 'model/order.dart';
+part 'model/parakeet.dart';
+part 'model/parrot_body.dart';
+part 'model/parrot_body1.dart';
+part 'model/part_four.dart';
+part 'model/part_master.dart';
+part 'model/part_one.dart';
+part 'model/part_three.dart';
+part 'model/part_two.dart';
+part 'model/pet.dart';
+part 'model/pet_pet_id_body.dart';
+part 'model/pup.dart';
+part 'model/sub_category.dart';
+part 'model/tag.dart';
+part 'model/test.dart';
+part 'model/user.dart';
+part 'model/val_member_choice1.dart';
+part 'model/val_member_choice2.dart';
+part 'model/val_members.dart';
+
+ApiClient defaultApiClient = new ApiClient();
