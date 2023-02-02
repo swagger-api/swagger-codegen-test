@@ -1,0 +1,194 @@
+
+****** BUILD ******
+
+
+****** executing: sh ./build.sh ******
+
+[INFO] Target framework: net35
+[INFO] Download nuget and packages
+nuget is /usr/bin/nuget
+--2023-02-02 09:15:13--  https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+Resolving dist.nuget.org (dist.nuget.org)... 152.199.4.184
+Connecting to dist.nuget.org (dist.nuget.org)|152.199.4.184|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6450096 (6.2M) [application/x-msdownload]
+Saving to: ‘nuget.exe’
+
+     0K .......... .......... .......... .......... ..........  0% 9.79M 1s
+    50K .......... .......... .......... .......... ..........  1% 9.19M 1s
+   100K .......... .......... .......... .......... ..........  2% 9.44M 1s
+   150K .......... .......... .......... .......... ..........  3%  177M 0s
+   200K .......... .......... .......... .......... ..........  3%  352M 0s
+   250K .......... .......... .......... .......... ..........  4% 10.0M 0s
+   300K .......... .......... .......... .......... ..........  5%  331M 0s
+   350K .......... .......... .......... .......... ..........  6%  165M 0s
+   400K .......... .......... .......... .......... ..........  7%  326M 0s
+   450K .......... .......... .......... .......... ..........  7%  344M 0s
+   500K .......... .......... .......... .......... ..........  8%  370M 0s
+   550K .......... .......... .......... .......... ..........  9% 11.0M 0s
+   600K .......... .......... .......... .......... .......... 10%  145M 0s
+   650K .......... .......... .......... .......... .......... 11%  306M 0s
+   700K .......... .......... .......... .......... .......... 11%  179M 0s
+   750K .......... .......... .......... .......... .......... 12%  269M 0s
+   800K .......... .......... .......... .......... .......... 13%  197M 0s
+   850K .......... .......... .......... .......... .......... 14%  186M 0s
+   900K .......... .......... .......... .......... .......... 15%  301M 0s
+   950K .......... .......... .......... .......... .......... 15%  297M 0s
+  1000K .......... .......... .......... .......... .......... 16%  268M 0s
+  1050K .......... .......... .......... .......... .......... 17%  317M 0s
+  1100K .......... .......... .......... .......... .......... 18%  323M 0s
+  1150K .......... .......... .......... .......... .......... 19% 17.6M 0s
+  1200K .......... .......... .......... .......... .......... 19%  246M 0s
+  1250K .......... .......... .......... .......... .......... 20% 87.0M 0s
+  1300K .......... .......... .......... .......... .......... 21%  296M 0s
+  1350K .......... .......... .......... .......... .......... 22%  302M 0s
+  1400K .......... .......... .......... .......... .......... 23%  359M 0s
+  1450K .......... .......... .......... .......... .......... 23%  367M 0s
+  1500K .......... .......... .......... .......... .......... 24%  275M 0s
+  1550K .......... .......... .......... .......... .......... 25%  290M 0s
+  1600K .......... .......... .......... .......... .......... 26%  365M 0s
+  1650K .......... .......... .......... .......... .......... 26%  292M 0s
+  1700K .......... .......... .......... .......... .......... 27%  352M 0s
+  1750K .......... .......... .......... .......... .......... 28%  323M 0s
+  1800K .......... .......... .......... .......... .......... 29%  359M 0s
+  1850K .......... .......... .......... .......... .......... 30%  315M 0s
+  1900K .......... .......... .......... .......... .......... 30%  362M 0s
+  1950K .......... .......... .......... .......... .......... 31%  301M 0s
+  2000K .......... .......... .......... .......... .......... 32%  327M 0s
+  2050K .......... .......... .......... .......... .......... 33%  341M 0s
+  2100K .......... .......... .......... .......... .......... 34%  337M 0s
+  2150K .......... .......... .......... .......... .......... 34%  304M 0s
+  2200K .......... .......... .......... .......... .......... 35%  363M 0s
+  2250K .......... .......... .......... .......... .......... 36%  352M 0s
+  2300K .......... .......... .......... .......... .......... 37% 43.4M 0s
+  2350K .......... .......... .......... .......... .......... 38%  179M 0s
+  2400K .......... .......... .......... .......... .......... 38%  176M 0s
+  2450K .......... .......... .......... .......... .......... 39%  347M 0s
+  2500K .......... .......... .......... .......... .......... 40%  347M 0s
+  2550K .......... .......... .......... .......... .......... 41%  291M 0s
+  2600K .......... .......... .......... .......... .......... 42%  357M 0s
+  2650K .......... .......... .......... .......... .......... 42%  196M 0s
+  2700K .......... .......... .......... .......... .......... 43%  224M 0s
+  2750K .......... .......... .......... .......... .......... 44%  301M 0s
+  2800K .......... .......... .......... .......... .......... 45%  326M 0s
+  2850K .......... .......... .......... .......... .......... 46%  333M 0s
+  2900K .......... .......... .......... .......... .......... 46%  366M 0s
+  2950K .......... .......... .......... .......... .......... 47%  332M 0s
+  3000K .......... .......... .......... .......... .......... 48%  306M 0s
+  3050K .......... .......... .......... .......... .......... 49%  366M 0s
+  3100K .......... .......... .......... .......... .......... 50%  370M 0s
+  3150K .......... .......... .......... .......... .......... 50%  274M 0s
+  3200K .......... .......... .......... .......... .......... 51%  338M 0s
+  3250K .......... .......... .......... .......... .......... 52%  350M 0s
+  3300K .......... .......... .......... .......... .......... 53%  376M 0s
+  3350K .......... .......... .......... .......... .......... 53%  289M 0s
+  3400K .......... .......... .......... .......... .......... 54%  354M 0s
+  3450K .......... .......... .......... .......... .......... 55%  370M 0s
+  3500K .......... .......... .......... .......... .......... 56%  222M 0s
+  3550K .......... .......... .......... .......... .......... 57% 55.4M 0s
+  3600K .......... .......... .......... .......... .......... 57%  338M 0s
+  3650K .......... .......... .......... .......... .......... 58%  356M 0s
+  3700K .......... .......... .......... .......... .......... 59%  192M 0s
+  3750K .......... .......... .......... .......... .......... 60%  324M 0s
+  3800K .......... .......... .......... .......... .......... 61%  220M 0s
+  3850K .......... .......... .......... .......... .......... 61%  337M 0s
+  3900K .......... .......... .......... .......... .......... 62%  359M 0s
+  3950K .......... .......... .......... .......... .......... 63%  187M 0s
+  4000K .......... .......... .......... .......... .......... 64%  363M 0s
+  4050K .......... .......... .......... .......... .......... 65%  351M 0s
+  4100K .......... .......... .......... .......... .......... 65%  221M 0s
+  4150K .......... .......... .......... .......... .......... 66%  322M 0s
+  4200K .......... .......... .......... .......... .......... 67%  327M 0s
+  4250K .......... .......... .......... .......... .......... 68%  221M 0s
+  4300K .......... .......... .......... .......... .......... 69%  348M 0s
+  4350K .......... .......... .......... .......... .......... 69%  303M 0s
+  4400K .......... .......... .......... .......... .......... 70%  198M 0s
+  4450K .......... .......... .......... .......... .......... 71%  341M 0s
+  4500K .......... .......... .......... .......... .......... 72%  225M 0s
+  4550K .......... .......... .......... .......... .......... 73%  302M 0s
+  4600K .......... .......... .......... .......... .......... 73%  357M 0s
+  4650K .......... .......... .......... .......... .......... 74%  227M 0s
+  4700K .......... .......... .......... .......... .......... 75% 7.74M 0s
+  4750K .......... .......... .......... .......... .......... 76% 96.3M 0s
+  4800K .......... .......... .......... .......... .......... 76%  103M 0s
+  4850K .......... .......... .......... .......... .......... 77%  262M 0s
+  4900K .......... .......... .......... .......... .......... 78%  308M 0s
+  4950K .......... .......... .......... .......... .......... 79%  270M 0s
+  5000K .......... .......... .......... .......... .......... 80%  298M 0s
+  5050K .......... .......... .......... .......... .......... 80%  301M 0s
+  5100K .......... .......... .......... .......... .......... 81%  319M 0s
+  5150K .......... .......... .......... .......... .......... 82%  263M 0s
+  5200K .......... .......... .......... .......... .......... 83%  287M 0s
+  5250K .......... .......... .......... .......... .......... 84%  318M 0s
+  5300K .......... .......... .......... .......... .......... 84%  294M 0s
+  5350K .......... .......... .......... .......... .......... 85%  284M 0s
+  5400K .......... .......... .......... .......... .......... 86%  313M 0s
+  5450K .......... .......... .......... .......... .......... 87%  303M 0s
+  5500K .......... .......... .......... .......... .......... 88%  309M 0s
+  5550K .......... .......... .......... .......... .......... 88%  272M 0s
+  5600K .......... .......... .......... .......... .......... 89%  286M 0s
+  5650K .......... .......... .......... .......... .......... 90%  311M 0s
+  5700K .......... .......... .......... .......... .......... 91%  301M 0s
+  5750K .......... .......... .......... .......... .......... 92%  278M 0s
+  5800K .......... .......... .......... .......... .......... 92%  305M 0s
+  5850K .......... .......... .......... .......... .......... 93%  297M 0s
+  5900K .......... .......... .......... .......... .......... 94%  309M 0s
+  5950K .......... .......... .......... .......... .......... 95%  235M 0s
+  6000K .......... .......... .......... .......... .......... 96%  309M 0s
+  6050K .......... .......... .......... .......... .......... 96%  309M 0s
+  6100K .......... .......... .......... .......... .......... 97%  295M 0s
+  6150K .......... .......... .......... .......... .......... 98%  276M 0s
+  6200K .......... .......... .......... .......... .......... 99%  301M 0s
+  6250K .......... .......... .......... .......... ........  100%  289M=0.06s
+
+2023-02-02 09:15:13 (108 MB/s) - ‘nuget.exe’ saved [6450096/6450096]
+
+Mozilla Roots Importer - version 6.12.0.182
+Download and import trusted root certificates from Mozilla's MXR.
+Copyright 2002, 2003 Motus Technologies. Copyright 2004-2008 Novell. BSD licensed.
+
+WARNING: mozroots is deprecated, please move to cert-sync instead.
+
+Downloading from 'https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt'...
+Importing certificates into user store...
+160 new root certificates were added to your trust store.
+Import process completed.
+
+Feeds used:
+  https://api.nuget.org/v3/index.json
+
+Restoring NuGet package RestSharp.105.1.0.
+  GET https://api.nuget.org/v3-flatcontainer/restsharp/105.1.0/restsharp.105.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/restsharp/105.1.0/restsharp.105.1.0.nupkg 28ms
+Installed RestSharp 105.1.0 from https://api.nuget.org/v3/index.json with content hash 2DRH1cpTOJwesBOwQ0cIhVHUmupbRKt+tdSatfdvndvsawsGMIEgrbq8yv6g3GM1MRVcb37bT8LACVFsqITDmg==.
+Adding package 'RestSharp.105.1.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3.5-v3___petstoreMixed3___/packages'
+Added package 'RestSharp.105.1.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3.5-v3___petstoreMixed3___/packages'
+Restoring NuGet package Newtonsoft.Json.10.0.3.
+  GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/10.0.3/newtonsoft.json.10.0.3.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/10.0.3/newtonsoft.json.10.0.3.nupkg 13ms
+Installed Newtonsoft.Json 10.0.3 from https://api.nuget.org/v3/index.json with content hash hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==.
+Adding package 'Newtonsoft.Json.10.0.3' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3.5-v3___petstoreMixed3___/packages'
+Added package 'Newtonsoft.Json.10.0.3' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3.5-v3___petstoreMixed3___/packages'
+Restoring NuGet package JsonSubTypes.1.2.0.
+  GET https://api.nuget.org/v3-flatcontainer/jsonsubtypes/1.2.0/jsonsubtypes.1.2.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/jsonsubtypes/1.2.0/jsonsubtypes.1.2.0.nupkg 14ms
+Installed JsonSubTypes 1.2.0 from https://api.nuget.org/v3/index.json with content hash XY9yuNIl9LmHhC/Vz+u35lB7Dyj/H/biKsNybJI9XLUyabBIHPF1PQ3PY/ffADn/LdjiQOhx/ry+ZsuEO4mBnw==.
+Adding package 'JsonSubTypes.1.2.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3.5-v3___petstoreMixed3___/packages'
+Added package 'JsonSubTypes.1.2.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v3.5-v3___petstoreMixed3___/packages'
+[INFO] Copy DLLs to the 'bin' folder
+[INFO] Run 'mcs' to build bin/IO.Swagger.dll
+src/IO.Swagger/Model/AllOfSubCategoryCategory.cs(39,16): warning CS1573: Parameter `id' has no matching param tag in the XML comment for `IO.Swagger.Model.AllOfSubCategoryCategory.AllOfSubCategoryCategory(bool?, int?, string, IO.Swagger.Model.User, long?, string)'
+src/IO.Swagger/Model/AllOfSubCategoryCategory.cs(39,16): warning CS1573: Parameter `name' has no matching param tag in the XML comment for `IO.Swagger.Model.AllOfSubCategoryCategory.AllOfSubCategoryCategory(bool?, int?, string, IO.Swagger.Model.User, long?, string)'
+src/IO.Swagger/Model/Cat.cs(36,16): warning CS1573: Parameter `className' has no matching param tag in the XML comment for `IO.Swagger.Model.Cat.Cat(bool?, string, string)'
+src/IO.Swagger/Model/Cat.cs(36,16): warning CS1573: Parameter `color' has no matching param tag in the XML comment for `IO.Swagger.Model.Cat.Cat(bool?, string, string)'
+src/IO.Swagger/Model/Dog.cs(36,16): warning CS1573: Parameter `className' has no matching param tag in the XML comment for `IO.Swagger.Model.Dog.Dog(string, string, string)'
+src/IO.Swagger/Model/Dog.cs(36,16): warning CS1573: Parameter `color' has no matching param tag in the XML comment for `IO.Swagger.Model.Dog.Dog(string, string, string)'
+src/IO.Swagger/Client/ApiClient.cs(208,30): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ApiClient.ParameterToFile(string, byte[])'
+src/IO.Swagger/Client/ApiClient.cs(481,58): warning CS1573: Parameter `collectionFormat' has no matching param tag in the XML comment for `IO.Swagger.Client.ApiClient.ParameterToKeyValuePairs(string, string, object)'
+src/IO.Swagger/Model/EnumTest.cs(186,27): warning CS0472: The result of comparing value type `IO.Swagger.Model.OuterEnum' with null is always `true'
+src/IO.Swagger/Model/EnumTest.cs(206,26): warning CS0472: The result of comparing value type `IO.Swagger.Model.OuterEnum' with null is always `true'
+Compilation succeeded - 10 warning(s)
+[INFO] bin/IO.Swagger.dll was created successfully
+
+****** executed all buildcommand ******
+

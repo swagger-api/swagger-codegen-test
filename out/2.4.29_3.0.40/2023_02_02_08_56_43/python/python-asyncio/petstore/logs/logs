@@ -1,0 +1,158 @@
+
+****** BUILD ******
+
+
+****** executing: python3 setup.py install --user ******
+
+running install
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running bdist_egg
+running egg_info
+creating swagger_client.egg-info
+writing swagger_client.egg-info/PKG-INFO
+writing dependency_links to swagger_client.egg-info/dependency_links.txt
+writing requirements to swagger_client.egg-info/requires.txt
+writing top-level names to swagger_client.egg-info/top_level.txt
+writing manifest file 'swagger_client.egg-info/SOURCES.txt'
+reading manifest file 'swagger_client.egg-info/SOURCES.txt'
+writing manifest file 'swagger_client.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/swagger_client
+copying swagger_client/configuration.py -> build/lib/swagger_client
+copying swagger_client/rest.py -> build/lib/swagger_client
+copying swagger_client/__init__.py -> build/lib/swagger_client
+copying swagger_client/api_client.py -> build/lib/swagger_client
+creating build/lib/test
+copying test/test_user_api.py -> build/lib/test
+copying test/test_store_api.py -> build/lib/test
+copying test/test_user.py -> build/lib/test
+copying test/test_tag.py -> build/lib/test
+copying test/test_pet_api.py -> build/lib/test
+copying test/test_pet.py -> build/lib/test
+copying test/__init__.py -> build/lib/test
+copying test/test_order.py -> build/lib/test
+copying test/test_api_response.py -> build/lib/test
+copying test/test_category.py -> build/lib/test
+creating build/lib/swagger_client/models
+copying swagger_client/models/pet.py -> build/lib/swagger_client/models
+copying swagger_client/models/category.py -> build/lib/swagger_client/models
+copying swagger_client/models/api_response.py -> build/lib/swagger_client/models
+copying swagger_client/models/tag.py -> build/lib/swagger_client/models
+copying swagger_client/models/order.py -> build/lib/swagger_client/models
+copying swagger_client/models/user.py -> build/lib/swagger_client/models
+copying swagger_client/models/__init__.py -> build/lib/swagger_client/models
+creating build/lib/swagger_client/api
+copying swagger_client/api/user_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/store_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/pet_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/__init__.py -> build/lib/swagger_client/api
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/swagger_client
+creating build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/pet.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/category.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/api_response.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/tag.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/order.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/user.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/configuration.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/rest.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/api_client.py -> build/bdist.linux-x86_64/egg/swagger_client
+creating build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/user_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/store_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/pet_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+creating build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_user_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_store_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_user.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_tag.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_pet_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_pet.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/__init__.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_order.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_api_response.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_category.py -> build/bdist.linux-x86_64/egg/test
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/pet.py to pet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/category.py to category.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/api_response.py to api_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/tag.py to tag.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/order.py to order.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/user.py to user.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/configuration.py to configuration.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/rest.py to rest.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api_client.py to api_client.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/user_api.py to user_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/store_api.py to store_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/pet_api.py to pet_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_user_api.py to test_user_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_store_api.py to test_store_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_user.py to test_user.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_tag.py to test_tag.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_pet_api.py to test_pet_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_pet.py to test_pet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_order.py to test_order.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_api_response.py to test_api_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_category.py to test_category.cpython-311.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+creating dist
+creating 'dist/swagger_client-1.0.0-py3.11.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing swagger_client-1.0.0-py3.11.egg
+Copying swagger_client-1.0.0-py3.11.egg to /home/runner/.local/lib/python3.11/site-packages
+Adding swagger-client 1.0.0 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/swagger_client-1.0.0-py3.11.egg
+Processing dependencies for swagger-client==1.0.0
+Searching for aiohttp
+Reading https://pypi.org/simple/aiohttp/
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning:  is an invalid version and will not be supported in a future release
+  warnings.warn(
+Downloading https://files.pythonhosted.org/packages/f0/f2/703dba52c7620199ea0ec8ea9a4a2f06203b4893b94f60240c2c10225043/aiohttp-4.0.0a1.tar.gz#sha256=b5036133c1ba77ed5a70208d2a021a90b76fdf8bf523ae33dae46d4f4380d86f
+Best match: aiohttp 4.0.0a1
+Processing aiohttp-4.0.0a1.tar.gz
+Writing /tmp/easy_install-vdoqdjvv/aiohttp-4.0.0a1/setup.cfg
+Running aiohttp-4.0.0a1/setup.py -q bdist_egg --dist-dir /tmp/easy_install-vdoqdjvv/aiohttp-4.0.0a1/egg-dist-tmp-yjszm769
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/config/setupcfg.py:508: SetuptoolsDeprecationWarning: The license_file parameter is deprecated, use license_files instead.
+  warnings.warn(msg, warning_class)
+warning: no files found matching 'aiohttp' anywhere in distribution
+warning: no previously-included files matching '*.pyc' found anywhere in distribution
+warning: no previously-included files matching '*.pyd' found anywhere in distribution
+warning: no previously-included files matching '*.so' found anywhere in distribution
+warning: no previously-included files matching '*.lib' found anywhere in distribution
+warning: no previously-included files matching '*.dll' found anywhere in distribution
+warning: no previously-included files matching '*.a' found anywhere in distribution
+warning: no previously-included files matching '*.obj' found anywhere in distribution
+warning: no previously-included files found matching 'aiohttp/*.html'
+no previously-included directories found matching 'docs/_build'
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+aiohttp/_websocket.c:196:12: fatal error: longintrepr.h: No such file or directory
+  196 |   #include "longintrepr.h"
+      |            ^~~~~~~~~~~~~~~
+compilation terminated.
+**********************
+* Accellerated build *
+**********************
+error: Setup script exited with error: command '/usr/bin/gcc' failed with exit code 1

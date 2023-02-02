@@ -1,0 +1,309 @@
+
+****** BUILD ******
+
+
+****** executing: npm install ******
+
+npm WARN deprecated superagent@5.3.1: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.2 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN swagger_petstore@1.0.0 No repository field.
+npm WARN swagger_petstore@1.0.0 license should be a valid SPDX license expression
+
+added 343 packages from 505 contributors and audited 344 packages in 10.136s
+
+35 packages are looking for funding
+  run `npm fund` for details
+
+found 3 vulnerabilities (1 moderate, 2 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run test ******
+
+
+> swagger_petstore@1.0.0 test /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6-v3___petstore3composed___
+> mocha --require @babel/register --recursive
+
+
+
+  (package)
+    DefaultApi
+      testMethod
+        ✓ should call testMethod successfully
+
+  (package)
+    PetApi
+      addParrot
+        ✓ should call addParrot successfully
+      addPet
+        ✓ should call addPet successfully
+      deletePet
+        ✓ should call deletePet successfully
+      doCategoryStuff
+        ✓ should call doCategoryStuff successfully
+      feedPet
+        ✓ should call feedPet successfully
+      findPetsByStatus
+        ✓ should call findPetsByStatus successfully
+      findPetsByTags
+        ✓ should call findPetsByTags successfully
+      getParrots
+        ✓ should call getParrots successfully
+      getPetById
+        ✓ should call getPetById successfully
+      updateParrots
+        ✓ should call updateParrots successfully
+      updatePet
+        ✓ should call updatePet successfully
+      updatePetWithForm
+        ✓ should call updatePetWithForm successfully
+      uploadFile
+        ✓ should call uploadFile successfully
+
+  (package)
+    StoreApi
+      deleteOrder
+        ✓ should call deleteOrder successfully
+      getInventory
+        ✓ should call getInventory successfully
+      getOrderById
+        ✓ should call getOrderById successfully
+      placeOrder
+        ✓ should call placeOrder successfully
+
+  (package)
+    UserApi
+      createUser
+        ✓ should call createUser successfully
+      createUsersWithArrayInput
+        ✓ should call createUsersWithArrayInput successfully
+      createUsersWithListInput
+        ✓ should call createUsersWithListInput successfully
+      deleteUser
+        ✓ should call deleteUser successfully
+      getUserByName
+        ✓ should call getUserByName successfully
+      loginUser
+        ✓ should call loginUser successfully
+      logoutUser
+        ✓ should call logoutUser successfully
+      userUsernamePut
+        ✓ should call userUsernamePut successfully
+
+  (package)
+    AllOfSubCategoryCategory
+      ✓ should create an instance of AllOfSubCategoryCategory
+      ✓ should have the property foo (base name: "foo")
+      ✓ should have the property bar (base name: "bar")
+      ✓ should have the property beer (base name: "beer")
+      ✓ should have the property drunk (base name: "drunk")
+
+  (package)
+    AllOfSubCategoryPetsItems
+      ✓ should create an instance of AllOfSubCategoryPetsItems
+
+  (package)
+    AllPetsResponse
+      ✓ should create an instance of AllPetsResponse
+
+  (package)
+    AnyOfparrotBodyParrotsItems
+      ✓ should create an instance of AnyOfparrotBodyParrotsItems
+
+  (package)
+    ApiResponse
+      ✓ should create an instance of ApiResponse
+      ✓ should have the property code (base name: "code")
+      ✓ should have the property type (base name: "type")
+      ✓ should have the property message (base name: "message")
+
+  (package)
+    Cat
+      ✓ should create an instance of Cat
+      ✓ should have the property hunts (base name: "hunts")
+      ✓ should have the property age (base name: "age")
+
+  (package)
+    Category
+      ✓ should create an instance of Category
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property subcategories (base name: "subcategories")
+
+  (package)
+    Dog
+      ✓ should create an instance of Dog
+      ✓ should have the property bark (base name: "bark")
+      ✓ should have the property breed (base name: "breed")
+
+  (package)
+    InlineResponse200
+      ✓ should create an instance of InlineResponse200
+      ✓ should have the property parrots (base name: "parrots")
+
+  (package)
+    InlineResponse2001
+      ✓ should create an instance of InlineResponse2001
+
+  (package)
+    Macaw
+      ✓ should create an instance of Macaw
+      ✓ should have the property color (base name: "color")
+      ✓ should have the property singer (base name: "singer")
+
+  (package)
+    NullableEnumModel
+      ✓ should create an instance of NullableEnumModel
+      ✓ should have the property enumProp (base name: "enumProp")
+
+  (package)
+    OneOfAllPetsResponseItems
+      ✓ should create an instance of OneOfAllPetsResponseItems
+
+  (package)
+    OneOfPartMasterDestination
+      ✓ should create an instance of OneOfPartMasterDestination
+
+  (package)
+    OneOfPartMasterOrigin
+      ✓ should create an instance of OneOfPartMasterOrigin
+
+  (package)
+    OneOfPetPartItems
+      ✓ should create an instance of OneOfPetPartItems
+
+  (package)
+    OneOfPup
+      ✓ should create an instance of OneOfPup
+
+  (package)
+    OneOfinlineResponse200ParrotsItems
+      ✓ should create an instance of OneOfinlineResponse200ParrotsItems
+
+  (package)
+    OneOfvalMembersValMemberItems
+      ✓ should create an instance of OneOfvalMembersValMemberItems
+
+  (package)
+    Order
+      ✓ should create an instance of Order
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property petId (base name: "petId")
+      ✓ should have the property quantity (base name: "quantity")
+      ✓ should have the property shipDate (base name: "shipDate")
+      ✓ should have the property status (base name: "status")
+      ✓ should have the property complete (base name: "complete")
+
+  (package)
+    Parakeet
+      ✓ should create an instance of Parakeet
+      ✓ should have the property color (base name: "color")
+      ✓ should have the property soundRepeater (base name: "soundRepeater")
+
+  (package)
+    ParrotBody
+      ✓ should create an instance of ParrotBody
+      ✓ should have the property parrots (base name: "parrots")
+
+  (package)
+    ParrotBody1
+      ✓ should create an instance of ParrotBody1
+
+  (package)
+    PartFour
+      ✓ should create an instance of PartFour
+      ✓ should have the property otherIdPart (base name: "otherIdPart")
+
+  (package)
+    PartMaster
+      ✓ should create an instance of PartMaster
+      ✓ should have the property destination (base name: "destination")
+      ✓ should have the property origin (base name: "origin")
+
+  (package)
+    PartOne
+      ✓ should create an instance of PartOne
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    PartThree
+      ✓ should create an instance of PartThree
+      ✓ should have the property otherId (base name: "otherId")
+
+  (package)
+    PartTwo
+      ✓ should create an instance of PartTwo
+      ✓ should have the property id (base name: "id")
+
+  (package)
+    Pet
+      ✓ should create an instance of Pet
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property status (base name: "status")
+      ✓ should have the property part (base name: "part")
+
+  (package)
+    PetPetIdBody
+      ✓ should create an instance of PetPetIdBody
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property status (base name: "status")
+
+  (package)
+    Pup
+      ✓ should create an instance of Pup
+      ✓ should have the property id (base name: "id")
+
+  (package)
+    SubCategory
+      ✓ should create an instance of SubCategory
+      ✓ should have the property category (base name: "category")
+      ✓ should have the property category2 (base name: "category2")
+      ✓ should have the property pets (base name: "pets")
+
+  (package)
+    Tag
+      ✓ should create an instance of Tag
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    Test
+      ✓ should create an instance of Test
+
+  (package)
+    User
+      ✓ should create an instance of User
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property username (base name: "username")
+      ✓ should have the property firstName (base name: "firstName")
+      ✓ should have the property lastName (base name: "lastName")
+      ✓ should have the property email (base name: "email")
+      ✓ should have the property password (base name: "password")
+      ✓ should have the property phone (base name: "phone")
+      ✓ should have the property userStatus (base name: "userStatus")
+
+  (package)
+    ValMemberChoice1
+      ✓ should create an instance of ValMemberChoice1
+      ✓ should have the property valDateOfBirth (base name: "val_date_of_birth")
+      ✓ should have the property valLeavingDate (base name: "val_leaving_date")
+
+  (package)
+    ValMemberChoice2
+      ✓ should create an instance of ValMemberChoice2
+      ✓ should have the property valLeavingDate (base name: "val_leaving_date")
+
+  (package)
+    ValMembers
+      ✓ should create an instance of ValMembers
+      ✓ should have the property valMember (base name: "val_member")
+
+
+  121 passing (105ms)
+
+
+****** executed all buildcommand ******
+

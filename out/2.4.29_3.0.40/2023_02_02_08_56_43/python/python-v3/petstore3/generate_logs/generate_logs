@@ -1,0 +1,59 @@
+
+****** generate ******
+
+LANGUAGE python
+JOB_NAME python-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+09:09:58.187 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+09:09:58.523 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/address.py
+09:09:58.531 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_address.py
+09:09:58.540 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/Address.md
+09:09:58.583 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/api_response.py
+09:09:58.590 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_api_response.py
+09:09:58.598 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/ApiResponse.md
+09:09:58.648 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/category.py
+09:09:58.656 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_category.py
+09:09:58.662 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/Category.md
+09:09:58.689 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/customer.py
+09:09:58.693 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_customer.py
+09:09:58.696 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/Customer.md
+09:09:58.720 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/order.py
+09:09:58.724 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_order.py
+09:09:58.726 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/Order.md
+09:09:58.755 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/pet.py
+09:09:58.759 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_pet.py
+09:09:58.763 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/Pet.md
+09:09:58.782 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/tag.py
+09:09:58.788 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_tag.py
+09:09:58.791 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/Tag.md
+09:09:58.810 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/user.py
+09:09:58.816 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_user.py
+09:09:58.819 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/User.md
+09:09:59.044 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/api/pet_api.py
+09:09:59.047 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_pet_api.py
+09:09:59.069 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/PetApi.md
+09:09:59.084 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/api/store_api.py
+09:09:59.087 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_store_api.py
+09:09:59.096 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/StoreApi.md
+09:09:59.121 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/api/user_api.py
+09:09:59.126 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/test_user_api.py
+09:09:59.136 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/docs/UserApi.md
+09:09:59.160 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/README.md
+09:09:59.162 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/tox.ini
+09:09:59.163 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test-requirements.txt
+09:09:59.165 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/requirements.txt
+09:09:59.168 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/configuration.py
+09:09:59.170 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/__init__.py
+09:09:59.172 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/models/__init__.py
+09:09:59.173 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/api/__init__.py
+09:09:59.174 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/test/__init__.py
+09:09:59.175 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/git_push.sh
+09:09:59.176 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/.gitignore
+09:09:59.176 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/.travis.yml
+09:09:59.183 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/setup.py
+09:09:59.190 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/api_client.py
+09:09:59.193 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/swagger_client/rest.py
+09:09:59.198 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/.swagger-codegen-ignore
+09:09:59.198 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/python-v3___petstore3___/.swagger-codegen/VERSION

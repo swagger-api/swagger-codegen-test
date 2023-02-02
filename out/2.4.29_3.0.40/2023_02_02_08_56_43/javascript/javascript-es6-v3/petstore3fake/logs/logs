@@ -1,0 +1,500 @@
+
+****** BUILD ******
+
+
+****** executing: npm install ******
+
+npm WARN deprecated superagent@5.3.1: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.2 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN swagger_petstore@1.0.0 No repository field.
+
+added 343 packages from 505 contributors and audited 344 packages in 8.174s
+
+35 packages are looking for funding
+  run `npm fund` for details
+
+found 3 vulnerabilities (1 moderate, 2 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run test ******
+
+
+> swagger_petstore@1.0.0 test /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6-v3___petstore3fake___
+> mocha --require @babel/register --recursive
+
+
+
+  (package)
+    AnimalApi
+      addAnimal
+        ✓ should call addAnimal successfully
+      deleteAnimal
+        ✓ should call deleteAnimal successfully
+      getAnimalById
+        ✓ should call getAnimalById successfully
+      updateAnimal
+        ✓ should call updateAnimal successfully
+      updateAnimalWithForm
+        ✓ should call updateAnimalWithForm successfully
+
+  (package)
+    AnotherFakeApi
+      testSpecialTags
+        ✓ should call testSpecialTags successfully
+
+  (package)
+    DogApi
+      addDog
+        ✓ should call addDog successfully
+      deleteDog
+        ✓ should call deleteDog successfully
+      getDogById
+        ✓ should call getDogById successfully
+      updateDog
+        ✓ should call updateDog successfully
+      updateDogWithForm
+        ✓ should call updateDogWithForm successfully
+
+  (package)
+    FakeApi
+      fakeOuterBooleanSerialize
+        ✓ should call fakeOuterBooleanSerialize successfully
+      fakeOuterCompositeSerialize
+        ✓ should call fakeOuterCompositeSerialize successfully
+      fakeOuterNumberSerialize
+        ✓ should call fakeOuterNumberSerialize successfully
+      fakeOuterStringSerialize
+        ✓ should call fakeOuterStringSerialize successfully
+      testClientModel
+        ✓ should call testClientModel successfully
+      testEndpointParameters
+        ✓ should call testEndpointParameters successfully
+      testEnumParameters
+        ✓ should call testEnumParameters successfully
+      testEnumRequestBody
+        ✓ should call testEnumRequestBody successfully
+      testInlineAdditionalProperties
+        ✓ should call testInlineAdditionalProperties successfully
+      testJsonFormData
+        ✓ should call testJsonFormData successfully
+
+  (package)
+    FakeClassnameTags123Api
+      testClassname
+        ✓ should call testClassname successfully
+
+  (package)
+    PetApi
+      addPet
+        ✓ should call addPet successfully
+      deletePet
+        ✓ should call deletePet successfully
+      doCategoryStuff
+        ✓ should call doCategoryStuff successfully
+      findPetsByStatus
+        ✓ should call findPetsByStatus successfully
+      findPetsByTags
+        ✓ should call findPetsByTags successfully
+      getAllPets
+        ✓ should call getAllPets successfully
+      getPetById
+        ✓ should call getPetById successfully
+      getRandomPet
+        ✓ should call getRandomPet successfully
+      updatePet
+        ✓ should call updatePet successfully
+      updatePetWithForm
+        ✓ should call updatePetWithForm successfully
+      uploadFile
+        ✓ should call uploadFile successfully
+
+  (package)
+    StoreApi
+      deleteOrder
+        ✓ should call deleteOrder successfully
+      getInventory
+        ✓ should call getInventory successfully
+      getOrderById
+        ✓ should call getOrderById successfully
+      placeOrder
+        ✓ should call placeOrder successfully
+
+  (package)
+    UserApi
+      createUser
+        ✓ should call createUser successfully
+      createUsersWithArrayInput
+        ✓ should call createUsersWithArrayInput successfully
+      createUsersWithListInput
+        ✓ should call createUsersWithListInput successfully
+      deleteUser
+        ✓ should call deleteUser successfully
+      getUserByName
+        ✓ should call getUserByName successfully
+      loginUser
+        ✓ should call loginUser successfully
+      logoutUser
+        ✓ should call logoutUser successfully
+      updateUser
+        ✓ should call updateUser successfully
+
+  (package)
+    AdditionalPropertiesClass
+      ✓ should create an instance of AdditionalPropertiesClass
+      ✓ should have the property mapProperty (base name: "map_property")
+      ✓ should have the property mapOfMapProperty (base name: "map_of_map_property")
+
+  (package)
+    AllOfSubCategoryCategory
+      ✓ should create an instance of AllOfSubCategoryCategory
+      ✓ should have the property foo (base name: "foo")
+      ✓ should have the property bar (base name: "bar")
+      ✓ should have the property beer (base name: "beer")
+      ✓ should have the property drunk (base name: "drunk")
+
+  (package)
+    AllOfSubCategoryPetsItems
+      ✓ should create an instance of AllOfSubCategoryPetsItems
+
+  (package)
+    AllPetsResponse
+      ✓ should create an instance of AllPetsResponse
+
+  (package)
+    Animal
+      ✓ should create an instance of Animal
+      ✓ should have the property className (base name: "className")
+      ✓ should have the property color (base name: "color")
+
+  (package)
+    AnimalAnimalIdBody
+      ✓ should create an instance of AnimalAnimalIdBody
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property status (base name: "status")
+
+  (package)
+    AnimalFarm
+      ✓ should create an instance of AnimalFarm
+
+  (package)
+    ApiResponse
+      ✓ should create an instance of ApiResponse
+      ✓ should have the property code (base name: "code")
+      ✓ should have the property type (base name: "type")
+      ✓ should have the property message (base name: "message")
+
+  (package)
+    ArrayOfArrayOfNumberOnly
+      ✓ should create an instance of ArrayOfArrayOfNumberOnly
+      ✓ should have the property arrayArrayNumber (base name: "ArrayArrayNumber")
+
+  (package)
+    ArrayOfNumberOnly
+      ✓ should create an instance of ArrayOfNumberOnly
+      ✓ should have the property arrayNumber (base name: "ArrayNumber")
+
+  (package)
+    ArrayTest
+      ✓ should create an instance of ArrayTest
+      ✓ should have the property arrayOfString (base name: "array_of_string")
+      ✓ should have the property arrayArrayOfInteger (base name: "array_array_of_integer")
+      ✓ should have the property arrayArrayOfModel (base name: "array_array_of_model")
+
+  (package)
+    Capitalization
+      ✓ should create an instance of Capitalization
+      ✓ should have the property smallCamel (base name: "smallCamel")
+      ✓ should have the property capitalCamel (base name: "CapitalCamel")
+      ✓ should have the property smallSnake (base name: "small_Snake")
+      ✓ should have the property capitalSnake (base name: "Capital_Snake")
+      ✓ should have the property sCAETHFlowPoints (base name: "SCA_ETH_Flow_Points")
+      ✓ should have the property ATT_NAME (base name: "ATT_NAME")
+
+  (package)
+    Cat
+      ✓ should create an instance of Cat
+      ✓ should have the property declawed (base name: "declawed")
+
+  (package)
+    Category
+      ✓ should create an instance of Category
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    ClassModel
+      ✓ should create an instance of ClassModel
+      ✓ should have the property _class (base name: "_class")
+
+  (package)
+    Client
+      ✓ should create an instance of Client
+      ✓ should have the property client (base name: "client")
+
+  (package)
+    Dog
+      ✓ should create an instance of Dog
+      ✓ should have the property breed (base name: "breed")
+
+  (package)
+    DogDogIdBody
+      ✓ should create an instance of DogDogIdBody
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property status (base name: "status")
+
+  (package)
+    EnumArrays
+      ✓ should create an instance of EnumArrays
+      ✓ should have the property justSymbol (base name: "just_symbol")
+      ✓ should have the property arrayEnum (base name: "array_enum")
+
+  (package)
+    EnumClass
+      ✓ should create an instance of EnumClass
+      ✓ should have the property abc
+      ✓ should have the property efg
+      ✓ should have the property xyz
+
+  (package)
+    EnumFormBody
+      ✓ should create an instance of EnumFormBody
+      ✓ should have the property enumFormStringArray (base name: "enum_form_string_array")
+      ✓ should have the property enumFormString (base name: "enum_form_string")
+      ✓ should have the property enumQueryDouble (base name: "enum_query_double")
+
+  (package)
+    EnumTest
+      ✓ should create an instance of EnumTest
+      ✓ should have the property enumString (base name: "enum_string")
+      ✓ should have the property enumInteger (base name: "enum_integer")
+      ✓ should have the property enumNumber (base name: "enum_number")
+      ✓ should have the property outerEnum (base name: "outerEnum")
+
+  (package)
+    FakeBody
+      ✓ should create an instance of FakeBody
+      ✓ should have the property integer (base name: "integer")
+      ✓ should have the property int32 (base name: "int32")
+      ✓ should have the property int64 (base name: "int64")
+      ✓ should have the property _number (base name: "number")
+      ✓ should have the property _float (base name: "float")
+      ✓ should have the property _double (base name: "double")
+      ✓ should have the property _string (base name: "string")
+      ✓ should have the property patternWithoutDelimiter (base name: "pattern_without_delimiter")
+      ✓ should have the property _byte (base name: "byte")
+      ✓ should have the property binary (base name: "binary")
+      ✓ should have the property _date (base name: "date")
+      ✓ should have the property dateTime (base name: "dateTime")
+      ✓ should have the property password (base name: "password")
+      ✓ should have the property callback (base name: "callback")
+
+  (package)
+    FakeBody1
+      ✓ should create an instance of FakeBody1
+      ✓ should have the property integer (base name: "integer")
+      ✓ should have the property int32 (base name: "int32")
+      ✓ should have the property int64 (base name: "int64")
+      ✓ should have the property _number (base name: "number")
+      ✓ should have the property _float (base name: "float")
+      ✓ should have the property _double (base name: "double")
+      ✓ should have the property _string (base name: "string")
+      ✓ should have the property patternWithoutDelimiter (base name: "pattern_without_delimiter")
+      ✓ should have the property _byte (base name: "byte")
+      ✓ should have the property binary (base name: "binary")
+      ✓ should have the property _date (base name: "date")
+      ✓ should have the property dateTime (base name: "dateTime")
+      ✓ should have the property password (base name: "password")
+      ✓ should have the property callback (base name: "callback")
+
+  (package)
+    FakeJsonFormDataBody
+      ✓ should create an instance of FakeJsonFormDataBody
+      ✓ should have the property param (base name: "param")
+      ✓ should have the property param2 (base name: "param2")
+
+  (package)
+    FormatTest
+      ✓ should create an instance of FormatTest
+      ✓ should have the property integer (base name: "integer")
+      ✓ should have the property int32 (base name: "int32")
+      ✓ should have the property int64 (base name: "int64")
+      ✓ should have the property _number (base name: "number")
+      ✓ should have the property _float (base name: "float")
+      ✓ should have the property _double (base name: "double")
+      ✓ should have the property _string (base name: "string")
+      ✓ should have the property _byte (base name: "byte")
+      ✓ should have the property binary (base name: "binary")
+      ✓ should have the property _date (base name: "date")
+      ✓ should have the property dateTime (base name: "dateTime")
+      ✓ should have the property uuid (base name: "uuid")
+      ✓ should have the property password (base name: "password")
+
+  (package)
+    HasOnlyReadOnly
+      ✓ should create an instance of HasOnlyReadOnly
+      ✓ should have the property bar (base name: "bar")
+      ✓ should have the property foo (base name: "foo")
+
+  (package)
+    List
+      ✓ should create an instance of List
+      ✓ should have the property _123List (base name: "123-list")
+
+  (package)
+    MapTest
+      ✓ should create an instance of MapTest
+      ✓ should have the property mapMapOfString (base name: "map_map_of_string")
+      ✓ should have the property mapOfEnumString (base name: "map_of_enum_string")
+
+  (package)
+    MixedPropertiesAndAdditionalPropertiesClass
+      ✓ should create an instance of MixedPropertiesAndAdditionalPropertiesClass
+      ✓ should have the property uuid (base name: "uuid")
+      ✓ should have the property dateTime (base name: "dateTime")
+      ✓ should have the property map (base name: "map")
+
+  (package)
+    Model200Response
+      ✓ should create an instance of Model200Response
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property _class (base name: "class")
+
+  (package)
+    ModelReturn
+      ✓ should create an instance of ModelReturn
+      ✓ should have the property _return (base name: "return")
+
+  (package)
+    Name
+      ✓ should create an instance of Name
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property snakeCase (base name: "snake_case")
+      ✓ should have the property property (base name: "property")
+      ✓ should have the property _123Number (base name: "123Number")
+
+  (package)
+    NullableEnumModel
+      ✓ should create an instance of NullableEnumModel
+      ✓ should have the property enumProp (base name: "enumProp")
+
+  (package)
+    NumberOnly
+      ✓ should create an instance of NumberOnly
+      ✓ should have the property justNumber (base name: "JustNumber")
+
+  (package)
+    OneOfAllPetsResponseItems
+      ✓ should create an instance of OneOfAllPetsResponseItems
+
+  (package)
+    OneOfSinglePetResponsePet
+      ✓ should create an instance of OneOfSinglePetResponsePet
+
+  (package)
+    Order
+      ✓ should create an instance of Order
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property petId (base name: "petId")
+      ✓ should have the property quantity (base name: "quantity")
+      ✓ should have the property shipDate (base name: "shipDate")
+      ✓ should have the property status (base name: "status")
+      ✓ should have the property complete (base name: "complete")
+
+  (package)
+    OuterBoolean
+      ✓ should create an instance of OuterBoolean
+
+  (package)
+    OuterComposite
+      ✓ should create an instance of OuterComposite
+      ✓ should have the property myNumber (base name: "my_number")
+      ✓ should have the property myString (base name: "my_string")
+      ✓ should have the property myBoolean (base name: "my_boolean")
+
+  (package)
+    OuterEnum
+      ✓ should create an instance of OuterEnum
+      ✓ should have the property placed
+      ✓ should have the property approved
+      ✓ should have the property delivered
+
+  (package)
+    OuterNumber
+      ✓ should create an instance of OuterNumber
+
+  (package)
+    OuterString
+      ✓ should create an instance of OuterString
+
+  (package)
+    Pet
+      ✓ should create an instance of Pet
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property category (base name: "category")
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property photoUrls (base name: "photoUrls")
+      ✓ should have the property tags (base name: "tags")
+      ✓ should have the property status (base name: "status")
+
+  (package)
+    PetIdUploadImageBody
+      ✓ should create an instance of PetIdUploadImageBody
+      ✓ should have the property additionalMetadata (base name: "additionalMetadata")
+      ✓ should have the property file (base name: "file")
+
+  (package)
+    PetPetIdBody
+      ✓ should create an instance of PetPetIdBody
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property status (base name: "status")
+
+  (package)
+    ReadOnlyFirst
+      ✓ should create an instance of ReadOnlyFirst
+      ✓ should have the property bar (base name: "bar")
+      ✓ should have the property baz (base name: "baz")
+
+  (package)
+    SinglePetResponse
+      ✓ should create an instance of SinglePetResponse
+      ✓ should have the property pet (base name: "pet")
+
+  (package)
+    SpecialModelName
+      ✓ should create an instance of SpecialModelName
+      ✓ should have the property specialPropertyName (base name: "$special[property.name]")
+
+  (package)
+    SubCategory
+      ✓ should create an instance of SubCategory
+      ✓ should have the property category (base name: "category")
+      ✓ should have the property category2 (base name: "category2")
+      ✓ should have the property pets (base name: "pets")
+
+  (package)
+    Tag
+      ✓ should create an instance of Tag
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    User
+      ✓ should create an instance of User
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property username (base name: "username")
+      ✓ should have the property firstName (base name: "firstName")
+      ✓ should have the property lastName (base name: "lastName")
+      ✓ should have the property email (base name: "email")
+      ✓ should have the property password (base name: "password")
+      ✓ should have the property phone (base name: "phone")
+      ✓ should have the property userStatus (base name: "userStatus")
+
+
+  240 passing (227ms)
+
+
+****** executed all buildcommand ******
+

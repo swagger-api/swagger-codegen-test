@@ -1,0 +1,25 @@
+
+****** generate ******
+
+LANGUAGE nodejs-server
+JOB_NAME nodejs-server-v3___petstore3composed___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3composed.yaml
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3composed.yaml
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+09:02:38.651 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+09:02:38.656 [Thread-1] WARN  i.s.c.v.g.DefaultCodegenConfig - Empty operationId found for path: PUT /user/{username}. Renamed to auto-generated operationId: userUsernamePUT
+09:02:38.964 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/service/DefaultService.js
+09:02:38.971 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/controllers/Default.js
+09:02:39.008 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/service/PetService.js
+09:02:39.017 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/controllers/Pet.js
+09:02:39.026 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/service/StoreService.js
+09:02:39.040 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/controllers/Store.js
+09:02:39.047 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/service/UserService.js
+09:02:39.055 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/controllers/User.js
+09:02:39.224 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/utils/writer.js
+09:02:39.228 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/api/openapi.yaml
+09:02:39.231 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/index.js
+09:02:39.236 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/package.json
+09:02:39.242 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/README.md
+09:02:39.246 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/.swagger-codegen-ignore
+09:02:39.247 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server-v3___petstore3composed___/.swagger-codegen/VERSION

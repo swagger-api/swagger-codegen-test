@@ -1,0 +1,54 @@
+
+****** generate ******
+
+LANGUAGE javascript
+JOB_NAME javascript-promise-es6-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+09:07:58.313 [Thread-1] WARN  i.s.c.v.i.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+09:07:58.315 [Thread-1] INFO  i.s.c.v.g.j.JavaScriptClientCodegen - Using JS ES6 templates
+09:07:58.632 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/Address.js
+09:07:58.646 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/Address.spec.js
+09:07:58.655 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/Address.md
+09:07:58.679 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/ApiResponse.js
+09:07:58.687 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/ApiResponse.spec.js
+09:07:58.691 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/ApiResponse.md
+09:07:58.719 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/Category.js
+09:07:58.727 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/Category.spec.js
+09:07:58.732 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/Category.md
+09:07:58.753 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/Customer.js
+09:07:58.759 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/Customer.spec.js
+09:07:58.764 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/Customer.md
+09:07:58.785 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/Order.js
+09:07:58.792 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/Order.spec.js
+09:07:58.797 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/Order.md
+09:07:58.819 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/Pet.js
+09:07:58.838 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/Pet.spec.js
+09:07:58.846 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/Pet.md
+09:07:58.883 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/Tag.js
+09:07:58.893 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/Tag.spec.js
+09:07:58.901 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/Tag.md
+09:07:58.936 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/model/User.js
+09:07:58.947 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/model/User.spec.js
+09:07:58.954 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/User.md
+09:07:59.182 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/api/PetApi.js
+09:07:59.209 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/api/PetApi.spec.js
+09:07:59.237 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/PetApi.md
+09:07:59.262 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/api/StoreApi.js
+09:07:59.279 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/api/StoreApi.spec.js
+09:07:59.303 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/StoreApi.md
+09:07:59.334 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/api/UserApi.js
+09:07:59.351 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/api/UserApi.spec.js
+09:07:59.364 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/docs/UserApi.md
+09:07:59.368 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/package.json
+09:07:59.375 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/index.js
+09:07:59.386 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/src/ApiClient.js
+09:07:59.387 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/git_push.sh
+09:07:59.401 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/README.md
+09:07:59.402 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/mocha.opts
+09:07:59.406 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/.travis.yml
+09:07:59.407 [Thread-1] INFO  i.s.codegen.v3.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/test/assert-equals.js
+09:07:59.407 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/.babelrc
+09:07:59.409 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/.swagger-codegen-ignore
+09:07:59.409 [Thread-1] INFO  i.s.codegen.v3.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-promise-es6-v3___petstore3___/.swagger-codegen/VERSION
