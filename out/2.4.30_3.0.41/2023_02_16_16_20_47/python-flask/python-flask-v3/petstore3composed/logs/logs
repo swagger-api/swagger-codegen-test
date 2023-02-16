@@ -1,0 +1,582 @@
+
+****** BUILD ******
+
+
+****** executing: python3 setup.py install --user ******
+
+running install
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running bdist_egg
+running egg_info
+creating swagger_server.egg-info
+writing swagger_server.egg-info/PKG-INFO
+writing dependency_links to swagger_server.egg-info/dependency_links.txt
+writing entry points to swagger_server.egg-info/entry_points.txt
+writing requirements to swagger_server.egg-info/requires.txt
+writing top-level names to swagger_server.egg-info/top_level.txt
+writing manifest file 'swagger_server.egg-info/SOURCES.txt'
+reading manifest file 'swagger_server.egg-info/SOURCES.txt'
+writing manifest file 'swagger_server.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/swagger_server
+copying swagger_server/util.py -> build/lib/swagger_server
+copying swagger_server/type_util.py -> build/lib/swagger_server
+copying swagger_server/__init__.py -> build/lib/swagger_server
+copying swagger_server/encoder.py -> build/lib/swagger_server
+copying swagger_server/__main__.py -> build/lib/swagger_server
+creating build/lib/swagger_server/models
+copying swagger_server/models/dog.py -> build/lib/swagger_server/models
+copying swagger_server/models/macaw.py -> build/lib/swagger_server/models
+copying swagger_server/models/one_of_part_master_origin.py -> build/lib/swagger_server/models
+copying swagger_server/models/pet.py -> build/lib/swagger_server/models
+copying swagger_server/models/cat.py -> build/lib/swagger_server/models
+copying swagger_server/models/inline_response2001.py -> build/lib/swagger_server/models
+copying swagger_server/models/category.py -> build/lib/swagger_server/models
+copying swagger_server/models/parakeet.py -> build/lib/swagger_server/models
+copying swagger_server/models/api_response.py -> build/lib/swagger_server/models
+copying swagger_server/models/part_master.py -> build/lib/swagger_server/models
+copying swagger_server/models/all_pets_response.py -> build/lib/swagger_server/models
+copying swagger_server/models/tag.py -> build/lib/swagger_server/models
+copying swagger_server/models/parrot_body.py -> build/lib/swagger_server/models
+copying swagger_server/models/sub_category.py -> build/lib/swagger_server/models
+copying swagger_server/models/base_model_.py -> build/lib/swagger_server/models
+copying swagger_server/models/one_of_pet_part_items.py -> build/lib/swagger_server/models
+copying swagger_server/models/part_one.py -> build/lib/swagger_server/models
+copying swagger_server/models/order.py -> build/lib/swagger_server/models
+copying swagger_server/models/one_of_all_pets_response_items.py -> build/lib/swagger_server/models
+copying swagger_server/models/user.py -> build/lib/swagger_server/models
+copying swagger_server/models/one_of_pup.py -> build/lib/swagger_server/models
+copying swagger_server/models/val_member_choice1.py -> build/lib/swagger_server/models
+copying swagger_server/models/all_of_sub_category_pets_items.py -> build/lib/swagger_server/models
+copying swagger_server/models/parrot_body1.py -> build/lib/swagger_server/models
+copying swagger_server/models/any_ofparrot_body_parrots_items.py -> build/lib/swagger_server/models
+copying swagger_server/models/__init__.py -> build/lib/swagger_server/models
+copying swagger_server/models/one_of_part_master_destination.py -> build/lib/swagger_server/models
+copying swagger_server/models/all_of_sub_category_category.py -> build/lib/swagger_server/models
+copying swagger_server/models/inline_response200.py -> build/lib/swagger_server/models
+copying swagger_server/models/part_two.py -> build/lib/swagger_server/models
+copying swagger_server/models/nullable_enum_model.py -> build/lib/swagger_server/models
+copying swagger_server/models/part_four.py -> build/lib/swagger_server/models
+copying swagger_server/models/test.py -> build/lib/swagger_server/models
+copying swagger_server/models/part_three.py -> build/lib/swagger_server/models
+copying swagger_server/models/pup.py -> build/lib/swagger_server/models
+copying swagger_server/models/pet_pet_id_body.py -> build/lib/swagger_server/models
+copying swagger_server/models/val_members.py -> build/lib/swagger_server/models
+copying swagger_server/models/one_ofval_members_val_member_items.py -> build/lib/swagger_server/models
+copying swagger_server/models/one_ofinline_response200_parrots_items.py -> build/lib/swagger_server/models
+copying swagger_server/models/val_member_choice2.py -> build/lib/swagger_server/models
+creating build/lib/swagger_server/controllers
+copying swagger_server/controllers/authorization_controller.py -> build/lib/swagger_server/controllers
+copying swagger_server/controllers/pet_controller.py -> build/lib/swagger_server/controllers
+copying swagger_server/controllers/default_controller.py -> build/lib/swagger_server/controllers
+copying swagger_server/controllers/__init__.py -> build/lib/swagger_server/controllers
+copying swagger_server/controllers/store_controller.py -> build/lib/swagger_server/controllers
+copying swagger_server/controllers/user_controller.py -> build/lib/swagger_server/controllers
+creating build/lib/swagger_server/test
+copying swagger_server/test/test_pet_controller.py -> build/lib/swagger_server/test
+copying swagger_server/test/test_store_controller.py -> build/lib/swagger_server/test
+copying swagger_server/test/test_user_controller.py -> build/lib/swagger_server/test
+copying swagger_server/test/test_default_controller.py -> build/lib/swagger_server/test
+copying swagger_server/test/__init__.py -> build/lib/swagger_server/test
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/setuptools/command/build_py.py:202: SetuptoolsDeprecationWarning:     Installing 'swagger_server.swagger' as data is deprecated, please list it in `packages`.
+    !!
+
+
+    ############################
+    # Package would be ignored #
+    ############################
+    Python recognizes 'swagger_server.swagger' as an importable package,
+    but it is not listed in the `packages` configuration of setuptools.
+
+    'swagger_server.swagger' has been automatically added to the distribution only
+    because it may contain data files, but this behavior is likely to change
+    in future versions of setuptools (and therefore is considered deprecated).
+
+    Please make sure that 'swagger_server.swagger' is included as a package by using
+    the `packages` configuration field or the proper discovery methods
+    (for example by using `find_namespace_packages(...)`/`find_namespace:`
+    instead of `find_packages(...)`/`find:`).
+
+    You can read more about "package discovery" and "data files" on setuptools
+    documentation page.
+
+
+!!
+
+  check.warn(importable)
+creating build/lib/swagger_server/swagger
+copying swagger_server/swagger/swagger.yaml -> build/lib/swagger_server/swagger
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/swagger_server
+copying build/lib/swagger_server/util.py -> build/bdist.linux-x86_64/egg/swagger_server
+creating build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/dog.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/macaw.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/one_of_part_master_origin.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/pet.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/cat.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/inline_response2001.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/category.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/parakeet.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/api_response.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/part_master.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/all_pets_response.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/tag.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/parrot_body.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/sub_category.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/base_model_.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/one_of_pet_part_items.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/part_one.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/order.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/one_of_all_pets_response_items.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/user.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/one_of_pup.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/val_member_choice1.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/all_of_sub_category_pets_items.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/parrot_body1.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/any_ofparrot_body_parrots_items.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/__init__.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/one_of_part_master_destination.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/all_of_sub_category_category.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/inline_response200.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/part_two.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/nullable_enum_model.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/part_four.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/test.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/part_three.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/pup.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/pet_pet_id_body.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/val_members.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/one_ofval_members_val_member_items.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/one_ofinline_response200_parrots_items.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+copying build/lib/swagger_server/models/val_member_choice2.py -> build/bdist.linux-x86_64/egg/swagger_server/models
+creating build/bdist.linux-x86_64/egg/swagger_server/controllers
+copying build/lib/swagger_server/controllers/authorization_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/controllers
+copying build/lib/swagger_server/controllers/pet_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/controllers
+copying build/lib/swagger_server/controllers/default_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/controllers
+copying build/lib/swagger_server/controllers/__init__.py -> build/bdist.linux-x86_64/egg/swagger_server/controllers
+copying build/lib/swagger_server/controllers/store_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/controllers
+copying build/lib/swagger_server/controllers/user_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/controllers
+copying build/lib/swagger_server/type_util.py -> build/bdist.linux-x86_64/egg/swagger_server
+copying build/lib/swagger_server/__init__.py -> build/bdist.linux-x86_64/egg/swagger_server
+creating build/bdist.linux-x86_64/egg/swagger_server/swagger
+copying build/lib/swagger_server/swagger/swagger.yaml -> build/bdist.linux-x86_64/egg/swagger_server/swagger
+creating build/bdist.linux-x86_64/egg/swagger_server/test
+copying build/lib/swagger_server/test/test_pet_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/test
+copying build/lib/swagger_server/test/test_store_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/test
+copying build/lib/swagger_server/test/test_user_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/test
+copying build/lib/swagger_server/test/test_default_controller.py -> build/bdist.linux-x86_64/egg/swagger_server/test
+copying build/lib/swagger_server/test/__init__.py -> build/bdist.linux-x86_64/egg/swagger_server/test
+copying build/lib/swagger_server/encoder.py -> build/bdist.linux-x86_64/egg/swagger_server
+copying build/lib/swagger_server/__main__.py -> build/bdist.linux-x86_64/egg/swagger_server
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/util.py to util.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/dog.py to dog.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/macaw.py to macaw.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/one_of_part_master_origin.py to one_of_part_master_origin.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/pet.py to pet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/cat.py to cat.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/inline_response2001.py to inline_response2001.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/category.py to category.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/parakeet.py to parakeet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/api_response.py to api_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/part_master.py to part_master.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/all_pets_response.py to all_pets_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/tag.py to tag.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/parrot_body.py to parrot_body.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/sub_category.py to sub_category.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/base_model_.py to base_model_.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/one_of_pet_part_items.py to one_of_pet_part_items.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/part_one.py to part_one.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/order.py to order.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/one_of_all_pets_response_items.py to one_of_all_pets_response_items.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/user.py to user.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/one_of_pup.py to one_of_pup.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/val_member_choice1.py to val_member_choice1.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/all_of_sub_category_pets_items.py to all_of_sub_category_pets_items.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/parrot_body1.py to parrot_body1.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/any_ofparrot_body_parrots_items.py to any_ofparrot_body_parrots_items.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/one_of_part_master_destination.py to one_of_part_master_destination.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/all_of_sub_category_category.py to all_of_sub_category_category.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/inline_response200.py to inline_response200.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/part_two.py to part_two.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/nullable_enum_model.py to nullable_enum_model.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/part_four.py to part_four.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/test.py to test.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/part_three.py to part_three.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/pup.py to pup.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/pet_pet_id_body.py to pet_pet_id_body.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/val_members.py to val_members.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/one_ofval_members_val_member_items.py to one_ofval_members_val_member_items.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/one_ofinline_response200_parrots_items.py to one_ofinline_response200_parrots_items.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/models/val_member_choice2.py to val_member_choice2.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/controllers/authorization_controller.py to authorization_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/controllers/pet_controller.py to pet_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/controllers/default_controller.py to default_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/controllers/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/controllers/store_controller.py to store_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/controllers/user_controller.py to user_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/type_util.py to type_util.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/test/test_pet_controller.py to test_pet_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/test/test_store_controller.py to test_store_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/test/test_user_controller.py to test_user_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/test/test_default_controller.py to test_default_controller.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/test/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/encoder.py to encoder.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_server/__main__.py to __main__.cpython-311.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_server.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_server.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_server.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_server.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_server.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_server.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+creating dist
+creating 'dist/swagger_server-1.0.0-py3.11.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing swagger_server-1.0.0-py3.11.egg
+Copying swagger_server-1.0.0-py3.11.egg to /home/runner/.local/lib/python3.11/site-packages
+Adding swagger-server 1.0.0 to easy-install.pth file
+Installing swagger_server script to /home/runner/.local/bin
+
+Installed /home/runner/.local/lib/python3.11/site-packages/swagger_server-1.0.0-py3.11.egg
+Processing dependencies for swagger-server==1.0.0
+Searching for swagger-ui-bundle>=0.0.2
+Reading https://pypi.org/simple/swagger-ui-bundle/
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning:  is an invalid version and will not be supported in a future release
+  warnings.warn(
+Downloading https://files.pythonhosted.org/packages/f1/4e/920b2cece4bc0367a60a53dcdb63ad210ea8bfe1fcebb35c6e5f47a69259/swagger_ui_bundle-0.0.9-py3-none-any.whl#sha256=cea116ed81147c345001027325c1ddc9ca78c1ee7319935c3c75d3669279d575
+Best match: swagger-ui-bundle 0.0.9
+Processing swagger_ui_bundle-0.0.9-py3-none-any.whl
+Installing swagger_ui_bundle-0.0.9-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding swagger-ui-bundle 0.0.9 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/swagger_ui_bundle-0.0.9-py3.11.egg
+Searching for connexion
+Reading https://pypi.org/simple/connexion/
+Downloading https://files.pythonhosted.org/packages/ed/e6/851b3d7688115b176eb5d3e45055d1dc5b2b91708007064a38b0e93813ed/connexion-2.14.2-py2.py3-none-any.whl#sha256=a73b96a0e07b16979a42cde7c7e26afe8548099e352cf350f80c57185e0e0b36
+Best match: connexion 2.14.2
+Processing connexion-2.14.2-py2.py3-none-any.whl
+Installing connexion-2.14.2-py2.py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding connexion 2.14.2 to easy-install.pth file
+Installing connexion script to /home/runner/.local/bin
+
+Installed /home/runner/.local/lib/python3.11/site-packages/connexion-2.14.2-py3.11.egg
+Searching for Jinja2>=2.0
+Reading https://pypi.org/simple/Jinja2/
+Downloading https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl#sha256=6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61
+Best match: Jinja2 3.1.2
+Processing Jinja2-3.1.2-py3-none-any.whl
+Installing Jinja2-3.1.2-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding Jinja2 3.1.2 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/Jinja2-3.1.2-py3.11.egg
+Searching for itsdangerous>=0.24
+Reading https://pypi.org/simple/itsdangerous/
+Downloading https://files.pythonhosted.org/packages/68/5f/447e04e828f47465eeab35b5d408b7ebaaaee207f48b7136c5a7267a30ae/itsdangerous-2.1.2-py3-none-any.whl#sha256=2c2349112351b88699d8d4b6b075022c0808887cb7ad10069318a8b0bc88db44
+Best match: itsdangerous 2.1.2
+Processing itsdangerous-2.1.2-py3-none-any.whl
+Installing itsdangerous-2.1.2-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding itsdangerous 2.1.2 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/itsdangerous-2.1.2-py3.11.egg
+Searching for flask<2.3,>=1.0.4
+Reading https://pypi.org/simple/flask/
+Downloading https://files.pythonhosted.org/packages/95/9c/a3542594ce4973786236a1b7b702b8ca81dbf40ea270f0f96284f0c27348/Flask-2.2.3-py3-none-any.whl#sha256=c0bec9477df1cb867e5a67c9e1ab758de9cb4a3e52dd70681f59fa40a62b3f2d
+Best match: Flask 2.2.3
+Processing Flask-2.2.3-py3-none-any.whl
+Installing Flask-2.2.3-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding Flask 2.2.3 to easy-install.pth file
+Installing flask script to /home/runner/.local/bin
+
+Installed /home/runner/.local/lib/python3.11/site-packages/Flask-2.2.3-py3.11.egg
+Searching for packaging>=20
+Reading https://pypi.org/simple/packaging/
+Downloading https://files.pythonhosted.org/packages/ed/35/a31aed2993e398f6b09a790a181a7927eb14610ee8bbf02dc14d31677f1c/packaging-23.0-py3-none-any.whl#sha256=714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2
+Best match: packaging 23.0
+Processing packaging-23.0-py3-none-any.whl
+Installing packaging-23.0-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding packaging 23.0 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/packaging-23.0-py3.11.egg
+Searching for werkzeug<2.3,>=1.0
+Reading https://pypi.org/simple/werkzeug/
+Downloading https://files.pythonhosted.org/packages/f6/f8/9da63c1617ae2a1dec2fbf6412f3a0cfe9d4ce029eccbda6e1e4258ca45f/Werkzeug-2.2.3-py3-none-any.whl#sha256=56433961bc1f12533306c624f3be5e744389ac61d722175d543e1751285da612
+Best match: Werkzeug 2.2.3
+Processing Werkzeug-2.2.3-py3-none-any.whl
+Installing Werkzeug-2.2.3-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding Werkzeug 2.2.3 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/Werkzeug-2.2.3-py3.11.egg
+Searching for inflection<0.6,>=0.3.1
+Reading https://pypi.org/simple/inflection/
+Downloading https://files.pythonhosted.org/packages/59/91/aa6bde563e0085a02a435aa99b49ef75b0a4b062635e606dab23ce18d720/inflection-0.5.1-py2.py3-none-any.whl#sha256=f38b2b640938a4f35ade69ac3d053042959b62a0f1076a5bbaa1b9526605a8a2
+Best match: inflection 0.5.1
+Processing inflection-0.5.1-py2.py3-none-any.whl
+Installing inflection-0.5.1-py2.py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding inflection 0.5.1 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/inflection-0.5.1-py3.11.egg
+Searching for requests<3,>=2.9.1
+Reading https://pypi.org/simple/requests/
+Downloading https://files.pythonhosted.org/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl#sha256=64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa
+Best match: requests 2.28.2
+Processing requests-2.28.2-py3-none-any.whl
+Installing requests-2.28.2-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding requests 2.28.2 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/requests-2.28.2-py3.11.egg
+Searching for PyYAML<7,>=5.1
+Reading https://pypi.org/simple/PyYAML/
+Downloading https://files.pythonhosted.org/packages/56/8f/e8b49ad21d26111493dc2d5cae4d7efbd0e2e065440665f5023515f87f64/PyYAML-6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=432557aa2c09802be39460360ddffd48156e30721f5e8d917f01d31694216782
+Best match: PyYAML 6.0
+Processing PyYAML-6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Installing PyYAML-6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding PyYAML 6.0 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/PyYAML-6.0-py3.11-linux-x86_64.egg
+Searching for jsonschema<5,>=2.5.1
+Reading https://pypi.org/simple/jsonschema/
+Downloading https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl#sha256=a870ad254da1a8ca84b6a2905cac29d265f805acc57af304784962a2aa6508f6
+Best match: jsonschema 4.17.3
+Processing jsonschema-4.17.3-py3-none-any.whl
+Installing jsonschema-4.17.3-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding jsonschema 4.17.3 to easy-install.pth file
+Installing jsonschema script to /home/runner/.local/bin
+
+Installed /home/runner/.local/lib/python3.11/site-packages/jsonschema-4.17.3-py3.11.egg
+Searching for clickclick<21,>=1.2
+Reading https://pypi.org/simple/clickclick/
+Downloading https://files.pythonhosted.org/packages/7a/7e/c08007d3fb2bbefb430437a3573373590abedc03566b785d7d6763b22480/clickclick-20.10.2-py2.py3-none-any.whl#sha256=c8f33e6d9ec83f68416dd2136a7950125bd256ec39ccc9a85c6e280a16be2bb5
+Best match: clickclick 20.10.2
+Processing clickclick-20.10.2-py2.py3-none-any.whl
+Installing clickclick-20.10.2-py2.py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding clickclick 20.10.2 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/clickclick-20.10.2-py3.11.egg
+Searching for MarkupSafe>=2.0
+Reading https://pypi.org/simple/MarkupSafe/
+Downloading https://files.pythonhosted.org/packages/5a/94/d056bf5dbadf7f4b193ee2a132b3d49ffa1602371e3847518b2982045425/MarkupSafe-2.1.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=f2bfb563d0211ce16b63c7cb9395d2c682a23187f54c3d79bfec33e6705473c6
+Best match: MarkupSafe 2.1.2
+Processing MarkupSafe-2.1.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Installing MarkupSafe-2.1.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding MarkupSafe 2.1.2 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/MarkupSafe-2.1.2-py3.11-linux-x86_64.egg
+Searching for click>=8.0
+Reading https://pypi.org/simple/click/
+Downloading https://files.pythonhosted.org/packages/c2/f1/df59e28c642d583f7dacffb1e0965d0e00b218e0186d7858ac5233dce840/click-8.1.3-py3-none-any.whl#sha256=bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48
+Best match: click 8.1.3
+Processing click-8.1.3-py3-none-any.whl
+Installing click-8.1.3-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding click 8.1.3 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/click-8.1.3-py3.11.egg
+Searching for certifi>=2017.4.17
+Reading https://pypi.org/simple/certifi/
+Downloading https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl#sha256=4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
+Best match: certifi 2022.12.7
+Processing certifi-2022.12.7-py3-none-any.whl
+Installing certifi-2022.12.7-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding certifi 2022.12.7 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/certifi-2022.12.7-py3.11.egg
+Searching for urllib3<1.27,>=1.21.1
+Reading https://pypi.org/simple/urllib3/
+Downloading https://files.pythonhosted.org/packages/fe/ca/466766e20b767ddb9b951202542310cba37ea5f2d792dae7589f1741af58/urllib3-1.26.14-py2.py3-none-any.whl#sha256=75edcdc2f7d85b137124a6c3c9fc3933cdeaa12ecb9a6a959f22797a0feca7e1
+Best match: urllib3 1.26.14
+Processing urllib3-1.26.14-py2.py3-none-any.whl
+Installing urllib3-1.26.14-py2.py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding urllib3 1.26.14 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/urllib3-1.26.14-py3.11.egg
+Searching for idna<4,>=2.5
+Reading https://pypi.org/simple/idna/
+Downloading https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl#sha256=90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2
+Best match: idna 3.4
+Processing idna-3.4-py3-none-any.whl
+Installing idna-3.4-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding idna 3.4 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/idna-3.4-py3.11.egg
+Searching for charset-normalizer<4,>=2
+Reading https://pypi.org/simple/charset-normalizer/
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-1.4.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-1.4.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.2 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.3 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.4 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.5 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.6 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.7 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.8 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.9 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.10 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.11 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.0.12 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.1.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-2.1.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-3.0.0b1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-3.0.0b2 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-3.0.0rc1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-3.0.0 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: normalizer-3.0.1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+Downloading https://files.pythonhosted.org/packages/d9/7a/60d45c9453212b30eebbf8b5cddbdef330eebddfcf335bce7920c43fb72e/charset_normalizer-3.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=79909e27e8e4fcc9db4addea88aa63f6423ebb171db091fb4373e3312cb6d603
+Best match: charset-normalizer 3.0.1
+Processing charset_normalizer-3.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Installing charset_normalizer-3.0.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding charset-normalizer 3.0.1 to easy-install.pth file
+Installing normalizer script to /home/runner/.local/bin
+
+Installed /home/runner/.local/lib/python3.11/site-packages/charset_normalizer-3.0.1-py3.11-linux-x86_64.egg
+Searching for pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+Reading https://pypi.org/simple/pyrsistent/
+Downloading https://files.pythonhosted.org/packages/64/de/375aa14daaee107f987da76ca32f7a907fea00fa8b8afb67dc09bec0de91/pyrsistent-0.19.3-py3-none-any.whl#sha256=ccf0d6bd208f8111179f0c26fdf84ed7c3891982f2edaeae7422575f47e66b64
+Best match: pyrsistent 0.19.3
+Processing pyrsistent-0.19.3-py3-none-any.whl
+Installing pyrsistent-0.19.3-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding pyrsistent 0.19.3 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/pyrsistent-0.19.3-py3.11.egg
+Searching for attrs>=17.4.0
+Reading https://pypi.org/simple/attrs/
+Downloading https://files.pythonhosted.org/packages/fb/6e/6f83bf616d2becdf333a1640f1d463fef3150e2e926b7010cb0f81c95e88/attrs-22.2.0-py3-none-any.whl#sha256=29e95c7f6778868dbd49170f98f8818f78f3dc5e0e37c0b1f474e3561b240836
+Best match: attrs 22.2.0
+Processing attrs-22.2.0-py3-none-any.whl
+Installing attrs-22.2.0-py3-none-any.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding attrs 22.2.0 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/attrs-22.2.0-py3.11.egg
+Finished processing dependencies for swagger-server==1.0.0
+
+****** executing: pip3 install nose2 --user ******
+
+Collecting nose2
+  Downloading nose2-0.12.0-py2.py3-none-any.whl (152 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 152.8/152.8 kB 4.2 MB/s eta 0:00:00
+Installing collected packages: nose2
+Successfully installed nose2-0.12.0
+
+[notice] A new release of pip is available: 22.3.1 -> 23.0
+[notice] To update, run: pip install --upgrade pip
+
+****** executing: python3 -m nose2 ******
+
+EEEEE
+======================================================================
+ERROR: swagger_server.models.test (nose2.loader.ModuleImportFailure.swagger_server.models.test)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: swagger_server.models.test
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/plugins/loader/discovery.py", line 204, in _find_tests_in_file
+    module = util.module_from_name(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/util.py", line 76, in module_from_name
+    __import__(name)
+  File "/home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3composed___/swagger_server/models/__init__.py", line 6, in <module>
+    from swagger_server.models.all_of_sub_category_category import AllOfSubCategoryCategory
+  File "/home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3composed___/swagger_server/models/all_of_sub_category_category.py", line 8, in <module>
+    from swagger_server.models.base_model_ import Model
+  File "/home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3composed___/swagger_server/models/base_model_.py", line 3, in <module>
+    import six
+ModuleNotFoundError: No module named 'six'
+
+
+======================================================================
+ERROR: swagger_server.test.test_pet_controller (nose2.loader.ModuleImportFailure.swagger_server.test.test_pet_controller)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: swagger_server.test.test_pet_controller
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/plugins/loader/discovery.py", line 204, in _find_tests_in_file
+    module = util.module_from_name(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/util.py", line 76, in module_from_name
+    __import__(name)
+  File "/home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3composed___/swagger_server/test/__init__.py", line 4, in <module>
+    from flask_testing import TestCase
+ModuleNotFoundError: No module named 'flask_testing'
+
+
+======================================================================
+ERROR: swagger_server.test.test_store_controller (nose2.loader.ModuleImportFailure.swagger_server.test.test_store_controller)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: swagger_server.test.test_store_controller
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/plugins/loader/discovery.py", line 204, in _find_tests_in_file
+    module = util.module_from_name(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/util.py", line 76, in module_from_name
+    __import__(name)
+  File "/home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3composed___/swagger_server/test/__init__.py", line 4, in <module>
+    from flask_testing import TestCase
+ModuleNotFoundError: No module named 'flask_testing'
+
+
+======================================================================
+ERROR: swagger_server.test.test_user_controller (nose2.loader.ModuleImportFailure.swagger_server.test.test_user_controller)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: swagger_server.test.test_user_controller
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/plugins/loader/discovery.py", line 204, in _find_tests_in_file
+    module = util.module_from_name(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/util.py", line 76, in module_from_name
+    __import__(name)
+  File "/home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3composed___/swagger_server/test/__init__.py", line 4, in <module>
+    from flask_testing import TestCase
+ModuleNotFoundError: No module named 'flask_testing'
+
+
+======================================================================
+ERROR: swagger_server.test.test_default_controller (nose2.loader.ModuleImportFailure.swagger_server.test.test_default_controller)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: swagger_server.test.test_default_controller
+Traceback (most recent call last):
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/plugins/loader/discovery.py", line 204, in _find_tests_in_file
+    module = util.module_from_name(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.11/site-packages/nose2/util.py", line 76, in module_from_name
+    __import__(name)
+  File "/home/runner/work/swagger-codegen/swagger-codegen/generated/python-flask-v3___petstore3composed___/swagger_server/test/__init__.py", line 4, in <module>
+    from flask_testing import TestCase
+ModuleNotFoundError: No module named 'flask_testing'
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+FAILED (errors=5)

@@ -1,0 +1,220 @@
+
+****** BUILD ******
+
+
+****** executing: sh ./build.sh ******
+
+[INFO] Target framework: net40
+[INFO] Download nuget and packages
+nuget is /usr/bin/nuget
+--2023-02-16 16:34:23--  https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+Resolving dist.nuget.org (dist.nuget.org)... 152.199.4.184
+Connecting to dist.nuget.org (dist.nuget.org)|152.199.4.184|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6450096 (6.2M) [application/x-msdownload]
+Saving to: ‘nuget.exe’
+
+     0K .......... .......... .......... .......... ..........  0% 60.1M 0s
+    50K .......... .......... .......... .......... ..........  1% 44.4M 0s
+   100K .......... .......... .......... .......... ..........  2% 76.6M 0s
+   150K .......... .......... .......... .......... ..........  3% 78.8M 0s
+   200K .......... .......... .......... .......... ..........  3% 80.9M 0s
+   250K .......... .......... .......... .......... ..........  4% 80.0M 0s
+   300K .......... .......... .......... .......... ..........  5% 76.6M 0s
+   350K .......... .......... .......... .......... ..........  6% 64.7M 0s
+   400K .......... .......... .......... .......... ..........  7% 85.7M 0s
+   450K .......... .......... .......... .......... ..........  7% 71.9M 0s
+   500K .......... .......... .......... .......... ..........  8% 92.8M 0s
+   550K .......... .......... .......... .......... ..........  9% 89.0M 0s
+   600K .......... .......... .......... .......... .......... 10% 76.4M 0s
+   650K .......... .......... .......... .......... .......... 11% 76.7M 0s
+   700K .......... .......... .......... .......... .......... 11%  100M 0s
+   750K .......... .......... .......... .......... .......... 12% 84.9M 0s
+   800K .......... .......... .......... .......... .......... 13%  126M 0s
+   850K .......... .......... .......... .......... .......... 14%  330M 0s
+   900K .......... .......... .......... .......... .......... 15%  311M 0s
+   950K .......... .......... .......... .......... .......... 15%  258M 0s
+  1000K .......... .......... .......... .......... .......... 16%  320M 0s
+  1050K .......... .......... .......... .......... .......... 17%  336M 0s
+  1100K .......... .......... .......... .......... .......... 18%  337M 0s
+  1150K .......... .......... .......... .......... .......... 19%  267M 0s
+  1200K .......... .......... .......... .......... .......... 19%  311M 0s
+  1250K .......... .......... .......... .......... .......... 20%  334M 0s
+  1300K .......... .......... .......... .......... .......... 21%  340M 0s
+  1350K .......... .......... .......... .......... .......... 22%  105M 0s
+  1400K .......... .......... .......... .......... .......... 23%  305M 0s
+  1450K .......... .......... .......... .......... .......... 23%  303M 0s
+  1500K .......... .......... .......... .......... .......... 24%  313M 0s
+  1550K .......... .......... .......... .......... .......... 25%  262M 0s
+  1600K .......... .......... .......... .......... .......... 26%  158M 0s
+  1650K .......... .......... .......... .......... .......... 26%  306M 0s
+  1700K .......... .......... .......... .......... .......... 27% 70.8M 0s
+  1750K .......... .......... .......... .......... .......... 28% 73.4M 0s
+  1800K .......... .......... .......... .......... .......... 29% 88.4M 0s
+  1850K .......... .......... .......... .......... .......... 30%  124M 0s
+  1900K .......... .......... .......... .......... .......... 30%  103M 0s
+  1950K .......... .......... .......... .......... .......... 31% 82.3M 0s
+  2000K .......... .......... .......... .......... .......... 32%  103M 0s
+  2050K .......... .......... .......... .......... .......... 33%  129M 0s
+  2100K .......... .......... .......... .......... .......... 34%  111M 0s
+  2150K .......... .......... .......... .......... .......... 34%  271M 0s
+  2200K .......... .......... .......... .......... .......... 35%  327M 0s
+  2250K .......... .......... .......... .......... .......... 36%  339M 0s
+  2300K .......... .......... .......... .......... .......... 37%  167M 0s
+  2350K .......... .......... .......... .......... .......... 38%  252M 0s
+  2400K .......... .......... .......... .......... .......... 38%  315M 0s
+  2450K .......... .......... .......... .......... .......... 39%  305M 0s
+  2500K .......... .......... .......... .......... .......... 40%  317M 0s
+  2550K .......... .......... .......... .......... .......... 41%  283M 0s
+  2600K .......... .......... .......... .......... .......... 42% 63.4M 0s
+  2650K .......... .......... .......... .......... .......... 42% 86.8M 0s
+  2700K .......... .......... .......... .......... .......... 43% 67.5M 0s
+  2750K .......... .......... .......... .......... .......... 44% 88.3M 0s
+  2800K .......... .......... .......... .......... .......... 45%  107M 0s
+  2850K .......... .......... .......... .......... .......... 46% 97.5M 0s
+  2900K .......... .......... .......... .......... .......... 46% 81.1M 0s
+  2950K .......... .......... .......... .......... .......... 47% 72.6M 0s
+  3000K .......... .......... .......... .......... .......... 48%  139M 0s
+  3050K .......... .......... .......... .......... .......... 49%  119M 0s
+  3100K .......... .......... .......... .......... .......... 50%  133M 0s
+  3150K .......... .......... .......... .......... .......... 50%  262M 0s
+  3200K .......... .......... .......... .......... .......... 51%  315M 0s
+  3250K .......... .......... .......... .......... .......... 52%  349M 0s
+  3300K .......... .......... .......... .......... .......... 53%  337M 0s
+  3350K .......... .......... .......... .......... .......... 53%  303M 0s
+  3400K .......... .......... .......... .......... .......... 54%  339M 0s
+  3450K .......... .......... .......... .......... .......... 55%  152M 0s
+  3500K .......... .......... .......... .......... .......... 56%  263M 0s
+  3550K .......... .......... .......... .......... .......... 57%  278M 0s
+  3600K .......... .......... .......... .......... .......... 57%  344M 0s
+  3650K .......... .......... .......... .......... .......... 58%  268M 0s
+  3700K .......... .......... .......... .......... .......... 59%  325M 0s
+  3750K .......... .......... .......... .......... .......... 60%  273M 0s
+  3800K .......... .......... .......... .......... .......... 61%  332M 0s
+  3850K .......... .......... .......... .......... .......... 61%  340M 0s
+  3900K .......... .......... .......... .......... .......... 62%  272M 0s
+  3950K .......... .......... .......... .......... .......... 63%  278M 0s
+  4000K .......... .......... .......... .......... .......... 64%  243M 0s
+  4050K .......... .......... .......... .......... .......... 65%  338M 0s
+  4100K .......... .......... .......... .......... .......... 65%  337M 0s
+  4150K .......... .......... .......... .......... .......... 66%  304M 0s
+  4200K .......... .......... .......... .......... .......... 67%  323M 0s
+  4250K .......... .......... .......... .......... .......... 68%  190M 0s
+  4300K .......... .......... .......... .......... .......... 69%  240M 0s
+  4350K .......... .......... .......... .......... .......... 69%  281M 0s
+  4400K .......... .......... .......... .......... .......... 70%  337M 0s
+  4450K .......... .......... .......... .......... .......... 71%  340M 0s
+  4500K .......... .......... .......... .......... .......... 72%  282M 0s
+  4550K .......... .......... .......... .......... .......... 73%  283M 0s
+  4600K .......... .......... .......... .......... .......... 73%  315M 0s
+  4650K .......... .......... .......... .......... .......... 74%  316M 0s
+  4700K .......... .......... .......... .......... .......... 75%  235M 0s
+  4750K .......... .......... .......... .......... .......... 76%  255M 0s
+  4800K .......... .......... .......... .......... .......... 76%  217M 0s
+  4850K .......... .......... .......... .......... .......... 77%  337M 0s
+  4900K .......... .......... .......... .......... .......... 78%  341M 0s
+  4950K .......... .......... .......... .......... .......... 79% 70.1M 0s
+  5000K .......... .......... .......... .......... .......... 80% 78.6M 0s
+  5050K .......... .......... .......... .......... .......... 80% 83.2M 0s
+  5100K .......... .......... .......... .......... .......... 81%  122M 0s
+  5150K .......... .......... .......... .......... .......... 82% 99.2M 0s
+  5200K .......... .......... .......... .......... .......... 83%  156M 0s
+  5250K .......... .......... .......... .......... .......... 84%  127M 0s
+  5300K .......... .......... .......... .......... .......... 84%  168M 0s
+  5350K .......... .......... .......... .......... .......... 85%  155M 0s
+  5400K .......... .......... .......... .......... .......... 86%  156M 0s
+  5450K .......... .......... .......... .......... .......... 87%  132M 0s
+  5500K .......... .......... .......... .......... .......... 88%  142M 0s
+  5550K .......... .......... .......... .......... .......... 88% 90.1M 0s
+  5600K .......... .......... .......... .......... .......... 89%  113M 0s
+  5650K .......... .......... .......... .......... .......... 90%  126M 0s
+  5700K .......... .......... .......... .......... .......... 91%  146M 0s
+  5750K .......... .......... .......... .......... .......... 92% 96.3M 0s
+  5800K .......... .......... .......... .......... .......... 92%  147M 0s
+  5850K .......... .......... .......... .......... .......... 93%  111M 0s
+  5900K .......... .......... .......... .......... .......... 94%  130M 0s
+  5950K .......... .......... .......... .......... .......... 95%  121M 0s
+  6000K .......... .......... .......... .......... .......... 96%  105M 0s
+  6050K .......... .......... .......... .......... .......... 96%  159M 0s
+  6100K .......... .......... .......... .......... .......... 97%  108M 0s
+  6150K .......... .......... .......... .......... .......... 98%  150M 0s
+  6200K .......... .......... .......... .......... .......... 99%  108M 0s
+  6250K .......... .......... .......... .......... ........  100%  131M=0.04s
+
+2023-02-16 16:34:23 (141 MB/s) - ‘nuget.exe’ saved [6450096/6450096]
+
+Mozilla Roots Importer - version 6.12.0.182
+Download and import trusted root certificates from Mozilla's MXR.
+Copyright 2002, 2003 Motus Technologies. Copyright 2004-2008 Novell. BSD licensed.
+
+WARNING: mozroots is deprecated, please move to cert-sync instead.
+
+Downloading from 'https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt'...
+Importing certificates into user store...
+160 new root certificates were added to your trust store.
+Import process completed.
+
+Feeds used:
+  https://api.nuget.org/v3/index.json
+
+Restoring NuGet package RestSharp.105.1.0.
+  GET https://api.nuget.org/v3-flatcontainer/restsharp/105.1.0/restsharp.105.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/restsharp/105.1.0/restsharp.105.1.0.nupkg 6ms
+Installed RestSharp 105.1.0 from https://api.nuget.org/v3/index.json with content hash 2DRH1cpTOJwesBOwQ0cIhVHUmupbRKt+tdSatfdvndvsawsGMIEgrbq8yv6g3GM1MRVcb37bT8LACVFsqITDmg==.
+Adding package 'RestSharp.105.1.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v4.0-v3___petstore3composed___/packages'
+Added package 'RestSharp.105.1.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v4.0-v3___petstore3composed___/packages'
+Restoring NuGet package Newtonsoft.Json.10.0.3.
+  GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/10.0.3/newtonsoft.json.10.0.3.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/10.0.3/newtonsoft.json.10.0.3.nupkg 5ms
+Installed Newtonsoft.Json 10.0.3 from https://api.nuget.org/v3/index.json with content hash hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==.
+Adding package 'Newtonsoft.Json.10.0.3' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v4.0-v3___petstore3composed___/packages'
+Added package 'Newtonsoft.Json.10.0.3' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v4.0-v3___petstore3composed___/packages'
+Restoring NuGet package JsonSubTypes.1.2.0.
+  GET https://api.nuget.org/v3-flatcontainer/jsonsubtypes/1.2.0/jsonsubtypes.1.2.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/jsonsubtypes/1.2.0/jsonsubtypes.1.2.0.nupkg 5ms
+Installed JsonSubTypes 1.2.0 from https://api.nuget.org/v3/index.json with content hash XY9yuNIl9LmHhC/Vz+u35lB7Dyj/H/biKsNybJI9XLUyabBIHPF1PQ3PY/ffADn/LdjiQOhx/ry+ZsuEO4mBnw==.
+Adding package 'JsonSubTypes.1.2.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v4.0-v3___petstore3composed___/packages'
+Added package 'JsonSubTypes.1.2.0' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-v4.0-v3___petstore3composed___/packages'
+[INFO] Copy DLLs to the 'bin' folder
+[INFO] Run 'mcs' to build bin/IO.Swagger.dll
+src/IO.Swagger/Model/AllOfSubCategoryCategory.cs(39,16): warning CS1573: Parameter `id' has no matching param tag in the XML comment for `IO.Swagger.Model.AllOfSubCategoryCategory.AllOfSubCategoryCategory(bool?, int?, string, IO.Swagger.Model.User, long?, string, System.Collections.Generic.List<IO.Swagger.Model.Category>)'
+src/IO.Swagger/Model/AllOfSubCategoryCategory.cs(39,16): warning CS1573: Parameter `name' has no matching param tag in the XML comment for `IO.Swagger.Model.AllOfSubCategoryCategory.AllOfSubCategoryCategory(bool?, int?, string, IO.Swagger.Model.User, long?, string, System.Collections.Generic.List<IO.Swagger.Model.Category>)'
+src/IO.Swagger/Model/AllOfSubCategoryCategory.cs(39,16): warning CS1573: Parameter `subcategories' has no matching param tag in the XML comment for `IO.Swagger.Model.AllOfSubCategoryCategory.AllOfSubCategoryCategory(bool?, int?, string, IO.Swagger.Model.User, long?, string, System.Collections.Generic.List<IO.Swagger.Model.Category>)'
+src/IO.Swagger/Model/Cat.cs(37,16): warning CS1573: Parameter `id' has no matching param tag in the XML comment for `IO.Swagger.Model.Cat.Cat(bool?, int?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Model/Cat.cs(37,16): warning CS1573: Parameter `name' has no matching param tag in the XML comment for `IO.Swagger.Model.Cat.Cat(bool?, int?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Model/Cat.cs(37,16): warning CS1573: Parameter `status' has no matching param tag in the XML comment for `IO.Swagger.Model.Cat.Cat(bool?, int?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Model/Cat.cs(37,16): warning CS1573: Parameter `part' has no matching param tag in the XML comment for `IO.Swagger.Model.Cat.Cat(bool?, int?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Model/Dog.cs(68,16): warning CS1573: Parameter `id' has no matching param tag in the XML comment for `IO.Swagger.Model.Dog.Dog(bool?, IO.Swagger.Model.Dog.BreedEnum?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Model/Dog.cs(68,16): warning CS1573: Parameter `name' has no matching param tag in the XML comment for `IO.Swagger.Model.Dog.Dog(bool?, IO.Swagger.Model.Dog.BreedEnum?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Model/Dog.cs(68,16): warning CS1573: Parameter `status' has no matching param tag in the XML comment for `IO.Swagger.Model.Dog.Dog(bool?, IO.Swagger.Model.Dog.BreedEnum?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Model/Dog.cs(68,16): warning CS1573: Parameter `part' has no matching param tag in the XML comment for `IO.Swagger.Model.Dog.Dog(bool?, IO.Swagger.Model.Dog.BreedEnum?, long?, string, IO.Swagger.Model.Pet.StatusEnum?, System.Collections.Generic.List<IO.Swagger.Model.OneOfPetPartItems>)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(17,18): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(20,48): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.GetEnumerator()'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(25,16): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.ReadOnlyDictionary()'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(30,16): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.ReadOnlyDictionary(System.Collections.Generic.IDictionary<T,K>)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(41,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Add(System.Collections.Generic.KeyValuePair<T,K>)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(46,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Clear()'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(51,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Contains(System.Collections.Generic.KeyValuePair<T,K>)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(56,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.CopyTo(System.Collections.Generic.KeyValuePair<T,K>[], int)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(61,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Remove(System.Collections.Generic.KeyValuePair<T,K>)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(66,20): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Count'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(71,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.IsReadOnly'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(76,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Add(T, K)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(81,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.ContainsKey(T)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(86,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Remove(T)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(91,21): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.TryGetValue(T, out K)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(96,18): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.this[T]'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(106,31): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Keys'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(111,31): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadOnlyDictionary<T,K>.Values'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(118,18): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadonlyOperationException'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(127,16): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadonlyOperationException.ReadonlyOperationException()'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(131,16): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadonlyOperationException.ReadonlyOperationException(string)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(135,16): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadonlyOperationException.ReadonlyOperationException(string, System.Exception)'
+src/IO.Swagger/Client/ReadOnlyDictionary.cs(139,19): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ReadonlyOperationException.ReadonlyOperationException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)'
+src/IO.Swagger/Client/ApiClient.cs(208,30): warning CS1591: Missing XML comment for publicly visible type or member `IO.Swagger.Client.ApiClient.ParameterToFile(string, byte[])'
+src/IO.Swagger/Client/ApiClient.cs(481,58): warning CS1573: Parameter `collectionFormat' has no matching param tag in the XML comment for `IO.Swagger.Client.ApiClient.ParameterToKeyValuePairs(string, string, object)'
+Compilation succeeded - 36 warning(s)
+[INFO] bin/IO.Swagger.dll was created successfully
+
+****** executed all buildcommand ******
+
