@@ -1461,99 +1461,77 @@
       "builder": "",
       "buildCommands": []
     },
-    "typescript-angular-v2": {
+    "typescript-angular-v15": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-no-build.yml",
-      "options": " --additional-properties ngVersion=2",
+      "options": " --additional-properties ngVersion=15.0.0,npmName=swagger-angular2-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v2-with-interface": {
+    "typescript-angular-v15-with-interface": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=2",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=15.0.0,npmName=swagger-angular2-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v2-with-npm": {
+    "typescript-angular-v14-with-npm": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=2",
+      "options": " --additional-properties ngVersion=14.0.0,npmName=swagger-angular2-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v4.3-with-interface": {
+    "typescript-angular-v13-with-interface": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=4.3",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=13.0.0,npmName=swagger-angular2-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v4.3-with-npm": {
+    "typescript-angular-v13-with-npm": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=4.3,npmName=@swagger/angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
+      "options": " --additional-properties ngVersion=13.0.0,npmName=swagger-angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v4-with-npm": {
+    "typescript-angular-v12-with-npm": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=4,npmName=@swagger/angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
+      "options": " --additional-properties ngVersion=12.0.0,npmName=swagger-angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v45-with-interface": {
+    "typescript-angular-v12-with-interface": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=5",
-      "builder": "",
-      "buildCommands": [
-        "npm i",
-        "npm run build"
-      ]
-    },
-    "typescript-angular-v5-with-npm": {
-      "version": "v2",
-      "language": "typescript-angular",
-      "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=5,npmName=@swagger/angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
-      "builder": "",
-      "buildCommands": [
-        "npm i",
-        "npm run build"
-      ]
-    },
-    "typescript-angular-v6-with-npm": {
-      "version": "v2",
-      "language": "typescript-angular",
-      "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=6,npmName=@swagger/angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=12.0.0,npmName=swagger-angular2-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
@@ -2258,7 +2236,7 @@
     },
     "kotlin-v3": {
       "version": "v3",
-      "language": "kotlin",
+      "language": "kotlin-client",
       "workflow": "test-framework-java.yml",
       "options": " --additional-properties dateLibrary=java8",
       "builder": "",
@@ -2269,7 +2247,7 @@
     },
     "kotlin-string-v3": {
       "version": "v3",
-      "language": "kotlin",
+      "language": "kotlin-client",
       "workflow": "test-framework-java.yml",
       "options": " --additional-properties dateLibrary=string",
       "builder": "",
@@ -2280,7 +2258,7 @@
     },
     "kotlin-threetenbp-v3": {
       "version": "v3",
-      "language": "kotlin",
+      "language": "kotlin-client",
       "workflow": "test-framework-java.yml",
       "options": " --additional-properties dateLibrary=threetenbp",
       "builder": "",
@@ -2594,88 +2572,88 @@
       "builder": "",
       "buildCommands": []
     },
-    "typescript-angular-v5-v3": {
+    "typescript-angular-v15-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=5.0.0",
+      "options": " --additional-properties ngVersion=15.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v5-with-interface-v3": {
+    "typescript-angular-v15-with-interface-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=5.0.0",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=15.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v6-with-npm-v3": {
+    "typescript-angular-v14-with-npm-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=6.0.0",
+      "options": " --additional-properties ngVersion=14.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v6-with-interface-v3": {
+    "typescript-angular-v14-with-interface-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=6.0.0",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=14.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v7-with-npm-v3": {
+    "typescript-angular-v13-with-npm-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=7.0.0",
+      "options": " --additional-properties ngVersion=13.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v7-with-interface-v3": {
+    "typescript-angular-v13-with-interface-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=7.0.0",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=13.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v8-with-npm-v3": {
+    "typescript-angular-v12-with-npm-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=8.0.0",
+      "options": " --additional-properties ngVersion=12.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v8-with-interface-v3": {
+    "typescript-angular-v12-with-interface-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=.0.0",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=12.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",

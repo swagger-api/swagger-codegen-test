@@ -278,11 +278,11 @@
         "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
       ]
     },
-    "typescript-angular-v6-with-npm": {
+    "typescript-angular-v15-with-npm": {
       "version": "v2",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=6,npmName=@swagger/angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
+      "options": " --additional-properties ngVersion=15.0.0,npmName=swagger-angular2-typescript-petstore,npmVersion=0.0.1,npmRepository=https://skimdb.npmjs.com/registry,snapshot=false",
       "builder": "",
       "buildCommands": [
         "npm i",
@@ -560,33 +560,33 @@
         "mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3"
       ]
     },
-    "typescript-angular-v6-with-npm-v3": {
+    "typescript-angular-v15-with-npm-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=6.0.0",
+      "options": " --additional-properties ngVersion=15.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v7-with-interface-v3": {
+    "typescript-angular-v14-with-interface-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " -D withInterfaces=true --additional-properties ngVersion=7.0.0",
+      "options": " -D withInterfaces=true --additional-properties ngVersion=14.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
         "npm run build"
       ]
     },
-    "typescript-angular-v8-with-npm-v3": {
+    "typescript-angular-v13-with-npm-v3": {
       "version": "v3",
       "language": "typescript-angular",
       "workflow": "test-framework-js.yml",
-      "options": " --additional-properties ngVersion=8.0.0",
+      "options": " --additional-properties ngVersion=13.0.0,npmName=swagger-angular-typescript",
       "builder": "",
       "buildCommands": [
         "npm i",
