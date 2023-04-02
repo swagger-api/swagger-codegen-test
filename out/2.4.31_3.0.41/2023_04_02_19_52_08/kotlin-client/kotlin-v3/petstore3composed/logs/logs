@@ -1,0 +1,38 @@
+
+****** BUILD ******
+
+
+****** executing: gradle wrapper ******
+
+
+Welcome to Gradle 8.0.2!
+
+Here are the highlights of this release:
+ - Improvements to the Kotlin DSL
+ - Fine-grained parallelism from the first build with configuration cache
+ - Configurable Gradle user home cache cleanup
+
+For more details see https://docs.gradle.org/8.0.2/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-v3___petstore3composed___/build.gradle' line: 20
+
+* What went wrong:
+A problem occurred evaluating root project 'kotlin-client'.
+> Failed to apply plugin 'kotlin'.
+   > Could not register artifact transform DiscoverScriptExtensionsTransformAction (from {artifactType=jar} to {artifactType=script-files-extensions}).
+      > Could not generate a decorated class for type DiscoverScriptExtensionsTransformAction.
+         > Cannot use @InputArtifact annotation on property DiscoverScriptExtensionsTransformAction.getInputArtifact() of type java.io.File. Allowed property types: org.gradle.api.provider.Provider<org.gradle.api.file.FileSystemLocation>.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 33s

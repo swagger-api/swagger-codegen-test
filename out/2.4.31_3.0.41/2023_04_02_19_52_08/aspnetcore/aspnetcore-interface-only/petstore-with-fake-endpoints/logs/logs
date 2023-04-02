@@ -1,0 +1,70 @@
+
+****** BUILD ******
+
+
+****** executing: dotnet restore src/IO.Swagger/ ******
+
+  Determining projects to restore...
+  Restored /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj (in 4.9 sec).
+  Restored /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj (in 5.01 sec).
+
+****** executing: dotnet build src/IO.Swagger/ ******
+
+Microsoft (R) Build Engine version 16.7.3+2f374e28e for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+Controllers/IFakeApi.cs(94,596): error CS1003: Syntax error, ']' expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,25): error CS1514: { expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,31): error CS1514: { expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,31): error CS1513: } expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,25): error CS1513: } expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,25): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,28): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,42): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,45): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(68,22): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(74,22): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(196,1): error CS1022: Type or namespace definition, or end-of-file expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/FormatTest.cs(91,45): error CS1009: Unrecognized escape sequence [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/FormatTest.cs(91,67): error CS1009: Unrecognized escape sequence [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/FormatTest.cs(91,87): error CS1009: Unrecognized escape sequence [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,31): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,34): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,41): error CS1519: Invalid token ',' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,52): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,55): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(48,23): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(54,23): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(176,1): error CS1022: Type or namespace definition, or end-of-file expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+
+Build FAILED.
+
+Controllers/IFakeApi.cs(94,596): error CS1003: Syntax error, ']' expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,25): error CS1514: { expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,31): error CS1514: { expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,31): error CS1513: } expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,25): error CS1513: } expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,25): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,28): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,42): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(61,45): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(68,22): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(74,22): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumArrays.cs(196,1): error CS1022: Type or namespace definition, or end-of-file expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/FormatTest.cs(91,45): error CS1009: Unrecognized escape sequence [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/FormatTest.cs(91,67): error CS1009: Unrecognized escape sequence [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/FormatTest.cs(91,87): error CS1009: Unrecognized escape sequence [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,31): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,34): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,41): error CS1519: Invalid token ',' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,52): error CS1519: Invalid token '&' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(41,55): error CS1519: Invalid token ';' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(48,23): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(54,23): error CS1519: Invalid token '=' in class, struct, or interface member declaration [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+Models/MapTest.cs(176,1): error CS1022: Type or namespace definition, or end-of-file expected [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-only___petstore-with-fake-endpoints___/src/IO.Swagger/IO.Swagger.csproj]
+    0 Warning(s)
+    23 Error(s)
+
+Time Elapsed 00:00:01.46

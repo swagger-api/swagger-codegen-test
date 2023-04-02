@@ -1,0 +1,75 @@
+
+****** BUILD ******
+
+
+****** executing: npm install ******
+
+npm WARN deprecated multer@1.4.4: Multer 1.x is affected by CVE-2022-24434. This is fixed in v1.4.4-lts.1 which drops support for versions of Node.js before 6. Please upgrade to at least Node.js 6 and version 1.4.4-lts.1 of Multer. If you need support for older versions of Node.js, we are open to accepting patches that would fix the CVE on the main 1.x release line, whilst maintaining compatibility with Node.js 0.10.
+npm WARN deprecated superagent@1.8.5: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+npm WARN deprecated formidable@1.0.17: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated superagent@7.1.6: Please downgrade to v7.1.5 if you need IE/ActiveXObject support OR upgrade to v8.0.0 as we no longer support IE and published an incorrect patch version (see https://github.com/visionmedia/superagent/issues/1731)
+
+> core-js@2.6.12 postinstall /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 167 packages from 99 contributors and audited 167 packages in 5.323s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 16 vulnerabilities (2 low, 5 moderate, 9 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run start ******
+
+
+> swagger-petstore@1.0.0 prestart /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___
+> npm install
+
+audited 167 packages in 0.84s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 16 vulnerabilities (2 low, 5 moderate, 9 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> swagger-petstore@1.0.0 start /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___
+> node index.js
+
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EACCES: permission denied 0.0.0.0:80
+    at Server.setupListenHandle [as _listen2] (net.js:1299:21)
+    at listenInCluster (net.js:1364:12)
+    at Server.listen (net.js:1450:7)
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/index.js:39:26
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/node_modules/swagger-tools/index.js:85:7
+    at cbWrapper (/home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/node_modules/swagger-tools/lib/specs.js:1035:5)
+    at validateSwagger2_0 (/home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/node_modules/swagger-tools/lib/specs.js:1030:3)
+    at validateSemantically (/home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/node_modules/swagger-tools/lib/specs.js:1040:5)
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/node_modules/swagger-tools/lib/specs.js:1233:7
+    at /home/runner/work/swagger-codegen/swagger-codegen/generated/nodejs-server___petstore-with-fake-endpoints___/node_modules/swagger-tools/lib/specs.js:1073:29
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1343:8)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  code: 'EACCES',
+  errno: 'EACCES',
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 80
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! swagger-petstore@1.0.0 start: `node index.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the swagger-petstore@1.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/runner/.npm/_logs/2023-04-02T19_55_51_306Z-debug.log

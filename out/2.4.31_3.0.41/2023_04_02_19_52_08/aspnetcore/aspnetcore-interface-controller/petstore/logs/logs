@@ -1,0 +1,32 @@
+
+****** BUILD ******
+
+
+****** executing: dotnet restore src/IO.Swagger/ ******
+
+  Determining projects to restore...
+  Restored /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-controller___petstore___/src/IO.Swagger/IO.Swagger.csproj (in 5.07 sec).
+  Restored /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-controller___petstore___/src/IO.Swagger/IO.Swagger.csproj (in 5.08 sec).
+
+****** executing: dotnet build src/IO.Swagger/ ******
+
+Microsoft (R) Build Engine version 16.7.3+2f374e28e for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+Security/ApiKeyAuthenticationHandler.cs(30,59): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-controller___petstore___/src/IO.Swagger/IO.Swagger.csproj]
+Security/ApiKeyAuthenticationHandler.cs(23,16): warning CS1591: Missing XML comment for publicly visible type or member 'ApiKeyAuthenticationHandler.ApiKeyAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-controller___petstore___/src/IO.Swagger/IO.Swagger.csproj]
+  IO.Swagger -> /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-controller___petstore___/src/IO.Swagger/bin/Debug/netcoreapp3.0/IO.Swagger.dll
+
+Build succeeded.
+
+Security/ApiKeyAuthenticationHandler.cs(30,59): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-controller___petstore___/src/IO.Swagger/IO.Swagger.csproj]
+Security/ApiKeyAuthenticationHandler.cs(23,16): warning CS1591: Missing XML comment for publicly visible type or member 'ApiKeyAuthenticationHandler.ApiKeyAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-interface-controller___petstore___/src/IO.Swagger/IO.Swagger.csproj]
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.58
+
+****** executed all buildcommand ******
+

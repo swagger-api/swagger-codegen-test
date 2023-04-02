@@ -1,0 +1,65 @@
+
+****** generate ******
+
+LANGUAGE php-symfony
+JOB_NAME php-symfony___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Model/ApiResponse.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Model/ApiResponseTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Model/ApiResponse.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Model/Category.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Model/CategoryTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Model/Category.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Model/Order.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Model/OrderTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Model/Order.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Model/Pet.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Model/PetTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Model/Pet.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Model/Tag.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Model/TagTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Model/Tag.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Model/User.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Model/UserTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Model/User.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Api/PetApiInterface.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Controller/PetController.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Api/PetApiInterfaceTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Api/PetApiInterface.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Api/StoreApiInterface.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Controller/StoreController.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Api/StoreApiInterfaceTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Api/StoreApiInterface.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Api/UserApiInterface.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Controller/UserController.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/Api/UserApiInterfaceTest.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/docs/Api/UserApiInterface.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Controller/Controller.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/SwaggerServerBundle.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/DependencyInjection/SwaggerServerExtension.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/DependencyInjection/Compiler/SwaggerServerApiPass.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Api/ApiServer.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Service/SerializerInterface.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Service/JmsSerializer.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Service/StrictJsonDeserializationVisitor.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Service/TypeMismatchException.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Service/ValidatorInterface.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Service/SymfonyValidator.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/phpunit.xml.dist
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/pom.xml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/AppKernel.php
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/./Tests/test_config.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/config/routing.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/Resources/config/services.yml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/composer.json
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/autoload.php
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/README.md
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/.travis.yml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/.php_cs
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/SymfonyBundle-php/git_push.sh
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/php-symfony___petstore___/.swagger-codegen/VERSION

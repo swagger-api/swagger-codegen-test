@@ -1,0 +1,34 @@
+
+****** BUILD ******
+
+
+****** executing: sbt compile ******
+
+Downloading sbt launcher for 1.8.2:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.8.2/sbt-launch-1.8.2.jar
+    To  /home/runner/.sbt/launchers/1.8.2/sbt-launch.jar
+Downloading sbt launcher 1.8.2 md5 hash:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.8.2/sbt-launch-1.8.2.jar.md5
+    To  /home/runner/.sbt/launchers/1.8.2/sbt-launch.jar.md5
+/home/runner/.sbt/launchers/1.8.2/sbt-launch.jar: OK
+[info] [launcher] getting org.scala-sbt sbt 1.8.2  (this may take some time)...
+[info] [launcher] getting Scala 2.12.17 (for sbt)...
+[0m[[0m[0minfo[0m] [0m[0mUpdated file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3fake___/project/build.properties: set sbt.version to 1.8.2[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.8.2 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3fake___/project[0m
+/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3fake___/build.sbt:31: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+publishArtifact in (Compile, packageDoc) := false
+                ^
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project scala-v3___petstore3fake___ from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to swagger-scala-client (in build file:/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3fake___/)[0m
+[0m[[0m[0minfo[0m] [0m[0mExecuting in batch mode. For better performance use sbt's shell[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 61 Scala sources to /home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3fake___/target/scala-2.11/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.11' for Scala 2.11.12. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 11.18s.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala-v3___petstore3fake___/src/main/scala/io/swagger/client/api/PetApi.scala:18:37: ';' expected but '[' found.[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.swagger.client.model.Array[Byte][0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 15 s, completed Apr 2, 2023 8:05:59 PM[0m
+[0J
