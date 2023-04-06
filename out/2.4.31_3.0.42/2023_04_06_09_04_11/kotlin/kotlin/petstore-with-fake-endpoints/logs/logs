@@ -1,0 +1,35 @@
+
+****** BUILD ******
+
+
+****** executing: gradle wrapper ******
+
+
+Welcome to Gradle 8.0.2!
+
+Here are the highlights of this release:
+ - Improvements to the Kotlin DSL
+ - Fine-grained parallelism from the first build with configuration cache
+ - Configurable Gradle user home cache cleanup
+
+For more details see https://docs.gradle.org/8.0.2/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore-with-fake-endpoints___/build.gradle' line: 4
+
+* What went wrong:
+A problem occurred evaluating root project 'kotlin-client'.
+> Cannot add task 'wrapper' as a task with that name already exists.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 34s

@@ -1,0 +1,120 @@
+
+****** BUILD ******
+
+
+****** executing: npm i ******
+
+npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+npm WARN deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+npm WARN deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+
+> esbuild@0.15.18 postinstall /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v14-with-npm-v3___petstore3___/node_modules/ng-packagr/node_modules/esbuild
+> node install.js
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN notsup Unsupported engine for @angular/compiler-cli@14.3.0: wanted: {"node":"^14.15.0 || >=16.10.0"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: @angular/compiler-cli@14.3.0
+npm WARN notsup Unsupported engine for @angular/core@14.3.0: wanted: {"node":"^14.15.0 || >=16.10.0"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: @angular/core@14.3.0
+npm WARN notsup Unsupported engine for @angular/common@14.3.0: wanted: {"node":"^14.15.0 || >=16.10.0"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: @angular/common@14.3.0
+npm WARN notsup Unsupported engine for @angular/compiler@14.3.0: wanted: {"node":"^14.15.0 || >=16.10.0"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: @angular/compiler@14.3.0
+npm WARN notsup Unsupported engine for @angular/platform-browser@14.3.0: wanted: {"node":"^14.15.0 || >=16.10.0"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: @angular/platform-browser@14.3.0
+npm WARN notsup Unsupported engine for ng-packagr@14.2.2: wanted: {"node":"^14.15.0 || >=16.10.0"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: ng-packagr@14.2.2
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.2 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @esbuild/android-arm@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/@esbuild/android-arm):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @esbuild/android-arm@0.15.18: wanted {"os":"android","arch":"arm"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: @esbuild/linux-loong64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/@esbuild/linux-loong64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for @esbuild/linux-loong64@0.15.18: wanted {"os":"linux","arch":"loong64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-android-64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-android-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-android-64@0.15.18: wanted {"os":"android","arch":"x64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-android-arm64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-android-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-android-arm64@0.15.18: wanted {"os":"android","arch":"arm64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-darwin-64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-darwin-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-darwin-64@0.15.18: wanted {"os":"darwin","arch":"x64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-darwin-arm64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-darwin-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-darwin-arm64@0.15.18: wanted {"os":"darwin","arch":"arm64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-freebsd-64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-freebsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-freebsd-64@0.15.18: wanted {"os":"freebsd","arch":"x64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-freebsd-arm64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-freebsd-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-freebsd-arm64@0.15.18: wanted {"os":"freebsd","arch":"arm64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-32@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-linux-32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-32@0.15.18: wanted {"os":"linux","arch":"ia32"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-arm@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-linux-arm):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-arm@0.15.18: wanted {"os":"linux","arch":"arm"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-arm64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-linux-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-arm64@0.15.18: wanted {"os":"linux","arch":"arm64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-mips64le@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-linux-mips64le):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-mips64le@0.15.18: wanted {"os":"linux","arch":"mips64el"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-ppc64le@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-linux-ppc64le):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-ppc64le@0.15.18: wanted {"os":"linux","arch":"ppc64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-riscv64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-linux-riscv64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-riscv64@0.15.18: wanted {"os":"linux","arch":"riscv64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-linux-s390x@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-linux-s390x):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-linux-s390x@0.15.18: wanted {"os":"linux","arch":"s390x"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-netbsd-64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-netbsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-netbsd-64@0.15.18: wanted {"os":"netbsd","arch":"x64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-openbsd-64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-openbsd-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-openbsd-64@0.15.18: wanted {"os":"openbsd","arch":"x64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-sunos-64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-sunos-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-sunos-64@0.15.18: wanted {"os":"sunos","arch":"x64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-windows-32@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-windows-32):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-windows-32@0.15.18: wanted {"os":"win32","arch":"ia32"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-windows-64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-windows-64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-windows-64@0.15.18: wanted {"os":"win32","arch":"x64"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: esbuild-windows-arm64@0.15.18 (node_modules/ng-packagr/node_modules/esbuild/node_modules/esbuild-windows-arm64):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for esbuild-windows-arm64@0.15.18: wanted {"os":"win32","arch":"arm64"} (current: {"os":"linux","arch":"x64"})
+npm WARN notsup Unsupported engine for @csstools/postcss-trigonometric-functions@1.0.2: wanted: {"node":"^14 || >=16"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: @csstools/postcss-trigonometric-functions@1.0.2
+npm WARN notsup Unsupported engine for @csstools/selector-specificity@2.2.0: wanted: {"node":"^14 || ^16 || >=18"} (current: {"node":"12.22.12","npm":"6.14.16"})
+npm WARN notsup Not compatible with your version of node/npm: @csstools/selector-specificity@2.2.0
+npm WARN swagger-angular-typescript@1.0.0 No repository field.
+
+added 309 packages from 220 contributors and audited 333 packages in 15.287s
+
+72 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+****** executing: npm run build ******
+
+
+> swagger-angular-typescript@1.0.0 build /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v14-with-npm-v3___petstore3___
+> ng-packagr -p ng-package.json
+
+Building Angular Package
+
+------------------------------------------------------------------------------
+Building entry point 'swagger-angular-typescript'
+------------------------------------------------------------------------------
+- Compiling with Angular sources in Ivy partial compilation mode.
+✔ Compiling with Angular sources in Ivy partial compilation mode.
+- Generating FESM2020
+✔ Generating FESM2020
+- Generating FESM2015
+✔ Generating FESM2015
+- Copying assets
+✔ Copying assets
+- Writing package manifest
+ℹ Removing scripts section in package.json as it's considered a potential security vulnerability.
+ℹ Removing devDependencies section in package.json.
+✔ Writing package manifest
+✔ Built swagger-angular-typescript
+
+------------------------------------------------------------------------------
+Built Angular Package
+ - from: /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v14-with-npm-v3___petstore3___
+ - to:   /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-angular-v14-with-npm-v3___petstore3___/dist
+------------------------------------------------------------------------------
+
+Build at: 2023-04-06T09:19:48.992Z - Time: 6578ms
+
+
+****** executed all buildcommand ******
+

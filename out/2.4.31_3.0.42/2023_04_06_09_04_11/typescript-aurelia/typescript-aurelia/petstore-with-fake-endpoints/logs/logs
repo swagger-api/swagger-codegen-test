@@ -1,0 +1,111 @@
+
+****** BUILD ******
+
+
+****** executing: npm i ******
+
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN deprecated typings@1.5.0: Typings is deprecated in favor of NPM @types -- see README for more information
+npm WARN deprecated popsicle-proxy-agent@3.0.0: Use `agent` option with `popsicle` directly
+npm WARN deprecated uuid@2.0.3: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+> core-js@2.6.12 postinstall /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-aurelia___petstore-with-fake-endpoints___/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+npm WARN prepublish-on-install As of npm@5, `prepublish` scripts are deprecated.
+npm WARN prepublish-on-install Use `prepare` for build steps and `prepublishOnly` for upload-only.
+npm WARN prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+
+> typescript-fetch-api@0.0.0 prepublish /home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-aurelia___petstore-with-fake-endpoints___
+> typings install && tsc
+
+typings WARN enoent Path "/home/runner/work/swagger-codegen/swagger-codegen/generated/typescript-aurelia___petstore-with-fake-endpoints___/typings.json" is missing
+[?25h
+└── (No dependencies)
+
+Api.ts(52,44): error TS1110: Type expected.
+Api.ts(52,49): error TS1005: ';' expected.
+Api.ts(71,3): error TS1128: Declaration or statement expected.
+Api.ts(71,40): error TS1005: ',' expected.
+Api.ts(71,56): error TS1005: ',' expected.
+Api.ts(71,70): error TS1005: ',' expected.
+Api.ts(71,78): error TS1005: ',' expected.
+Api.ts(71,80): error TS1005: ';' expected.
+Api.ts(72,9): error TS1138: Parameter declaration expected.
+Api.ts(72,14): error TS1005: ':' expected.
+Api.ts(72,35): error TS1005: ',' expected.
+Api.ts(72,37): error TS1136: Property assignment expected.
+Api.ts(75,3): error TS1128: Declaration or statement expected.
+Api.ts(76,1): error TS1128: Declaration or statement expected.
+AuthStorage.ts(44,17): error TS1110: Type expected.
+AuthStorage.ts(44,31): error TS1005: ';' expected.
+AuthStorage.ts(53,25): error TS1005: ',' expected.
+AuthStorage.ts(53,34): error TS1005: ';' expected.
+AuthStorage.ts(53,41): error TS1005: ';' expected.
+AuthStorage.ts(61,24): error TS1005: ';' expected.
+AuthStorage.ts(61,31): error TS1005: ';' expected.
+AuthStorage.ts(69,21): error TS1005: ';' expected.
+AuthStorage.ts(69,37): error TS1005: ';' expected.
+AuthStorage.ts(78,27): error TS1005: ',' expected.
+AuthStorage.ts(78,36): error TS1005: ';' expected.
+AuthStorage.ts(78,43): error TS1005: ';' expected.
+AuthStorage.ts(86,26): error TS1005: ';' expected.
+AuthStorage.ts(86,33): error TS1005: ';' expected.
+AuthStorage.ts(94,23): error TS1005: ';' expected.
+AuthStorage.ts(94,39): error TS1005: ';' expected.
+AuthStorage.ts(103,25): error TS1005: ',' expected.
+AuthStorage.ts(103,34): error TS1005: ';' expected.
+AuthStorage.ts(103,41): error TS1005: ';' expected.
+AuthStorage.ts(111,24): error TS1005: ';' expected.
+AuthStorage.ts(111,31): error TS1005: ';' expected.
+AuthStorage.ts(119,21): error TS1005: ';' expected.
+AuthStorage.ts(119,37): error TS1005: ';' expected.
+AuthStorage.ts(122,1): error TS1128: Declaration or statement expected.
+FakeApi.ts(99,22): error TS1110: Type expected.
+FakeApi.ts(100,19): error TS1109: Expression expected.
+FakeApi.ts(101,1): error TS1128: Declaration or statement expected.
+Api.ts(52,43): error TS4055: Return type of public method from exported class has or is using private name ''.
+AuthStorage.ts(44,16): error TS4055: Return type of public method from exported class has or is using private name ''.
+AnotherFakeApi.ts(49,58): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(99,21): error TS4033: Property 'enumQueryInteger' of exported interface has or is using private name ''.
+FakeApi.ts(138,78): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(166,82): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(194,76): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(222,76): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(250,74): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(285,58): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(328,72): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(384,64): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(423,88): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeApi.ts(454,60): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+FakeClassnameTags123Api.ts(49,54): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(104,40): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(136,46): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(165,60): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(197,56): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(229,48): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(259,46): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(292,62): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+PetApi.ts(329,48): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+StoreApi.ts(69,50): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+StoreApi.ts(96,25): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+StoreApi.ts(124,52): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+StoreApi.ts(152,48): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(99,48): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(129,78): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(159,76): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(189,48): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(217,54): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(246,46): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(278,23): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+UserApi.ts(305,48): error TS4055: Return type of public method from exported class has or is using private name 'Promise'.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! typescript-fetch-api@0.0.0 prepublish: `typings install && tsc`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the typescript-fetch-api@0.0.0 prepublish script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/runner/.npm/_logs/2023-04-06T09_10_04_715Z-debug.log

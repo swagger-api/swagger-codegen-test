@@ -1,0 +1,149 @@
+
+****** BUILD ******
+
+
+****** executing: npm install ******
+
+npm WARN deprecated superagent@5.3.1: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.2 (node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN swagger_petstore___open_api_30@1.0.5 No repository field.
+npm WARN swagger_petstore___open_api_30@1.0.5 license should be a valid SPDX license expression
+
+added 343 packages from 505 contributors and audited 344 packages in 7.68s
+
+35 packages are looking for funding
+  run `npm fund` for details
+
+found 3 vulnerabilities (1 moderate, 2 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+****** executing: npm run test ******
+
+
+> swagger_petstore___open_api_30@1.0.5 test /home/runner/work/swagger-codegen/swagger-codegen/generated/javascript-es6-v3___petstore3___
+> mocha --require @babel/register --recursive
+
+
+
+  (package)
+    PetApi
+      addPet
+        ✓ should call addPet successfully
+      deletePet
+        ✓ should call deletePet successfully
+      findPetsByStatus
+        ✓ should call findPetsByStatus successfully
+      findPetsByTags
+        ✓ should call findPetsByTags successfully
+      getPetById
+        ✓ should call getPetById successfully
+      updatePet
+        ✓ should call updatePet successfully
+      updatePetWithForm
+        ✓ should call updatePetWithForm successfully
+      uploadFile
+        ✓ should call uploadFile successfully
+
+  (package)
+    StoreApi
+      deleteOrder
+        ✓ should call deleteOrder successfully
+      getInventory
+        ✓ should call getInventory successfully
+      getOrderById
+        ✓ should call getOrderById successfully
+      placeOrder
+        ✓ should call placeOrder successfully
+
+  (package)
+    UserApi
+      createUser
+        ✓ should call createUser successfully
+      createUsersWithListInput
+        ✓ should call createUsersWithListInput successfully
+      deleteUser
+        ✓ should call deleteUser successfully
+      getUserByName
+        ✓ should call getUserByName successfully
+      loginUser
+        ✓ should call loginUser successfully
+      logoutUser
+        ✓ should call logoutUser successfully
+      updateUser
+        ✓ should call updateUser successfully
+
+  (package)
+    Address
+      ✓ should create an instance of Address
+      ✓ should have the property street (base name: "street")
+      ✓ should have the property city (base name: "city")
+      ✓ should have the property state (base name: "state")
+      ✓ should have the property zip (base name: "zip")
+
+  (package)
+    ApiResponse
+      ✓ should create an instance of ApiResponse
+      ✓ should have the property code (base name: "code")
+      ✓ should have the property type (base name: "type")
+      ✓ should have the property message (base name: "message")
+
+  (package)
+    Category
+      ✓ should create an instance of Category
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    Customer
+      ✓ should create an instance of Customer
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property username (base name: "username")
+      ✓ should have the property address (base name: "address")
+
+  (package)
+    Order
+      ✓ should create an instance of Order
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property petId (base name: "petId")
+      ✓ should have the property quantity (base name: "quantity")
+      ✓ should have the property shipDate (base name: "shipDate")
+      ✓ should have the property status (base name: "status")
+      ✓ should have the property complete (base name: "complete")
+
+  (package)
+    Pet
+      ✓ should create an instance of Pet
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+      ✓ should have the property category (base name: "category")
+      ✓ should have the property photoUrls (base name: "photoUrls")
+      ✓ should have the property tags (base name: "tags")
+      ✓ should have the property status (base name: "status")
+
+  (package)
+    Tag
+      ✓ should create an instance of Tag
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property name (base name: "name")
+
+  (package)
+    User
+      ✓ should create an instance of User
+      ✓ should have the property id (base name: "id")
+      ✓ should have the property username (base name: "username")
+      ✓ should have the property firstName (base name: "firstName")
+      ✓ should have the property lastName (base name: "lastName")
+      ✓ should have the property email (base name: "email")
+      ✓ should have the property password (base name: "password")
+      ✓ should have the property phone (base name: "phone")
+      ✓ should have the property userStatus (base name: "userStatus")
+
+
+  61 passing (51ms)
+
+
+****** executed all buildcommand ******
+
