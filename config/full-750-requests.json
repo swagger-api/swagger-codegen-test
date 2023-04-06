@@ -1086,7 +1086,7 @@
       "options": " ",
       "builder": "pythonbuild",
       "buildCommands": [
-        "pip3 -r requirements.txt --user",
+        "pip3 install -r requirements.txt --user",
         "python3 setup.py install --user",
         "pip3 install nose2 --user",
         "python3 -m nose2"
@@ -1099,7 +1099,7 @@
       "options": " --library asyncio",
       "builder": "pythonbuild",
       "buildCommands": [
-        "pip3 -r requirements.txt --user",
+        "pip3 install -r requirements.txt --user",
         "python3 setup.py install --user",
         "pip3 install nose2 --user",
         "python3 -m nose2"
@@ -1112,7 +1112,7 @@
       "options": " --library tornado",
       "builder": "pythonbuild",
       "buildCommands": [
-        "pip3 -r requirements.txt --user",
+        "pip3 install -r requirements.txt --user",
         "python3 setup.py install --user",
         "pip3 install nose2 --user",
         "python3 -m nose2"
@@ -2310,7 +2310,7 @@
       "options": " ",
       "builder": "pythonbuild",
       "buildCommands": [
-        "pip3 -r requirements.txt --user",
+        "pip3 install -r requirements.txt --user",
         "python3 setup.py install --user",
         "pip3 install nose2 --user",
         "python3 -m nose2"
