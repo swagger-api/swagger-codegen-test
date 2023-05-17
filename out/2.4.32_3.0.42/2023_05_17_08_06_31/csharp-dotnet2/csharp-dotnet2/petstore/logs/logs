@@ -1,0 +1,43 @@
+
+****** BUILD ******
+
+
+****** executing: chmod +x ./compile-mono.sh ******
+
+
+****** executing: ./compile-mono.sh ******
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 7155k  100 7155k    0     0  32.5M      0 --:--:-- --:--:-- --:--:-- 32.6M
+Mozilla Roots Importer - version 6.12.0.182
+Download and import trusted root certificates from Mozilla's MXR.
+Copyright 2002, 2003 Motus Technologies. Copyright 2004-2008 Novell. BSD licensed.
+
+WARNING: mozroots is deprecated, please move to cert-sync instead.
+
+Downloading from 'https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt'...
+Importing certificates into user store...
+160 new root certificates were added to your trust store.
+Import process completed.
+
+Feeds used:
+  https://api.nuget.org/v3/index.json
+
+Restoring NuGet package RestSharp.Net2.1.1.11.
+  GET https://api.nuget.org/v3-flatcontainer/restsharp.net2/1.1.11/restsharp.net2.1.1.11.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/restsharp.net2/1.1.11/restsharp.net2.1.1.11.nupkg 14ms
+Installed RestSharp.Net2 1.1.11 from https://api.nuget.org/v3/index.json with content hash P0Im8SSgglj6iiqWcx9gZpe4E6YSagOndTUWZOAnDuGp84eFOCzdUJRm8VsVTFG+Qj+VA1r/QyFzDV/3OYN4EQ==.
+Adding package 'RestSharp.Net2.1.1.11' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-dotnet2___petstore___/vendor'
+Added package 'RestSharp.Net2.1.1.11' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-dotnet2___petstore___/vendor'
+Restoring NuGet package Newtonsoft.Json.7.0.1.
+  GET https://api.nuget.org/v3-flatcontainer/newtonsoft.json/7.0.1/newtonsoft.json.7.0.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/newtonsoft.json/7.0.1/newtonsoft.json.7.0.1.nupkg 13ms
+Installed Newtonsoft.Json 7.0.1 from https://api.nuget.org/v3/index.json with content hash q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==.
+Adding package 'Newtonsoft.Json.7.0.1' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-dotnet2___petstore___/vendor'
+Added package 'Newtonsoft.Json.7.0.1' to folder '/home/runner/work/swagger-codegen/swagger-codegen/generated/csharp-dotnet2___petstore___/vendor'
+warning CS1701: Assuming assembly reference `Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' matches assembly `Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'. You may need to supply runtime policy
+Compilation succeeded - 1 warning(s)
+
+****** executed all buildcommand ******
+

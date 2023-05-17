@@ -1,0 +1,32 @@
+
+****** generate ******
+
+LANGUAGE kotlin-server
+JOB_NAME kotlin-server___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/models/ApiResponse.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/models/Category.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/models/Order.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/models/Pet.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/models/Tag.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/models/User.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/apis/PetApi.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/apis/StoreApi.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/apis/UserApi.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/README.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/Dockerfile
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/build.gradle
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/settings.gradle
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/gradle.properties
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/AppMain.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/Configuration.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/Paths.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/resources/application.conf
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/resources/logback.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/src/main/kotlin/io/swagger/server/infrastructure/ApiKeyAuth.kt
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server___petstore___/.swagger-codegen/VERSION

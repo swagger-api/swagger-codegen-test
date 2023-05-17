@@ -1,0 +1,34 @@
+
+****** BUILD ******
+
+
+****** executing: go mod init swagger ******
+
+go: creating new go.mod: module swagger
+go: to add module requirements and sums:
+	go mod tidy
+
+****** executing: go get github.com/antihax/optional ******
+
+go: downloading github.com/antihax/optional v1.0.0
+go: added github.com/antihax/optional v1.0.0
+
+****** executing: go get golang.org/x/oauth2 ******
+
+go: downloading golang.org/x/oauth2 v0.8.0
+go: downloading google.golang.org/appengine v1.6.7
+go: downloading github.com/golang/protobuf v1.5.2
+go: downloading golang.org/x/net v0.10.0
+go: downloading google.golang.org/protobuf v1.28.0
+go: added github.com/golang/protobuf v1.5.2
+go: added golang.org/x/net v0.10.0
+go: added golang.org/x/oauth2 v0.8.0
+go: added google.golang.org/appengine v1.6.7
+go: added google.golang.org/protobuf v1.28.0
+
+****** executing: go build ******
+
+# swagger
+./api_parrot.go:128:63: undefined: Object
+./api_parrot.go:134:25: undefined: Object
+./api_parrot.go:191:12: undefined: Object

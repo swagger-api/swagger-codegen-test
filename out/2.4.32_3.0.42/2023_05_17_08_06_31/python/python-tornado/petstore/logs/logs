@@ -1,0 +1,201 @@
+
+****** BUILD ******
+
+
+****** executing: pip3 install -r requirements.txt --user ******
+
+Collecting certifi>=14.05.14 (from -r requirements.txt (line 1))
+  Downloading certifi-2023.5.7-py3-none-any.whl (156 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.0/157.0 kB 2.9 MB/s eta 0:00:00
+Collecting six>=1.10 (from -r requirements.txt (line 2))
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting python_dateutil>=2.5.3 (from -r requirements.txt (line 3))
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 18.4 MB/s eta 0:00:00
+Requirement already satisfied: setuptools>=21.0.0 in /opt/hostedtoolcache/Python/3.11.3/x64/lib/python3.11/site-packages (from -r requirements.txt (line 4)) (65.5.0)
+Collecting urllib3>=1.15.1 (from -r requirements.txt (line 5))
+  Downloading urllib3-2.0.2-py3-none-any.whl (123 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.2/123.2 kB 34.4 MB/s eta 0:00:00
+Installing collected packages: urllib3, six, certifi, python_dateutil
+Successfully installed certifi-2023.5.7 python_dateutil-2.8.2 six-1.16.0 urllib3-2.0.2
+
+[notice] A new release of pip is available: 22.3.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+
+****** executing: python3 setup.py install --user ******
+
+running install
+/opt/hostedtoolcache/Python/3.11.3/x64/lib/python3.11/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.3/x64/lib/python3.11/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running bdist_egg
+running egg_info
+creating swagger_client.egg-info
+writing swagger_client.egg-info/PKG-INFO
+writing dependency_links to swagger_client.egg-info/dependency_links.txt
+writing requirements to swagger_client.egg-info/requires.txt
+writing top-level names to swagger_client.egg-info/top_level.txt
+writing manifest file 'swagger_client.egg-info/SOURCES.txt'
+reading manifest file 'swagger_client.egg-info/SOURCES.txt'
+writing manifest file 'swagger_client.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/swagger_client
+copying swagger_client/configuration.py -> build/lib/swagger_client
+copying swagger_client/rest.py -> build/lib/swagger_client
+copying swagger_client/__init__.py -> build/lib/swagger_client
+copying swagger_client/api_client.py -> build/lib/swagger_client
+creating build/lib/test
+copying test/test_order.py -> build/lib/test
+copying test/test_pet_api.py -> build/lib/test
+copying test/test_api_response.py -> build/lib/test
+copying test/test_category.py -> build/lib/test
+copying test/test_store_api.py -> build/lib/test
+copying test/test_user_api.py -> build/lib/test
+copying test/__init__.py -> build/lib/test
+copying test/test_user.py -> build/lib/test
+copying test/test_pet.py -> build/lib/test
+copying test/test_tag.py -> build/lib/test
+creating build/lib/swagger_client/models
+copying swagger_client/models/pet.py -> build/lib/swagger_client/models
+copying swagger_client/models/user.py -> build/lib/swagger_client/models
+copying swagger_client/models/category.py -> build/lib/swagger_client/models
+copying swagger_client/models/order.py -> build/lib/swagger_client/models
+copying swagger_client/models/tag.py -> build/lib/swagger_client/models
+copying swagger_client/models/__init__.py -> build/lib/swagger_client/models
+copying swagger_client/models/api_response.py -> build/lib/swagger_client/models
+creating build/lib/swagger_client/api
+copying swagger_client/api/user_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/pet_api.py -> build/lib/swagger_client/api
+copying swagger_client/api/__init__.py -> build/lib/swagger_client/api
+copying swagger_client/api/store_api.py -> build/lib/swagger_client/api
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/swagger_client
+creating build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/pet.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/user.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/category.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/order.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/tag.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/models/api_response.py -> build/bdist.linux-x86_64/egg/swagger_client/models
+copying build/lib/swagger_client/configuration.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/rest.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client
+copying build/lib/swagger_client/api_client.py -> build/bdist.linux-x86_64/egg/swagger_client
+creating build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/user_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/pet_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/__init__.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+copying build/lib/swagger_client/api/store_api.py -> build/bdist.linux-x86_64/egg/swagger_client/api
+creating build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_order.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_pet_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_api_response.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_category.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_store_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_user_api.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/__init__.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_user.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_pet.py -> build/bdist.linux-x86_64/egg/test
+copying build/lib/test/test_tag.py -> build/bdist.linux-x86_64/egg/test
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/pet.py to pet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/user.py to user.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/category.py to category.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/order.py to order.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/tag.py to tag.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/models/api_response.py to api_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/configuration.py to configuration.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/rest.py to rest.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api_client.py to api_client.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/user_api.py to user_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/pet_api.py to pet_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/swagger_client/api/store_api.py to store_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_order.py to test_order.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_pet_api.py to test_pet_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_api_response.py to test_api_response.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_category.py to test_category.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_store_api.py to test_store_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_user_api.py to test_user_api.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/__init__.py to __init__.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_user.py to test_user.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_pet.py to test_pet.cpython-311.pyc
+byte-compiling build/bdist.linux-x86_64/egg/test/test_tag.py to test_tag.cpython-311.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying swagger_client.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+creating dist
+creating 'dist/swagger_client-1.0.0-py3.11.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing swagger_client-1.0.0-py3.11.egg
+Copying swagger_client-1.0.0-py3.11.egg to /home/runner/.local/lib/python3.11/site-packages
+Adding swagger-client 1.0.0 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/swagger_client-1.0.0-py3.11.egg
+Processing dependencies for swagger-client==1.0.0
+Searching for tornado
+Reading https://pypi.org/simple/tornado/
+/opt/hostedtoolcache/Python/3.11.3/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning:  is an invalid version and will not be supported in a future release
+  warnings.warn(
+Downloading https://files.pythonhosted.org/packages/31/51/894f260c1380853cc268f661fe599a4523a47d07e867386abb58f1f11278/tornado-6.3.2-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=5b17b1cf5f8354efa3d37c6e28fdfd9c1c1e5122f2cb56dac121ac61baa47cbe
+Best match: tornado 6.3.2
+Processing tornado-6.3.2-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Installing tornado-6.3.2-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl to /home/runner/.local/lib/python3.11/site-packages
+Adding tornado 6.3.2 to easy-install.pth file
+
+Installed /home/runner/.local/lib/python3.11/site-packages/tornado-6.3.2-py3.11-linux-x86_64.egg
+Searching for urllib3==2.0.2
+Best match: urllib3 2.0.2
+Adding urllib3 2.0.2 to easy-install.pth file
+
+Using /home/runner/.local/lib/python3.11/site-packages
+Searching for six==1.16.0
+Best match: six 1.16.0
+Adding six 1.16.0 to easy-install.pth file
+
+Using /home/runner/.local/lib/python3.11/site-packages
+Searching for python-dateutil==2.8.2
+Best match: python-dateutil 2.8.2
+Adding python-dateutil 2.8.2 to easy-install.pth file
+
+Using /home/runner/.local/lib/python3.11/site-packages
+Searching for certifi==2023.5.7
+Best match: certifi 2023.5.7
+Adding certifi 2023.5.7 to easy-install.pth file
+
+Using /home/runner/.local/lib/python3.11/site-packages
+Finished processing dependencies for swagger-client==1.0.0
+
+****** executing: pip3 install nose2 --user ******
+
+Collecting nose2
+  Downloading nose2-0.13.0-py3-none-any.whl (205 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.6/205.6 kB 4.7 MB/s eta 0:00:00
+Installing collected packages: nose2
+Successfully installed nose2-0.13.0
+
+[notice] A new release of pip is available: 22.3.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+
+****** executing: python3 -m nose2 ******
+
+..........................
+----------------------------------------------------------------------
+Ran 26 tests in 0.058s
+
+OK
+
+****** executed all buildcommand ******
+

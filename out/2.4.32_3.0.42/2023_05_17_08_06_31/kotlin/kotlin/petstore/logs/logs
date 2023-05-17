@@ -1,0 +1,89 @@
+
+****** BUILD ******
+
+
+****** executing: gradle wrapper ******
+
+
+Welcome to Gradle 8.1.1!
+
+Here are the highlights of this release:
+ - Stable configuration cache
+ - Experimental Kotlin DSL assignment syntax
+ - Building with Java 20
+
+For more details see https://docs.gradle.org/8.1.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :wrapper
+
+BUILD SUCCESSFUL in 30s
+1 actionable task: 1 executed
+
+****** executing: ./gradlew check assemble ******
+
+Downloading https://services.gradle.org/distributions/gradle-7.5-all.zip
+...............10%................20%................30%................40%................50%................60%...............70%................80%................90%................100%
+
+Welcome to Gradle 7.5!
+
+Here are the highlights of this release:
+ - Support for Java 18
+ - Support for building with Groovy 4
+ - Much more responsive continuous builds
+ - Improved diagnostics for dependency resolution
+
+For more details see https://docs.gradle.org/7.5/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :processResources NO-SOURCE
+> Task :processTestResources NO-SOURCE
+
+> Task :compileKotlin
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:46:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:61:15 Unnecessary safe call on a non-null receiver of type String
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:82:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:116:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:150:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:180:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:209:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:244:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:280:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/StoreApi.kt:45:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/StoreApi.kt:74:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/StoreApi.kt:104:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/StoreApi.kt:134:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:45:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:74:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:103:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:132:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:162:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:198:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:226:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:256:13 'when' is exhaustive so 'else' is redundant here
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:28:48 'create(MediaType?, File): RequestBody' is deprecated. Moved to extension function. Put the 'file' argument first to fix Java
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:39:59 'create(MediaType?, String): RequestBody' is deprecated. Moved to extension function. Put the 'content' argument first to fix Java
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:80:81 'toLowerCase(): String' is deprecated. Use lowercase() instead.
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:81:71 'toLowerCase(): String' is deprecated. Use lowercase() instead.
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/ResponseExtensions.kt:13:14 Extension is shadowed by a member: public final val isRedirect: Boolean
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/Serializer.kt:3:27 'KotlinJsonAdapterFactory' is deprecated. this moved to avoid a package name conflict in the Java Platform Module System.
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/Serializer.kt:5:27 'Rfc3339DateJsonAdapter' is deprecated. Deprecated in Java
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/Serializer.kt:11:18 'KotlinJsonAdapterFactory' is deprecated. this moved to avoid a package name conflict in the Java Platform Module System.
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin___petstore___/src/main/kotlin/io/swagger/client/infrastructure/Serializer.kt:12:36 'Rfc3339DateJsonAdapter' is deprecated. Deprecated in Java
+
+> Task :compileJava NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :inspectClassesForKotlinIC
+> Task :compileTestKotlin NO-SOURCE
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :assemble
+
+BUILD SUCCESSFUL in 38s
+3 actionable tasks: 3 executed
+
+****** executed all buildcommand ******
+
