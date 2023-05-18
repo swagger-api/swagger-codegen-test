@@ -1,0 +1,66 @@
+
+****** BUILD ******
+
+
+****** executing: gradle wrapper ******
+
+
+Welcome to Gradle 8.1.1!
+
+Here are the highlights of this release:
+ - Stable configuration cache
+ - Experimental Kotlin DSL assignment syntax
+ - Building with Java 20
+
+For more details see https://docs.gradle.org/8.1.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :wrapper
+
+BUILD SUCCESSFUL in 41s
+1 actionable task: 1 executed
+
+****** executing: ./gradlew check assemble ******
+
+Downloading https://services.gradle.org/distributions/gradle-7.5-all.zip
+...............10%................20%................30%................40%................50%................60%...............70%................80%................90%................100%
+
+Welcome to Gradle 7.5!
+
+Here are the highlights of this release:
+ - Support for Java 18
+ - Support for building with Groovy 4
+ - Much more responsive continuous builds
+ - Improved diagnostics for dependency resolution
+
+For more details see https://docs.gradle.org/7.5/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :processResources NO-SOURCE
+> Task :processTestResources NO-SOURCE
+
+> Task :compileKotlin
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-string-v3___petstore3composed___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:140:117 Parameter 'sessionId' is never used
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-string-v3___petstore3composed___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:355:46 This class shouldn't be used in Kotlin. Use kotlin.Any instead.
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-string-v3___petstore3composed___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:28:48 'create(MediaType?, File): RequestBody' is deprecated. Moved to extension function. Put the 'file' argument first to fix Java
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-string-v3___petstore3composed___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:39:59 'create(MediaType?, String): RequestBody' is deprecated. Moved to extension function. Put the 'content' argument first to fix Java
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-string-v3___petstore3composed___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:80:81 'toLowerCase(): String' is deprecated. Use lowercase() instead.
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-string-v3___petstore3composed___/src/main/kotlin/io/swagger/client/infrastructure/ApiClient.kt:81:71 'toLowerCase(): String' is deprecated. Use lowercase() instead.
+w: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-string-v3___petstore3composed___/src/main/kotlin/io/swagger/client/infrastructure/ResponseExtensions.kt:13:14 Extension is shadowed by a member: public final val isRedirect: Boolean
+
+> Task :compileJava NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :inspectClassesForKotlinIC
+> Task :compileTestKotlin NO-SOURCE
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :assemble
+
+BUILD SUCCESSFUL in 58s
+3 actionable tasks: 3 executed
+
+****** executed all buildcommand ******
+

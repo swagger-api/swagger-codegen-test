@@ -1,0 +1,144 @@
+
+****** BUILD ******
+
+
+****** executing: gradle wrapper ******
+
+
+Welcome to Gradle 8.1.1!
+
+Here are the highlights of this release:
+ - Stable configuration cache
+ - Experimental Kotlin DSL assignment syntax
+ - Building with Java 20
+
+For more details see https://docs.gradle.org/8.1.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :wrapper
+
+BUILD SUCCESSFUL in 28s
+1 actionable task: 1 executed
+
+****** executing: ./gradlew check assemble ******
+
+Downloading https://services.gradle.org/distributions/gradle-7.5-all.zip
+...............10%................20%................30%................40%................50%................60%...............70%................80%................90%................100%
+
+Welcome to Gradle 7.5!
+
+Here are the highlights of this release:
+ - Support for Java 18
+ - Support for building with Groovy 4
+ - Much more responsive continuous builds
+ - Improved diagnostics for dependency resolution
+
+For more details see https://docs.gradle.org/7.5/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :processResources NO-SOURCE
+> Task :processTestResources NO-SOURCE
+
+> Task :compileKotlin FAILED
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/AnimalApi.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/AnotherFakeApi.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/DogApi.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/FakeApi.kt:25:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/FakeClassnameTags123Api.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/PetApi.kt:21:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/StoreApi.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/apis/UserApi.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateAdapter.kt:5:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateAdapter.kt:6:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateAdapter.kt:10:23 Unresolved reference: LocalDate
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateAdapter.kt:11:16 Unresolved reference: DateTimeFormatter
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateAdapter.kt:15:34 Unresolved reference: LocalDate
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateAdapter.kt:16:16 Unresolved reference: LocalDate
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateAdapter.kt:16:39 Unresolved reference: DateTimeFormatter
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateTimeAdapter.kt:5:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateTimeAdapter.kt:6:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateTimeAdapter.kt:10:23 Unresolved reference: LocalDateTime
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateTimeAdapter.kt:11:16 Unresolved reference: DateTimeFormatter
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateTimeAdapter.kt:15:34 Unresolved reference: LocalDateTime
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateTimeAdapter.kt:16:16 Unresolved reference: LocalDateTime
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/infrastructure/LocalDateTimeAdapter.kt:16:43 Unresolved reference: DateTimeFormatter
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/$special%5Bmodel.name%5D.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/200_response.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/AdditionalPropertiesClass.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/AllOfSubCategoryCategory.kt:16:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/AllOfSubCategoryPetsItems.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/AllPetsResponse.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Animal.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/AnimalFarm.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Animal_animalId_body.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/ApiResponse.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/ArrayOfArrayOfNumberOnly.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/ArrayOfNumberOnly.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/ArrayTest.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Capitalization.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Cat.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Category.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/ClassModel.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Client.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Dog.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Dog_dogId_body.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/EnumArrays.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/EnumClass.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Enum_Test.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Enum_form_body.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body.kt:14:33 Unresolved reference: org
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body.kt:57:19 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body.kt:59:23 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body_1.kt:14:33 Unresolved reference: org
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body_1.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body_1.kt:57:19 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_body_1.kt:59:23 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Fake_jsonFormData_body.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Format_test.kt:14:33 Unresolved reference: org
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Format_test.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Format_test.kt:44:19 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Format_test.kt:45:23 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/HasOnlyReadOnly.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/List.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/MapTest.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/MixedPropertiesAndAdditionalPropertiesClass.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/MixedPropertiesAndAdditionalPropertiesClass.kt:26:23 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Name.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/NullableEnumModel.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/NumberOnly.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/OneOfAllPetsResponseItems.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/OneOfSinglePetResponsePet.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Order.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Order.kt:30:23 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/OuterBoolean.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/OuterComposite.kt:17:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/OuterEnum.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/OuterNumber.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/OuterString.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Pet.kt:16:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/PetId_uploadImage_body.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Pet_petId_body.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/ReadOnlyFirst.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Return.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/SinglePetResponse.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/SubCategory.kt:15:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/Tag.kt:14:12 Unresolved reference: threeten
+e: file:///home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-threetenbp-v3___petstore3fake___/src/main/kotlin/io/swagger/client/models/User.kt:14:12 Unresolved reference: threeten
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 39s
+1 actionable task: 1 executed

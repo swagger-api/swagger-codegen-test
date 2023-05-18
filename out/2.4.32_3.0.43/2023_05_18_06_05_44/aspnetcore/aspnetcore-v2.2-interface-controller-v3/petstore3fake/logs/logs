@@ -1,0 +1,44 @@
+
+****** BUILD ******
+
+
+****** executing: dotnet restore src/IO.Swagger/ ******
+
+  Determining projects to restore...
+  Restored /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj (in 6.12 sec).
+  Restored /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj (in 7.97 sec).
+
+****** executing: dotnet build src/IO.Swagger/ ******
+
+Microsoft (R) Build Engine version 16.7.3+2f374e28e for .NET
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+Models/AllPetsResponse.cs(45,28): warning CS0109: The member 'AllPetsResponse.ToJson()' does not hide an accessible member. The new keyword is not required. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Models/AnimalFarm.cs(45,28): warning CS0109: The member 'AnimalFarm.ToJson()' does not hide an accessible member. The new keyword is not required. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/BasicAuthenticationHandler.cs(30,59): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/ApiKeyAuthenticationHandler.cs(30,59): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumTest.cs(178,21): warning CS0472: The result of the expression is always 'true' since a value of type 'OuterEnum' is never equal to 'null' of type 'OuterEnum?' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumTest.cs(199,25): warning CS0472: The result of the expression is always 'true' since a value of type 'OuterEnum' is never equal to 'null' of type 'OuterEnum?' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/ApiKeyAuthenticationHandler.cs(23,16): warning CS1591: Missing XML comment for publicly visible type or member 'ApiKeyAuthenticationHandler.ApiKeyAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/BasicAuthenticationHandler.cs(23,16): warning CS1591: Missing XML comment for publicly visible type or member 'BasicAuthenticationHandler.BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+  IO.Swagger -> /home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/bin/Debug/netcoreapp2.2/IO.Swagger.dll
+
+Build succeeded.
+
+Models/AllPetsResponse.cs(45,28): warning CS0109: The member 'AllPetsResponse.ToJson()' does not hide an accessible member. The new keyword is not required. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Models/AnimalFarm.cs(45,28): warning CS0109: The member 'AnimalFarm.ToJson()' does not hide an accessible member. The new keyword is not required. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/BasicAuthenticationHandler.cs(30,59): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/ApiKeyAuthenticationHandler.cs(30,59): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumTest.cs(178,21): warning CS0472: The result of the expression is always 'true' since a value of type 'OuterEnum' is never equal to 'null' of type 'OuterEnum?' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Models/EnumTest.cs(199,25): warning CS0472: The result of the expression is always 'true' since a value of type 'OuterEnum' is never equal to 'null' of type 'OuterEnum?' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/ApiKeyAuthenticationHandler.cs(23,16): warning CS1591: Missing XML comment for publicly visible type or member 'ApiKeyAuthenticationHandler.ApiKeyAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+Security/BasicAuthenticationHandler.cs(23,16): warning CS1591: Missing XML comment for publicly visible type or member 'BasicAuthenticationHandler.BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions>, ILoggerFactory, UrlEncoder, ISystemClock)' [/home/runner/work/swagger-codegen/swagger-codegen/generated/aspnetcore-v2.2-interface-controller-v3___petstore3fake___/src/IO.Swagger/IO.Swagger.csproj]
+    8 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.63
+
+****** executed all buildcommand ******
+

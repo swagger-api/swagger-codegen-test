@@ -1,0 +1,20 @@
+
+****** generate ******
+
+LANGUAGE spring
+JOB_NAME springboot-bean-validation-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "Thread-1" java.lang.RuntimeException: Unknown library: spring-boot-DhideGenerationTimestamp=true
+Available libraries:
+  spring-boot
+  spring-mvc
+  spring-cloud
+	at io.swagger.codegen.v3.generators.DefaultCodegenConfig.setLibrary(DefaultCodegenConfig.java:3485)
+	at io.swagger.codegen.v3.config.CodegenConfigurator.toClientOptInput(CodegenConfigurator.java:663)
+	at io.swagger.codegen.v3.cli.cmd.Generate.run(Generate.java:386)
+	at java.lang.Thread.run(Thread.java:750)

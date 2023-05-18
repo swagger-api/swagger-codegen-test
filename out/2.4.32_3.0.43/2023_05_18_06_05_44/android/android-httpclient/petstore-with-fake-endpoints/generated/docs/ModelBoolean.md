@@ -1,0 +1,8 @@
+
+# ModelBoolean
+
+## Enum
+
+
+
+

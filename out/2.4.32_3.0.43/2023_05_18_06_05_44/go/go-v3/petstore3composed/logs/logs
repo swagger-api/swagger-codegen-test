@@ -1,0 +1,37 @@
+
+****** BUILD ******
+
+
+****** executing: go mod init swagger ******
+
+go: creating new go.mod: module swagger
+go: to add module requirements and sums:
+	go mod tidy
+
+****** executing: go get github.com/antihax/optional ******
+
+go: downloading github.com/antihax/optional v1.0.0
+go: added github.com/antihax/optional v1.0.0
+
+****** executing: go get golang.org/x/oauth2 ******
+
+go: downloading golang.org/x/oauth2 v0.8.0
+go: downloading google.golang.org/appengine v1.6.7
+go: downloading github.com/golang/protobuf v1.5.2
+go: downloading golang.org/x/net v0.10.0
+go: downloading google.golang.org/protobuf v1.28.0
+go: added github.com/golang/protobuf v1.5.2
+go: added golang.org/x/net v0.10.0
+go: added golang.org/x/oauth2 v0.8.0
+go: added google.golang.org/appengine v1.6.7
+go: added google.golang.org/protobuf v1.28.0
+
+****** executing: go build ******
+
+# swagger
+./model_all_of_sub_category_pets_items.go:17:9: undefined: Object
+./model_cat.go:17:9: undefined: Object
+./model_dog.go:17:9: undefined: Object
+./api_pet.go:617:60: undefined: Object
+./api_pet.go:623:25: undefined: Object
+./api_pet.go:680:12: undefined: Object

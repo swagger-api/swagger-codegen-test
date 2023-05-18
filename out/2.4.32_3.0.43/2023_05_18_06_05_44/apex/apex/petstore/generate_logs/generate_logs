@@ -1,0 +1,74 @@
+
+****** generate ******
+
+LANGUAGE apex
+JOB_NAME apex___petstore___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[main] INFO io.swagger.parser.Swagger20Parser - reading from https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v2/petstore.json
+[main] WARN io.swagger.codegen.ignore.CodegenIgnoreProcessor - Output directory does not exist, or is inaccessible. No file (.swagger-codegen-ignore) will be evaluated.
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagApiResponse.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagApiResponse.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagApiResponseTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagApiResponseTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagApiResponse.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagCategory.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagCategory.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagCategoryTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagCategoryTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagCategory.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagOrder.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagOrder.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagOrderTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagOrderTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagOrder.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagPet.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagPet.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagPetTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagPetTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagPet.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagTag.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagTag.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagTagTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagTagTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagTag.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagUser.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagUser.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagUserTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwagUserTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagUser.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagPetApi.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagPetApi.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagPetApiTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagPetApiTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagPetApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagStoreApi.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagStoreApi.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagStoreApiTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagStoreApiTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagStoreApi.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagUserApi.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagUserApi.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagUserApiTest.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagUserApiTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/docs/SwagUserApi.md
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/Swagger.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/Swagger.cls-meta.xml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwaggerTest.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwaggerTest.cls-meta.xml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwaggerResponseMock.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/force-app/main/default/classes/SwaggerResponseMock.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagClient.cls
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/classes/SwagClient.cls-meta.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy//namedCredentials/Swagger_Petstore.namedCredential
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/deploy/package.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/undeploy/destructiveChanges.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/build.xml
+[main] INFO io.swagger.codegen.DefaultGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/build.properties
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/undeploy/package.xml
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/git_push.sh
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/.gitignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/README.md
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/.swagger-codegen-ignore
+[main] INFO io.swagger.codegen.AbstractGenerator - writing file /home/runner/work/swagger-codegen/swagger-codegen/generated/apex___petstore___/.swagger-codegen/VERSION

@@ -1,0 +1,35 @@
+
+****** BUILD ******
+
+
+****** executing: gradle wrapper ******
+
+
+Welcome to Gradle 8.1.1!
+
+Here are the highlights of this release:
+ - Stable configuration cache
+ - Experimental Kotlin DSL assignment syntax
+ - Building with Java 20
+
+For more details see https://docs.gradle.org/8.1.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/swagger-codegen/swagger-codegen/generated/kotlin-server-v3___petstore3composed___/build.gradle' line: 34
+
+* What went wrong:
+A problem occurred evaluating root project 'kotlin-server'.
+> org/gradle/api/plugins/MavenPlugin
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 43s
