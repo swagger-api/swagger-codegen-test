@@ -1,0 +1,35 @@
+
+****** generate ******
+
+LANGUAGE java
+JOB_NAME java-resttemplate-v3___petstore3___
+SPEC_URL PARAM https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+SPEC_URL https://raw.githubusercontent.com/swagger-api/swagger-codegen/d7d5b9a97447f40e130e132cdf0cf7ee7c626cb8/fixtures/immutable/specifications/v3/petstore3.json
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+Exception in thread "main" java.lang.UnsupportedClassVersionError: ch/qos/logback/classic/spi/LogbackServiceProvider has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:757)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:419)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:352)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:370)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at org.slf4j.LoggerFactory.safelyInstantiate(LoggerFactory.java:134)
+	at org.slf4j.LoggerFactory.findServiceProviders(LoggerFactory.java:115)
+	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:178)
+	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:170)
+	at org.slf4j.LoggerFactory.getProvider(LoggerFactory.java:455)
+	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:441)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:390)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:416)
+	at io.swagger.codegen.v3.cli.SwaggerCodegen.<clinit>(SwaggerCodegen.java:40)

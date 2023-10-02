@@ -1,0 +1,21 @@
+
+****** BUILD ******
+
+
+****** executing: mvn clean package -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.httpconnectionManager.ttlSeconds=120 -Dmaven.wagon.http.retryHandler.count=3 ******
+
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM /home/runner/work/swagger-codegen/swagger-codegen/generated/jaxrs-jersey1___petstore-with-fake-endpoints___/pom.xml: Unrecognised tag: 'dependency' (position: START_TAG seen ...<dependency>\n    <dependency>... @124:17)  @ line 124, column 17
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project  (/home/runner/work/swagger-codegen/swagger-codegen/generated/jaxrs-jersey1___petstore-with-fake-endpoints___/pom.xml) has 1 error
+[ERROR]     Non-parseable POM /home/runner/work/swagger-codegen/swagger-codegen/generated/jaxrs-jersey1___petstore-with-fake-endpoints___/pom.xml: Unrecognised tag: 'dependency' (position: START_TAG seen ...<dependency>\n    <dependency>... @124:17)  @ line 124, column 17 -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException

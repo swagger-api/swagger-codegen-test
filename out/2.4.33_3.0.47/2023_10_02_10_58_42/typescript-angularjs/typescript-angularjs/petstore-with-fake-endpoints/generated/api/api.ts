@@ -1,0 +1,13 @@
+export * from './AnotherFakeApi';
+import { AnotherFakeApi } from './AnotherFakeApi';
+export * from './FakeApi';
+import { FakeApi } from './FakeApi';
+export * from './FakeClassnameTags123Api';
+import { FakeClassnameTags123Api } from './FakeClassnameTags123Api';
+export * from './PetApi';
+import { PetApi } from './PetApi';
+export * from './StoreApi';
+import { StoreApi } from './StoreApi';
+export * from './UserApi';
+import { UserApi } from './UserApi';
+export const APIS = [AnotherFakeApi, FakeApi, FakeClassnameTags123Api, PetApi, StoreApi, UserApi];

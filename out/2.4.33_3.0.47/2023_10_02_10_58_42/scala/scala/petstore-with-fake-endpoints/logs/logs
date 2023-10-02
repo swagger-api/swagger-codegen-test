@@ -1,0 +1,61 @@
+
+****** BUILD ******
+
+
+****** executing: sbt compile ******
+
+Downloading sbt launcher for 1.9.6:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.9.6/sbt-launch-1.9.6.jar
+    To  /home/runner/.sbt/launchers/1.9.6/sbt-launch.jar
+Downloading sbt launcher 1.9.6 md5 hash:
+  From  https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.9.6/sbt-launch-1.9.6.jar.md5
+    To  /home/runner/.sbt/launchers/1.9.6/sbt-launch.jar.md5
+/home/runner/.sbt/launchers/1.9.6/sbt-launch.jar: OK
+[info] [launcher] getting org.scala-sbt sbt 1.9.6  (this may take some time)...
+[info] [launcher] getting Scala 2.12.18 (for sbt)...
+[0m[[0m[0minfo[0m] [0m[0mUpdated file /home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/project/build.properties: set sbt.version to 1.9.6[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.9.6 (AdoptOpenJDK Java 1.8.0_292)[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/project[0m
+/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/build.sbt:31: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash
+publishArtifact in (Compile, packageDoc) := false
+                ^
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project scala___petstore-with-fake-endpoints___ from build.sbt ...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to swagger-scala-client (in build file:/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/)[0m
+[0m[[0m[0minfo[0m] [0m[0mExecuting in batch mode. For better performance use sbt's shell[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 46 Scala sources to /home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/target/scala-2.11/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.11' for Scala 2.11.12. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 9.902s.[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/FakeApi.scala:17:8: object ArrayByte is not a member of package io.swagger.client.model[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.swagger.client.model.ArrayByte[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/api/FakeApi.scala:20:8: object Number is not a member of package io.swagger.client.model[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.swagger.client.model.Number[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/Pet.scala:20:14: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  photoUrls: List[String],[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/Pet.scala:21:16: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  tags: Option[List[Tag]] = None,[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/ArrayOfArrayOfNumberOnly.scala:17:28: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  arrayArrayNumber: Option[List[List[Number]]] = None[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/ArrayOfNumberOnly.scala:17:23: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  arrayNumber: Option[List[Number]] = None[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/ArrayTest.scala:17:25: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  arrayOfString: Option[List[String]] = None,[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/ArrayTest.scala:18:31: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  arrayArrayOfInteger: Option[List[List[Long]]] = None,[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/ArrayTest.scala:19:29: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  arrayArrayOfModel: Option[List[List[ReadOnlyFirst]]] = None[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/runner/work/swagger-codegen/swagger-codegen/generated/scala___petstore-with-fake-endpoints___/src/main/scala/io/swagger/client/model/EnumArrays.scala:18:21: io.swagger.client.model.List does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  arrayEnum: Option[List[String]] = None[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 15 s, completed Oct 2, 2023 11:08:09 AM[0m
+[0J
