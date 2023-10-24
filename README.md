@@ -1,4 +1,6 @@
 # swagger-codegen-test
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fswagger-api%2Fswagger-codegen-test.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fswagger-api%2Fswagger-codegen-test?ref=badge_shield)
+
 
 ### files:
 
@@ -114,3 +116,7 @@ codegen-test-report.yml: expects optional params for v2 and v3 newest and oldest
 relies on codegen-test.yml being run before
 
 both workflows commit result into "out" directory
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fswagger-api%2Fswagger-codegen-test.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fswagger-api%2Fswagger-codegen-test?ref=badge_large)
